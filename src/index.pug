@@ -1,0 +1,14 @@
+extends templates/template
+
+block title
+	title Ilia Gromov Frontend developer
+block append style
+block content
+	include modules/header-module
+	
+	include content
+	
+block append script
+	script(src='js/modal.js')
+	script(src='js/canvans-rings.js')
+	script(src='js/scroll-anchors.js')

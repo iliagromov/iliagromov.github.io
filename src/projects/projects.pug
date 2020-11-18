@@ -1,0 +1,12 @@
+extends ../templates/template
+block base
+	base(href='../')
+block title
+	title Projects
+block append style
+block content
+	include ../modules/header-module
+	a(href='../').btn-back.page__btn
+		.page__btn_icon_arrow-left
+		span назад
+	include content

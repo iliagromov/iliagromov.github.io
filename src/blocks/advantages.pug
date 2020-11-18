@@ -1,0 +1,15 @@
+section.advantages
+    include mixins/mixin-page-title
+    +page-title("Преимущества")
+    .wrapper
+        .advantages-content
+            ol.page__lists
+                include mixins/mixin-advantage
+                +advantage("Профессиональный подход")
+                +advantage("Использование современных технологий")
+                +advantage("Здравая оценка сроков")
+                +advantage("Разработка по стандартам")
+                +advantage("Большую часть дня Online", '24/7')
+                +advantage("Оптимизация процесса и кода")
+                +advantage("Работаю исключительно по ТЗ")
+                +advantage("Ответственное исполнение")
