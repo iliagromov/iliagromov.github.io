@@ -1,6 +1,6 @@
 .projects {
   padding: 80px 0;
-
+  // opacity: 0;
   &-content {
     .row-flex();
     // justify-content: space-around;
@@ -29,6 +29,24 @@
     max-width: 180px;
     margin: 0 auto;
   }
+  &.animated{
+    opacity: 1;
+    .page__title-h2{
+        .animated({
+            .fadeInDown();
+            .delay(0.5s);
+        });
+    }
+    .page__subtitle_big{
+      opacity: 0.1;
+    }
+    .project{
+        .animated({
+            .zoomIn();
+            .delay(1s);
+        });
+    }
+}
 }
 
 

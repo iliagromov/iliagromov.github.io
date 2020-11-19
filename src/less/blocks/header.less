@@ -9,7 +9,8 @@
     z-index: 1;
     
     transition: all .35s ease-in-out;
-    
+    // opacity: 0;
+    transition: opacity 2s ease-out;
     &-content{
         .row-flex();
     }
@@ -37,5 +38,9 @@
     .page__subtitle{
         font-size: 20px;
         line-height: 24px;
+    }
+    &.animated{
+        opacity: 1;
+       
     }
 }

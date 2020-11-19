@@ -3,7 +3,8 @@
     background-color: @color_yellow-1;
     position: relative;
     z-index: -2;
-
+    // opacity: 0;
+    transition: all 0.5s ease-out;
     &-content{
         
         color: @color_black;
@@ -64,5 +65,23 @@
     
     .page__title_main{
         color:@color_base-gray;
+    }
+    &.animated{
+        opacity: 1;
+        .page__title-h2{
+            .animated({
+                .fadeInDown();
+                .delay(0.5s);
+            });
+        }
+        .page__subtitle_big{
+            opacity: 0.1;
+        }
+        .page__list-item{
+            .animated({
+                .zoomIn();
+                .delay(1s);
+            });
+        }
     }
 }

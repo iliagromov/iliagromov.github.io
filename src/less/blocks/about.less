@@ -1,5 +1,6 @@
 .about{
     padding: 80px 0;
+    // opacity: 0;
     &-content{
         padding-top: 65px;
         .row-flex();
@@ -42,6 +43,24 @@
         }
         .page__btn{
             .sm(margin, 0 auto);
+        }
+    }
+    &.animated{
+        opacity: 1;
+        .page__title-h2{
+            .animated({
+                .fadeInDown();
+                .delay(0.5s);
+            });
+        }
+        .page__subtitle_big{
+            opacity: 0.1;
+        }
+        .about-content{
+            .animated({
+                .fadeIn();
+                .delay(1s);
+            });
         }
     }
 }

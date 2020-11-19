@@ -51,15 +51,7 @@ const lessFiles = [
 	'./src/less/+(styles|styles-per).less',
 ];
 const jsFiles = [
-	'./src/js/debug-grid-create.js',
-	'./src/js/app.js',
-	'./src/js/main.js',
-	'./src/js/modal.js',
-	'./src/js/store-scroll.js',
-	'./src/js/scroll-anchors.js',
-	'./src/js/canvans-rings.js',
-	'./src/js/tabs.js',
-	'./src/js/render-content.js',
+	'./src/js/*.js'
 ];//порядок сборки js файлов
 
 function clear() {

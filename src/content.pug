@@ -1,17 +1,8 @@
-section.banner
-    canvas.canvas
-    .banner__logo
-        .page__subtitle Ilia
-            span.page_bold Gromov
-        .page__img
-            img(src="assets/img/img-frontend-developer.png")
-    a(href="#skills").page__icon_mouse-down
-
-
+include blocks/banner
 include blocks/skills
 include blocks/services
 include blocks/advantages
-section.projects
+section.projects.isAnimate
     include blocks/mixins/mixin-page-title
     +page-title("Проекты")
     .wrapper

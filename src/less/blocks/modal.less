@@ -12,6 +12,25 @@
     background: rgba(39, 39, 39, 0.6);
     &-container{
         .xs(width, 90%);
+        
+        &.zoomIn{
+            .animated({
+                .zoomIn();
+                // .delay(1s);
+            });
+        }
+        &.zoomOut{
+            .animated({
+                .zoomOut();
+                // .delay(1s);
+            });
+        }
+        &.fadeIn{
+            .animated({
+                .fadeIn();
+                // .delay(1s);
+            });
+        }
     }
     &.modal-skills{
         .modal__content{
