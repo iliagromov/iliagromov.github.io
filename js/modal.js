@@ -33,13 +33,13 @@ function modalToggle(e) {
             }
         } else if (el.classList.contains('modal') && !el.classList.contains('page_hidden')) {
 
-            console.log(e);
-            el.classList.toggle('page_hidden');
-            body.classList.toggle('modal-open');
+            animationToggle(modalId, false);
+            setTimeout(() => {
+                modalId.classList.toggle('page_hidden');
+                body.classList.toggle('modal-open');
+            }, 100);
 
         } else if (e.key === 'Escape' && el.classList.contains('modal-open')) {
-            console.log('el');
-            console.log(e);
             let modals = document.querySelectorAll('.modal');
             modals.forEach((e) => {
                 if (!e.classList.contains('page_hidden')) {
