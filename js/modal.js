@@ -33,9 +33,9 @@ function modalToggle(e) {
             }
         } else if (el.classList.contains('modal') && !el.classList.contains('page_hidden')) {
 
-            animationToggle(modalId, false);
+            animationToggle(el, false);
             setTimeout(() => {
-                modalId.classList.toggle('page_hidden');
+                el.classList.toggle('page_hidden');
                 body.classList.toggle('modal-open');
             }, 100);
 
