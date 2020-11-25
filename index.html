@@ -2,2105 +2,467 @@
 <html lang="ru"> 
 	<head>
 		<meta charset="utf-8">
-		<base href="build/">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Holy Basil Sourse</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" type="text/css">
+		<meta property="fb:app_id" content="764462494124576">
+		<meta property="og:title" content="Ilia Gromov">
+		<meta property="og:description" content="Frontend developer. Разработаю Вашу идею на профессиональном уровне!">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://iliagromov.github.io/">
+		<meta property="og:image" content="https://iliagromov.github.io/assets/img/img-about-2.jpg">
+		<meta property="vk:image" content="https://iliagromov.github.io/assets/img/img-about-2-vk.jpg">
+		<meta property="fb:image" content="https://iliagromov.github.io/assets/img/img-about-4.jpg">
+		<meta property="twitter:image" content="https://iliagromov.github.io/assets/img/img-about-3.jpg">
+		<meta property="og:image:secure_url" content="https://iliagromov.github.io/assets/img/img-about-2.jpg">
+		<meta property="og:image:type" content="image/jpg">
+		<meta property="twitter:card" content="summary">
+		<meta property="twitter:site" content="https://iliagromov.github.io/">
+		<meta property="twitter:creator" content="Ilia Gromov">
+		<title>Ilia Gromov Frontend developer</title>
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
+		<script type="text/javascript">
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+			ym(68013103, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+			});
+		</script>
 	</head>
 	<body>
+		<noscript>
+			<div><img src="https://mc.yandex.ru/watch/68013103" style="position:absolute; left:-9999px;" alt=""></div>
+		</noscript>
 		<main class="page">
-			<header class="header">
-				<div class="header-container">
-					<div class="header__logo"><a href="#banner"><img class="page__img" src="assets/img/logo.png"></a></div>
-					<div class="header__nav">
-						<nav class="page__nav"><a class="page__link" href="#rationMenu">Программа </a><a class="page__link" href="#rationForm">Доставка </a><a class="page__link" href="#menu">Меню </a><a class="page__link" href="#ecoSlider">О компании</a></nav>
+			<section class="theme">
+				<div class="theme-color theme-color-3"></div>
+				<div class="theme-color theme-color-2"></div>
+				<div class="theme-color theme-color-1"></div>
+			</section>
+			<section class="bg">
+				<div class="wrapper">
+					<div class="bg-grid">
+						<div class="bg-grid__line"></div>
+						<div class="bg-grid__line"></div>
+						<div class="bg-grid__line"></div>
+						<div class="bg-grid__line"></div>
 					</div>
-					<div class="header__actions"><a class="page__link" href="tel:+7 (495) 120-03-30">+7 (495) 120-03-30</a>
-						<button class="page_desktop page__btn open-modal" data-modal="modal-callback">Обратный звонок</button>
-						<button class="page_mobile page__btn page__btn_circle page__btn_menu open-modal" data-modal="modal-menu"> 
-							<div class="line"></div>
-						</button>
+				</div>
+			</section>
+			<header class="header isAnimate">
+				<div class="wrapper">
+					<div class="header-content">
+						<nav class="header__navbar"><a class="header__navbar-link page__subtitle" href="./">Ilia<span class="page_bold">Gromov</span></a>
+							<div class="header__navbar-link"><a href="#skills">Навыки </a></div>
+							<div class="header__navbar-link"><a href="./projects/projects.html">Проекты</a></div>
+							<div class="header__navbar-link"><a href="#about">Обо мне </a></div>
+						</nav>
 					</div>
 				</div>
 			</header>
-			<section class="banner" id="banner">
-				<div class="img-bg img-bg_holybottle"><img class="page__img" src="assets/img/img-holy-2.svg" alt=""></div>
-				<div class="img-bg img-bg_fish"><img class="page__img" src="assets/img/img-fish.svg" alt=""></div>
-				<div class="img-bg img-bg_serfer"><img class="page__img" src="assets/img/img-serfer-1.svg" alt=""></div>
-				<div class="wrapper">
-					<div class="banner-content">
-						<h1 class="page__title-h1">Оздоравливающие рационы Holy Basil с&nbsp;доставкой на&nbsp;дом
-							<div class="teaser-circle"><img class="teaser-circle__text" src="assets/img/img-text-white.png" alt=""><img class="teaser-circle__icon" src="assets/img/img-round-text-white.png" alt=""></div>
-						</h1>
-						<p class="page__text page_desktop">Наше меню разработанно экспертами здорового питания и основывается на принципах баланса и сочетания нутриентов для раскрытия максимальной пользы продуктов</p>
-						<p class="page__text page_mobile">Все, что поможет тебе выстроить здоровую микрофлору кишечника и не болеть. Ты получишь все необходимые аминокислоты и нутриенты в оптимальном количестве и каждая калория будет полезной.</p><a class="page__btn" href="#menu">МЕНЮ И РАЦИОНЫ</a>
-					</div>
-				</div>
+			<button class="btn-scrollTop page__btn">
+				<div class="page__btn_icon_arrow-top"> </div><span>наверх</span>
+			</button>
+			<section class="banner isAnimate">
+				<canvas class="canvas"></canvas>
+				<div class="banner__logo">
+					<div class="page__subtitle">Ilia<span class="page_bold">Gromov</span></div>
+					<div class="page__img"><img src="assets/img/img-frontend-developer.png"></div>
+				</div><a class="page__icon_mouse-down" href="#skills"></a>
 			</section>
-			<section class="banner-info" id="bannerInfo">
-				<div class="img-bg img-bg_holy-main img-bg_right-top img-bg_holybottleMain page_desktop" id="bottle"><img class="page__img" src="assets/img/img-holy-2.png" alt="">
-					<div class="banner-info-content page_desktop">
-						<div class="text-center page__text">Легкое усвоение </div>
-						<div class="text-center page__text">Здоровая микрофлора</div>
-						<div class="text-center page__text">Высокий метаболизм </div>
-						<div class="text-center page__text">Чистый состав</div>
-						<div class="text-center page__text">Насыщенный вкус</div>
-						<div class="text-center page__text">Экологичная упаковка </div>
-					</div>
-				</div>
-				<div class="img-bg img-bg_tofu"><img class="page__img" src="assets/img/img-tofu-1.png" alt=""></div>
-				<div class="img-bg img-bg_bas"><img class="page__img" src="assets/img/img-bas-1.png" alt=""></div>
-				<div class="img-bg img-bg_sol"><img class="page__img" src="assets/img/img-sol-1.png" alt=""></div>
-				<div class="img-bg img-bg_seas"><img class="page__img" src="assets/img/img-seas-1.png" alt=""></div>
-				<div class="banner-info-content page_mobile">
-					<div class="img-bg img-bg_holy page_mobile"><img class="page__img" src="assets/img/img-holy-2.png" alt=""></div>
-					<div class="text-center page__text">Легкое усвоение </div>
-					<div class="text-center page__text">Здоровая микрофлора</div>
-					<div class="text-center page__text">Высокий метаболизм </div>
-					<div class="text-center page__text">Чистый состав</div>
-					<div class="text-center page__text">Насыщенный вкус</div>
-					<div class="text-center page__text">Экологичная упаковка</div>
-				</div>
-			</section>
-			<section class="article">
-				<div class="wrapper">
-					<h1 class="page__title-h1">Твой источник здоровья и энергии</h1>
-					<div class="article-items">
-						<div class="article-items__item">
-							<div class="page__icon page__icon_science"></div>
-							<h4 class="page__title-h4">Разработано нутрицилогами</h4>
-							<p class="page__text">В нашей команде работают профессионалы и эксперты здорового питания</p>
-						</div>
-						<div class="article-items__item">
-							<div class="page__icon page__icon_protein"></div>
-							<h4 class="page__title-h4">Отсутсвие агрессивных белков</h4>
-							<p class="page__text">В наших рационах нет глютена, молочных продуктов, яиц и других сложных для усвоения белков</p>
-						</div>
-						<div class="article-items__item">
-							<div class="page__icon page__icon_oil"></div>
-							<h4 class="page__title-h4">Качественные масла</h4>
-							<p class="page__text">Мы используем только оливковое, рыжиковое и другие нерафинированные масла, насыщенные Омега 3 и 6 9</p>
-						</div>
-						<div class="article-items__item">
-							<div class="page__icon page__icon_fresh"></div>
-							<h4 class="page__title-h4">Ферментированные овощи и соусы, пробиотики</h4>
-							<p class="page__text">Мы наполним Вашу микрофлору заботливыми помощниками</p>
-						</div>
-						<div class="article-items__item">
-							<div class="page__icon page__icon_glutenFree"></div>
-							<h4 class="page__title-h4">Без муки, рафинированных и консервированных продуктов</h4>
-							<p class="page__text">Насыщение будет проходить равномерно и легко</p>
-						</div>
-						<div class="article-items__item">
-							<div class="page__icon page__icon_water"></div>
-							<h4 class="page__title-h4">Активированные и замоченные живые продукты</h4>
-							<p class="page__text">12 часов в чистой воде проводят наши крупы и бобовые перед использованием в готовке</p>
-						</div>
-					</div>
-				</div>
-				<div class="wrapper article_wrapper"> 
-					<div class="article-info">
-						<div class="article-info__bg">
-							<h2 class="page__title-h2 page_desktop">рационы Holy Basil объединяют знания современной нутрициологии и древней Аюрведы </h2>
-							<h2 class="page__title-h2 page_mobile">Если хотя бы три пункта про вас, тогда вы в правильном месте</h2>
-							<p class="page__text page_desktop">Наше меню разработанно экспертами здорового питания и основывается на принципах баланса и сочетания нутриентов для раскрытия максимальной пользы продуктов</p>
-							<p class="page__text page_mobile">Осень – пора авитаминозов и лучшее время, чтобы заняться здоровьем. Вирусные заболевания обостряются и сильнее хочется иметь нормальный иммунитет и быть продуктивным, а не сидеть с насморком или того хуже с covid-19.</p><img class="page__img" src="assets/img/img-leaves-right-2.png" alt=""><img class="img-bg img-bg_tiger" id="tiger" src="assets/img/img-tiger.png" alt=""><img class="img-bg img-bg_leafs" id="leafs" src="assets/img/img-leafs.png" alt="">
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="ration-menu" id="rationMenu">
-				<div class="wrapper">
-					<h1 class="page__title-h1">Из чего состоит HEALTHY RATION </h1>
-					<div class="slider__toggles">
-						<div class="slider__nav">
-							<div class="slider__nav-number active">01</div>
-							<div class="slider__nav-number">02</div>
-						</div>
-						<div class="slider__actions">
-							<button class="page__btn_prev"></button>
-							<button class="page__btn_next"></button>
-						</div>
-					</div>
-					<div class="slider">
-						<div class="slider__continer">
-							<div class="slide">
-								<div class="slide-content">
-									<div class="slide-content__img"><img class="page__img" src="assets/img/img-diet-1.png" alt=""></div>
-									<div class="slide-content__text">
-										<h3 class="page__title-h3">растительный рацион с рыбой</h3>
-										<ul class="page__lists">
-											<li class="page__list page__list-header">
-												<div class="name page__text page__text_bold">Основное меню </div>
-												<div class="value">1503 ккал</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Завтрак</div>
-												<div class="page__text">Chocolate Waffle, Holy Berry smoothie</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Обед</div>
-												<div class="page__text">Carrot cream with wacame, Вeans & Pesto</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Ужин</div>
-												<div class="page__text">Tofu Nori Pasta</div>
-											</li>
-											<li class="page__list page__list-header">
-												<div class="name page__text page__text_bold">Дополнительно</div>
-												<div class="value">298 ккал</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Десерт</div>
-												<div class="page__text">Blackcurrant Yogurt</div>
-											</li>
-										</ul>
-									</div>
+			<section class="skills" id="skills">
+								<div class="page__title page_transform-uppercase page_text-center">
+									<h2 class="page__subtitle_big">Навыки</h2>
+									<h2 class="page__title_main page__title-h2 page_bold">Навыки</h2>
 								</div>
-							</div>
-							<div class="slide">
-								<div class="slide-content">
-									<div class="slide-content__img"><img class="page__img" src="assets/img/img-diet-1.png" alt=""></div>
-									<div class="slide-content__text">
-										<h3 class="page__title-h3">Растительный рацион</h3>
-										<ul class="page__lists">
-											<li class="page__list page__list-header">
-												<div class="name page__text page__text_bold">Основное меню </div>
-												<div class="value">1503 ккал</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Завтрак</div>
-												<div class="page__text">Chocolate Waffle, Holy Berry smoothie</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Обед</div>
-												<div class="page__text">Carrot cream with wacame, Вeans & Pesto</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Ужин</div>
-												<div class="page__text">Tofu Nori Pasta</div>
-											</li>
-											<li class="page__list page__list-header">
-												<div class="name page__text page__text_bold">Перекус</div>
-												<div class="value">298 ккал</div>
-											</li>
-											<li class="page__list"> 
-												<div class="time-of-day page__text page__text_bold">Десерт</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="wrapper">
+					<div class="skills-content">
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-html-logo.png"></div>
+													<div class="page__subtitle">HTML 5</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-css-logo.png"></div>
+													<div class="page__subtitle">CSS 3</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-javascript-logo.png"></div>
+													<div class="page__subtitle">JavaScript</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-typescript-logo.png"></div>
+													<div class="page__subtitle">TypeScript</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-git-logo.png"></div>
+													<div class="page__subtitle">Git</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-bem-logo.png"></div>
+													<div class="page__subtitle">БЭМ</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-jq-logo.png"></div>
+													<div class="page__subtitle">JQuery</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-angular-logo.png"></div>
+													<div class="page__subtitle">Angular 2+</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-less-logo.png"></div>
+													<div class="page__subtitle">Less</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-sass-logo.png"></div>
+													<div class="page__subtitle">Sass</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-gulp-logo.png"></div>
+													<div class="page__subtitle">Gulp</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-smartgrid-logo.png"></div>
+													<div class="page__subtitle">SmartGrid</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-pug-logo.png"></div>
+													<div class="page__subtitle">Pug</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-bootstrap-logo.png"></div>
+													<div class="page__subtitle">Bootstrap</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-webpack-logo.png"></div>
+													<div class="page__subtitle">WebPack</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-nodejs-logo.png"></div>
+													<div class="page__subtitle">Node.js</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-nestjs-logo.png"></div>
+													<div class="page__subtitle">Nest.js</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-wordpress-logo.png"></div>
+													<div class="page__subtitle">Wordpress</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-1c-bitrix-logo.png"></div>
+													<div class="page__subtitle">1C Bitrix</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-modx-logo.png"></div>
+													<div class="page__subtitle">modx</div>
+												</div>
+												<div class="skill">
+													<div class="page__img"><img src="assets/img/logos/img-php-logo.png"></div>
+													<div class="page__subtitle">Php</div>
+												</div>
 					</div>
 				</div>
 			</section>
-			<section class="menu" id="menu">
-				<div class="wrapper">
-					<div class="tab-contents menu-content" id="tabs">
-						<div class="menu-content__text">
-							<h1 class="page__title-h1">Меню</h1>
-							<div class="page__text page_desktop">Рацион Holy Basil составлен с учетом потребности организма в различных нутриентах внутри дня. Утром будут преобладать угдеводы и жиры для энергии и сладкий вкус для снижения картизола (гормона стресса). В обед - главный приём пищи с белком. На ужин - легкие растительные продукты</div>
-							<div class="page__text page_mobile">Holy Basil — это доставка полезного питания, где меню основывается на принципах баланса и сочетания нутриентов для раскрытия максимальной  пользы продуктов. Мы объединили знания современной нутрициологии и древней Аюрведы, чтобы наша еда стала для Вас источником энергии и здоровья, в сочетании с потрясающим вкусом.</div>
-							<div class="menu-content-tabs">
-								<div class="menu-content-tabs__links">
-									<div class="tab-nav">
-										<button class="page__btn_prev tab-link tab-link_lv-1 is-active"></button>
-										<button class="page__btn_next tab-link tab-link_lv-1"></button>
-									</div>
-									<div class="tab-content tab-content_lv-1 is-active"> 
-										<div class="page__text page__text_bold">Растительный рацион</div>
-										<div class="menu-content-tabs__links">
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle is-active">ПН</div>
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle">ВТ</div>
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle">CР</div>
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle">ЧТ</div>
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle">ПТ</div>
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle">СБ</div>
-											<div class="tab-link tab-link_lv-2-1 page__btn page__btn_circle">ВС</div>
-										</div>
-										<div class="menu-content-tabs__links">
-											<div class="tab-link tab-link_lv-3-1 link is-active">
-												<div class="page__btn page__btn_circle">
-													<div class="page__icon_morning"></div>
-												</div>
-												<div class="page__text">Завтрак</div>
-											</div>
-											<div class="tab-link tab-link_lv-3-1 link">
-												<div class="page__btn page__btn_circle"> 
-													<div class="page__icon_day"></div>
-												</div>
-												<div class="page__text">Обед</div>
-											</div>
-											<div class="tab-link tab-link_lv-3-1 link">
-												<div class="page__btn page__btn_circle"> 
-													<div class="page__icon_moon"></div>
-												</div>
-												<div class="page__text">Ужин</div>
-											</div>
-											<div class="tab-link tab-link_lv-3-1 link">
-												<div class="page__btn page__btn_circle"> 
-													<div class="page__icon_snack"></div>
-												</div>
-												<div class="page__text">Перекус</div>
-											</div>
-										</div>
-									</div>
-									<div class="tab-content tab-content_lv-1"> 
-										<div class="page__text page__text_bold">Растительный рацион2</div>
-										<div class="menu-content-tabs__links">
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle is-active">ПН</div>
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle">ВТ</div>
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle">CР</div>
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle">ЧТ</div>
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle">ПТ</div>
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle">СБ</div>
-											<div class="tab-link tab-link_lv-2-2 page__btn page__btn_circle">ВС</div>
-										</div>
-										<div class="menu-content-tabs__links">
-											<div class="tab-link tab-link_lv-3-2 link is-active">
-												<div class="page__btn page__btn_circle">
-													<div class="page__icon_morning"></div>
-												</div>
-												<div class="page__text">Завтрак</div>
-											</div>
-											<div class="tab-link tab-link_lv-3-2 link">
-												<div class="page__btn page__btn_circle"> 
-													<div class="page__icon_day"></div>
-												</div>
-												<div class="page__text">Обед</div>
-											</div>
-											<div class="tab-link tab-link_lv-3-2 link">
-												<div class="page__btn page__btn_circle"> 
-													<div class="page__icon_moon"></div>
-												</div>
-												<div class="page__text">Ужин</div>
-											</div>
-											<div class="tab-link tab-link_lv-3-2 link">
-												<div class="page__btn page__btn_circle"> 
-													<div class="page__icon_snack"></div>
-												</div>
-												<div class="page__text">Перекус</div>
-											</div>
-										</div>
-									</div>
+			<section class="services isAnimate">
+								<div class="page__title page_transform-uppercase page_text-center">
+									<h2 class="page__subtitle_big">Услуги</h2>
+									<h2 class="page__title_main page__title-h2 page_bold">Услуги</h2>
 								</div>
-							</div>
-						</div>
-						<div class="menu-content__img">
-							<div class="menu-content__img-container">
-								<div class="tab-content tab-content_lv-1 is-active">
-												<div class="tab-content tab-content_lv-2-1 is-active">
-																<div class="tab-content tab-content_lv-3-1 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ПН Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-1">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ПН Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-1">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ПН Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-1">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ПН Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-1">
-																<div class="tab-content tab-content_lv-3-2 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВТ Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВТ Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВТ Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВТ Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-1">
-																<div class="tab-content tab-content_lv-3-3 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион CР Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-3">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион CР Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-3">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион CР Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-3">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион CР Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-1">
-																<div class="tab-content tab-content_lv-3-4 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ЧТ Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-4">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ЧТ Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-4">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ЧТ Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-4">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ЧТ Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-1">
-																<div class="tab-content tab-content_lv-3-5 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион Пт Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-5">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион Пт Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-5">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион Пт Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-5">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион Пт Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-1">
-																<div class="tab-content tab-content_lv-3-6 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион СБ Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-6">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион СБ Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-6">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион СБ Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-6">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион СБ Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-1">
-																<div class="tab-content tab-content_lv-3-7 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВС Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-7">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВС Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-7">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВС Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-7">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион ВС Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-								</div>
-								<div class="tab-content tab-content_lv-1">
-												<div class="tab-content tab-content_lv-2-2 is-active">
-																<div class="tab-content tab-content_lv-3-2-1 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ПН Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-1">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ПН Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-1">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ПН Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-1">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ПН Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-2">
-																<div class="tab-content tab-content_lv-3-2-2 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВТ Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-2">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВТ Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-2">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВТ Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-2">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВТ Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-2">
-																<div class="tab-content tab-content_lv-3-2-3 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 CР Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-3">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 CР Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-3">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 CР Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-3">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 CР Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-2">
-																<div class="tab-content tab-content_lv-3-2-4 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ЧТ Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-4">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ЧТ Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-4">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ЧТ Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-4">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ЧТ Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-2">
-																<div class="tab-content tab-content_lv-3-2-5 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 Пт Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-5">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 Пт Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-5">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 Пт Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-5">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 Пт Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-2">
-																<div class="tab-content tab-content_lv-3-2-6 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 СБ Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-6">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 СБ Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-6">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 СБ Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-6">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 СБ Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-												<div class="tab-content tab-content_lv-2-2">
-																<div class="tab-content tab-content_lv-3-2-7 is-active">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВС Завтрак</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-7">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВС Обед</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-7">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВС Ужин</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-																<div class="tab-content tab-content_lv-3-2-7">
-																	<div class="page__img"><img src="assets/img/img-menu-1.png" alt="">
-																		<div class="page__text page__text_bold">COLE SLOW LIFE <span>Растительный рацион2 ВС Перекус</span></div>
-																	</div>
-																	<div class="page__img"><img class="page__img" src="assets/img/img-menu-2.png" alt="">
-																		<div class="page__text page__text_bold">CHOCOLATE WAFFLE</div>
-																	</div>
-																	<div class="menu-kpfc">
-																		<div class="menu-kpfc_kcal"> 
-																			<p class="page__text page__text_bold">Калории</p>
-																			<p class="page__text">1200 Ккал</p>
-																		</div>
-																		<div class="menu-kpfc_protein">
-																			<p class="page__text page__text_bold">Белки</p>
-																			<p class="page__text">29 г</p>
-																		</div>
-																		<div class="menu-kpfc_fat">
-																			<p class="page__text page__text_bold">Жиры</p>
-																			<p class="page__text">49 г</p>
-																		</div>
-																		<div class="menu-kpfc_carbohydrates">
-																			<p class="page__text page__text_bold">Углеводы</p>
-																			<p class="page__text">11 г</p>
-																		</div>
-																	</div>
-																</div>
-												</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="advantages">
 				<div class="wrapper">
-					<h1 class="page__title-h1">Что вас ждёт после питания по&nbsp;HEALTHY RATION?</h1>
-					<div class="advantages-items">
-						<div class="advantages-item">
-							<div class="page__icon page__icon_immuno"></div>
-							<div class="page__text page__text_bold">Повысится иммунитет</div>
-							<p class="page__text">Повысится иммунитет * рацион Holy Basil сформирует правильную и сильную микрофлору</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_young"></div>
-							<div class="page__text page__text_bold">Продлится молодость</div>
-							<p class="page__text">Продлиться молодость * в основу заложены принципы Anti - Age питания</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_skinGood"></div>
-							<div class="page__text page__text_bold">Кожа, волосы и&nbsp;ногти станут здоровыми без уколов</div>
-							<p class="page__text">Кожа, волосы и ногти станут здоровыми * улучшая усваиваемость, организм наполнится требуемыми микроэлементами</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_happy"></div>
-							<div class="page__text page__text_bold">Стресс сменится чувством счастья</div>
-							<p class="page__text">Стресс смениться чувством счастья * чистый организм по новому запустит гормональные процессы </p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_act"></div>
-							<div class="page__text page__text_bold">Увеличатся энергия и&nbsp;концентрация</div>
-							<p class="page__text">Увеличится энергия и концентрация * теперь еда будет наполнять, а не отягощать</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_harmony"></div>
-							<div class="page__text page__text_bold">Появится психологическая стабильность</div>
-							<p class="page__text">Нормализуется вес * высокий метаболизм наладит внутренний энергообмен</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_fit"></div>
-							<div class="page__text page__text_bold">Нормализуется вес</div>
-							<p class="page__text">Нормализуется вес * высокий метаболизм наладит внутренний энергообмен</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_sleep"></div>
-							<div class="page__text page__text_bold">Наладится сон</div>
-							<p class="page__text">Нормализуется вес * высокий метаболизм наладит внутренний энергообмен</p>
-						</div>
-						<div class="advantages-item">
-							<div class="page__icon page__icon_good"></div>
-							<div class="page__text page__text_bold">Улучшится самочувствие</div>
-							<p class="page__text">Нормализуется вес * высокий метаболизм наладит внутренний энергообмен</p>
-						</div>
-					</div>
-					<div class="advantages__img"><img class="page__img" src="assets/img/img-clouds-left.png" alt=""><img class="img-bg img-bg_bird" src="assets/img/img-bird.png" alt="">
-						<h2 class="page__title-h2">Приятый бонус от питания рационами Holy Basil — похудение!</h2>
-					</div>
-				</div>
-			</section>
-			<section class="ration-info">
-				<div class="wrapper">
-					<div class="ration-info-container">
-						<div class="ration-info-container__text">
-							<h1 class="page__title-h1 page_desktop">Важно!<br>Количество доступных рационов ограничено</h1>
-							<h1 class="page__title-h1 page_mobile">Важно!<br>Количество рационов лимитировано нашими мощностями</h1>
-							<p class="page__text page_desktop">Нам очень важно, чтобы вы получили продукт уникального качества. Каждый рацион собран руками и с любовью.</p>
-							<p class="page__text page_mobile">Пока мы можем создавать и доставлять только 50 рационов в день. И каждый из них собран руками и с любовью. </p>
-						</div>
-						<div class="ration-info-container__img">
-							<div class="page__img">
-								<video src="assets/video/video-ration-info.mp4" autoplay="true" muted="muted" loop="loop" id="videoRationInfo" poster="assets/img/img-ration-info.png"></video>
-								<div class="teaser-circle"><img class="teaser-circle__text" src="assets/img/img-text-green.png" alt=""><img class="teaser-circle__icon" src="assets/img/img-round-text-green.png" alt=""></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="ration-form" id="rationForm">
-				<div class="wrapper">
-					<div class="ration-form-container">
-						<div class="ration-form-container__text">
-							<h1 class="page__title-h1 page_desktop">ВЫбери свой рацион</h1>
-							<h1 class="page__title-h1 page_mobile">Сколько стоит HEALTHY RATION</h1><img class="page__img page_desktop" src="assets/img/img-ration-form.png" alt=""><img class="page__img page_mobile" src="assets/img/img-ration-form-bg-mob.png" alt=""><img class="img-bg_girl page__img page_mobile" src="assets/img/img-ration-form-bg-girl.png" alt="">
-						</div>
-						<div class="ration-form-container__form">
-							<form class="page-form">
-								<div class="page-form-radio">
-									<div class="page-form-radio__column">
-													<div class="page__input-radio">
-														<input class="page__radio" id="day" type="radio" name="day" value="1 Holly Day" data-form="1" checked>
-														<label for="day">1 Holly Day</label>
+					<div class="services-content">
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-Email.png"></div>
+													<h4 class="page__subtitle">E-mail письма</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">E-mail письма</h4>
+														<p class="page__text">Делаю верстку e-mail письм как для уведомления пользователя от Вашего сайта, так и для рассылки УТП</p>
 													</div>
-													<div class="page__input-radio">
-														<input class="page__radio" id="days" type="radio" name="day" value="3 Holly Day" data-form="3">
-														<label for="days">3 Holly Day</label>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-landing.png"></div>
+													<h4 class="page__subtitle">Landing page</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Landing page</h4>
+														<p class="page__text">Одностраничный сайт Лендинг. Создание страницы, которая призывает пользователя к действию. </p>
 													</div>
-													<div class="page__input-radio">
-														<input class="page__radio" id="week" type="radio" name="day" value="1 Holly Week" data-form="7">
-														<label for="week">1 Holly Week</label>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-pages.png"></div>
+													<h4 class="page__subtitle">Многостраничный сайт</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Многостраничный сайт</h4>
+														<p class="page__text">Многостраничный сайт. Создание сайта с более сложной структурой: несколькими страницами, которые объединены меню или другими блоками с ссылками</p>
 													</div>
-									</div>
-									<div class="page-form-radio__column">
-													<div class="page__input-radio">
-														<input class="page__radio" id="kl1300" type="radio" name="kl" value="1300 Ккал" data-form="1300">
-														<label for="kl1300">1300 Ккал</label>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-shop.png"></div>
+													<h4 class="page__subtitle">Интернет магазин</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Интернет магазин</h4>
+														<p class="page__text">Интернет-магазин. Создание сайта для продажи товаров с платежной системой, корзиной и уведомлением продавца и покупателя о заказе.</p>
 													</div>
-													<div class="page__input-radio">
-														<input class="page__radio" id="kl1800" type="radio" name="kl" value="1800 Ккал" data-form="1800" checked>
-														<label for="kl1800">1800 Ккал</label>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-quiz.png"></div>
+													<h4 class="page__subtitle">Quiz сайт</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Quiz сайт</h4>
+														<p class="page__text">Квиз сайт — это вариант сайта, где основной функционал строится на основе теста или опроса для вовлечения посетителей. Так посетители охотнее превращаются в потенциальных клиентов. Статистика подтверждает, что конструктор quiz помогает увеличить конверсию любого сайта до 20-40 процентов, против обычных 2-5 для стандартных сайтов и лендингов.</p>
 													</div>
-									</div>
-									<div class="page-form-radio__column">
-													<div class="page__input-radio">
-														<input class="page__radio" id="vidRast" type="radio" name="vid" value="Растительный">
-														<label for="vidRast">Растительный</label>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-completion.png"></div>
+													<h4 class="page__subtitle">Доработка</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Доработка</h4>
+														<p class="page__text">Могу делать доработки на уже готовом сайте</p>
 													</div>
-													<div class="page__input-radio">
-														<input class="page__radio" id="vidPest" type="radio" name="vid" value="Пескетарианский" data-form>
-														<label for="vidPest">Пескетарианский</label>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-cms.png"></div>
+													<h4 class="page__subtitle">Интеграция</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Интеграция</h4>
+														<p class="page__text">Произвожу интеграцию кода на панель администратора WordPress Bitrix modX</p>
 													</div>
-									</div>
+												</div>
+												<div class="service">
+													<div class="page__img"><img src="assets/img/shared/img-script.png"></div>
+													<h4 class="page__subtitle">Написание скриптов</h4>
+													<div class="page__description">
+														<h4 class="page__subtitle page_text-center">Написание скриптов</h4>
+														<p class="page__text">Написание скриптов реализация логики </p>
+													</div>
+												</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages isAnimate">
+								<div class="page__title page_transform-uppercase page_text-center">
+									<h2 class="page__subtitle_big">Преимущества</h2>
+									<h2 class="page__title_main page__title-h2 page_bold">Преимущества</h2>
 								</div>
-								<div class="ration-form-container__form-action">
-									<div class="page-form-inputs">
-													<label class="page__label">
-														<input class="page__input" type="text" name="name" placeholder="Введите Ваше имя" required><span class="page__label-text page__text page__text_bold">Имя</span>
-													</label>
-													<label class="page__label">
-														<input class="page__input" type="phone" name="phone" placeholder="Ваш номер" required><span class="page__label-text page__text page__text_bold">Телефон</span>
-													</label>
-													<label class="page__label">
-														<input class="page__input" type="text" name="adress" placeholder="Введите Ваш адрес" required><span class="page__label-text page__text page__text_bold">АДРЕС</span>
-													</label>
-									</div>
-									<div class="page-form-cost">
-										<div class="page__text page__text_bold">Стоимость:</div>
-										<div class="page__text page__text_cost">2 000 </div><span>₽</span>
-										<div class="page__text page__text_day">за день</div>
-										<button class="page__btn">Заказать</button>
-									</div>
+				<div class="wrapper">
+					<div class="advantages-content">
+						<ol class="page__lists">
+														<li class="page__list-item"> <span class="page__line_before">Профессиональный подход</span></li>
+														<li class="page__list-item"> <span class="page__line_before">Использование современных технологий</span></li>
+														<li class="page__list-item"> <span class="page__line_before">Здравая оценка сроков</span></li>
+														<li class="page__list-item"> <span class="page__line_before">Разработка по стандартам</span></li>
+														<li class="page__list-item"> <span class="page__line_before">Большую часть дня Online<sup> <small>24/7</small></sup></span></li>
+														<li class="page__list-item"> <span class="page__line_before">Оптимизация процесса и кода</span></li>
+														<li class="page__list-item"> <span class="page__line_before">Работаю исключительно по ТЗ</span></li>
+														<li class="page__list-item"> <span class="page__line_before">Ответственное исполнение</span></li>
+						</ol>
+					</div>
+				</div>
+			</section>
+			<section class="projects isAnimate">
+								<div class="page__title page_transform-uppercase page_text-center">
+									<h2 class="page__subtitle_big">Проекты</h2>
+									<h2 class="page__title_main page__title-h2 page_bold">Проекты</h2>
 								</div>
-							</form>
+				<div class="wrapper">
+					<div class="projects-content">
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/yoga/yoga-miniature.jpg" alt="Yoga">
+														<figcaption class="page__figcaption" data-code="yoga">
+															<h3 class="page__title-h3">Yoga</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/ids/idsmedia-miniature.png" alt="IDS">
+														<figcaption class="page__figcaption" data-code="ids">
+															<h3 class="page__title-h3">IDS</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript, jq</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/fitnes/fitnes-miniature.jpg" alt="fitnes">
+														<figcaption class="page__figcaption" data-code="fitnes">
+															<h3 class="page__title-h3">fitnes</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/medical/medical-miniature.jpg" alt="medical">
+														<figcaption class="page__figcaption" data-code="medical">
+															<h3 class="page__title-h3">medical</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/decoreto/decoreto-miniature.png" alt="decoreto">
+														<figcaption class="page__figcaption" data-code="decoreto">
+															<h3 class="page__title-h3">decoreto</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript, jq, PhP, WP</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/hospital/hospital-miniature.jpg" alt="hospital">
+														<figcaption class="page__figcaption" data-code="hospital">
+															<h3 class="page__title-h3">hospital</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/multi/multi-miniature.jpg" alt="multi">
+														<figcaption class="page__figcaption" data-code="multi">
+															<h3 class="page__title-h3">multi</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript, jq</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+												<div class="project">
+													<figure class="page__figure works__effect"><img class="page__img" src="assets/img/projects/event/event-miniature.jpg" alt="event">
+														<figcaption class="page__figcaption" data-code="event">
+															<h3 class="page__title-h3">event</h3>
+															<p class="page__text">HTML 5, CSS 3, Smartgrid, JavaScript, jq</p>
+															<button class="page__btn">посмотреть</button>
+														</figcaption>
+													</figure>
+												</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__toogle"><a class="page__btn" href="projects/projects.html">Смотреть больше</a></div>
+			<section class="about isAnimate" id="about">
+								<div class="page__title page_transform-uppercase page_text-center">
+									<h2 class="page__subtitle_big">Обо мне</h2>
+									<h2 class="page__title_main page__title-h2 page_bold">Обо мне</h2>
+								</div>
+				<div class="wrapper">
+					<div class="about-content">
+						<div class="page__img" id="slides"><img class="slide showing delay" src="assets/img/img-about-1.jpg" alt=""></div>
+						<div class="page__content">
+							<p class="page__text page_padding-bottom-20">Frontend developer профессионально создаю сайты и веб-приложения, также имею навыки в интернет-маркетинге(понимание того что необходимо для сайта с точки зрения бизнеса).</p>
+							<p class="page__text page_padding-bottom-20">Считаю важным и правильным на этапе прототипирования, <strong class="page_bold">совещаться с разработчиком!</strong></p>
+							<p class="page__text"> <strong class="page_bold">On default: </strong></p>
+							<ul class="page__lists">
+								<li class="page__list page__list_text">Адаптивная верстка, даже если не&nbsp;имеете макеты сделаю адаптив&nbsp;по <strong class="page_bold">методологии responsive;</strong></li>
+								<li class="page__list page__list_text">Внедрю микроразметку <strong class="page_bold">schema.org и&nbsp;Open Graph, </strong>а&nbsp;также семантическую верстку;</li>
+							</ul><a class="page__link page__link_active open-modal" href="" data-modal="modal-skills">Открыть полный список</a>
+							<p class="page__text">В моей команде есть web-дизайнер, верстальщик, seo-специалист, маркетолог.</p>
+							<p class="page__text page_padding-bottom-20">В веб-разработке более 3-х лет.</p>
+							<p class="page__text page_padding-bottom-20">Если вы из Москвы, то при сотрудничестве буду рад встретиться лично для обсуждения тонкостей работы!</p>
+							<button class="page__btn js__create-modal open-modal" data-modal="modal-callback">Связаться со мной</button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="eco">
-				<div class="wrapper">
-					<div class="eco__text">
-						<h1 class="page__title-h1 page_desktop">Мы Заботимся об экологии</h1>
-						<h1 class="page__title-h1 page_mobile">Как рационы доставляются?</h1>
-						<p class="page__text page_desktop">Все наши рационы доставляются в стеклянных банках, которые мы заберём обратно, чтобы подарить им новую жизнь. Остальная упаковка и приборы сделана из биологически разлагаемого кукурузного крахмала.</p>
-						<p class="page__text page_mobile">Вся еда доставляется прямо до вашей двери в экологичных стеклянных баночках, которые мы с радостью заберём обратно))</p>
-					</div>
-					<div class="eco__img">
-						<div class="page__img"><img src="assets/img/img-eco.png" alt="">
-							<div class="page__icon">
-								<div class="page__icon_rec-white"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="eco-slider" id="ecoSlider">
-				<div class="wrapper">
-					<div class="slider">
-						<div class="slider__text">
-							<h1 class="page__title-h1 page_desktop">Команда Holy Basil</h1>
-							<h1 class="page__title-h1 page_mobile">Holy Basil — это что?</h1>
-							<p class="page__text page_desktop">Кафе Holy Basil основано в 2017 году адептами здорового образа жизни - Виктором и Ульяной. Holy Basil (Туласи или Базилик свяще́нный) — растение, которое тысячи лет используют в лечебных целях и в кулинарии.</p>
-							<p class="page__text page_mobile">Мы живая оффлайн-компания, в гости к которой можно прийти. Живая оффлайн-компания, в гости к которой можно прийти.</p>
-							<button class="page__btn open-modal" data-modal="modal-callback">Связаться с нами</button>
-						</div>
-						<div class="slider__img">
-							<div class="slider__continer">
-								<div class="slide">
-									<div class="page__img"><img src="assets/img/img-eco-slider.png" alt=""></div>
-								</div>
-								<div class="slide">
-									<div class="page__img"><img src="assets/img/img-eco-slider.png" alt=""></div>
-								</div>
-								<div class="slide">
-									<div class="page__img"><img src="assets/img/img-eco-slider.png" alt=""></div>
-								</div>
-							</div>
-							<div class="slider__toggles">
-								<div class="slider__nav">
-									<div class="slider__nav-number active">01</div>
-									<div class="slider__nav-number">02</div>
-								</div>
-								<div class="slider__actions">
-									<button class="page__btn_prev"></button>
-									<button class="page__btn_next"></button>
-								</div>
-							</div>
-							<div class="page__text page__text_bold">г. Москва, Цветной б-р, д.23</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="testimonials">
-				<div class="wrapper">
-					<div class="testimonials__text">
-						<h1 class="page__title-h1">Что говорят о&nbsp;нас клиенты?</h1>
-						<p class="page__text">Буквально все участники тестовой фокус-группы в восторге от наших рационов.</p>
-					</div>
-					<div class="testimonials__slider">
-						<div class="slider">
-							<div class="slider__continer">
-								<div class="slide">
-									<div class="slide__video">
-										<video src="assets/video/video-testimonial-1.mp4" controls muted="muted" id="videoRationInfo" poster="assets/img/img-testimonials.png"></video>
-										<div class="page__icon_video"></div>
-									</div>
-									<div class="page__text page__text_bold">«Наши программы питания разработаны с учетом современных исследований в области нутрициологии и диетологии!»</div>
-									<div class="page__text page__text_subtext"> <span class="name page__text_bold">Олеся Терещенко /  </span><span class="profession">сертифицированный health-коуч</span></div>
-								</div>
-								<div class="slide">
-									<div class="slide__video">
-										<video src="assets/video/video-testimonial-2.mov" controls muted="muted" id="videoRationInfo" poster="assets/img/img-testimonials.png"></video>
-										<div class="page__icon_video"></div>
-									</div>
-									<div class="page__text page__text_bold">«Наши программы питания разработаны с учетом современных исследований в области нутрициологии и диетологии!»</div>
-									<div class="page__text page__text_subtext"> <span class="name page__text_bold">Олеся Терещенко /  </span><span class="profession">сертифицированный health-коуч</span></div>
-								</div>
-							</div>
-							<div class="slider__bg"></div>
-							<div class="slider__actions">
-								<div class="slider__nav page_mobile">
-									<div class="slider__nav-number active">01</div>
-									<div class="slider__nav-number">02</div>
-								</div>
-								<button class="page__btn_prev"></button>
-								<button class="page__btn_next"></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="form-callback">
-				<div class="wrapper">
-					<h2 class="page__title-h2">если у вас есть вопросы или замечания </h2>
-					<form class="page-form" action="">
-									<label class="page__label">
-										<input class="page__input" type="text" name="name" placeholder="Введите Ваше имя" required><span class="page__label-text page__text page__text_bold">Имя</span>
-									</label>
-									<label class="page__label">
-										<input class="page__input" type="phone" name="phone" placeholder="Ваш номер" required><span class="page__label-text page__text page__text_bold">Телефон</span>
-									</label>
-									<label class="page__label">
-										<input class="page__input" type="email" name="email" placeholder="Ваш e-mail" required><span class="page__label-text page__text page__text_bold">Почта</span>
-									</label>
-						<label class="page__label page__label-textarea">
-							<textarea class="page__textarea" placeholder="Можете ввести Ваше сообщение"></textarea><span class="page__label-text page__text page__text_bold">Ваше сообщение (необязательно)</span>
-						</label>
-						<label class="page__label page__label_checkbox">
-							<input class="page__input_checkbox" type="checkbox"><span class="checkmark"></span>
-							<div class="page__text">Обрабатывать персональные данные</div>
-						</label>
-						<div class="page-form__action">
-							<button class="page__btn">Отправить сообщение</button>
-						</div>
-					</form>
-				</div>
-			</section>
-			<footer class="footer">
-				<div class="wrapper">
-					<div class="footer__logo"><a href="#banner"><img class="page__img" src="assets/img/logo.png" alt=""></a></div>
-					<div class="footer__actions"><a class="page__link" href="tel:+7 (495) 120-03-30">+7 (495) 120-03-30</a>
-						<button class="page__btn open-modal" data-modal="modal-callback">Обратный звонок</button>
-					</div>
-					<div class="footer__links">
-						<div class="copyright">© 2017-2020. Holy Basil</div><a class="page__link" href="javascript:void(0);">Пользовательское соглашение</a><a class="page__link" href="javascript:void(0);">Доставка возврат и оплата</a>
-					</div>
-					<div class="footer__social">
-						<div class="page__icon page__icon_instagram"></div>
-					</div>
-				</div>
-			</footer>
 			<section class="modal modal-callback page_hidden" id="modal-callback">
 				<div class="modal-container">
 					<div class="modal__action">
-						<button class="page__btn page__btn_close close-modal" data-modal="modal-callback"></button>
+						<button class="page__btn page__btn_circle page__btn_close close-modal" data-modal="modal-callback"></button>
 					</div>
 					<div class="modal__content">
-						<h2 class="page__title-h2">обратный звонок</h2>
-						<p class="page__text">Введите Ваши данные и мы обязательно свяжимся с Вами</p>
-						<form class="page-form" action="">
-										<label class="page__label">
-											<input class="page__input" type="text" name="name" placeholder="Введите Ваше имя" required><span class="page__label-text page__text page__text_bold">Имя</span>
-										</label>
-										<label class="page__label">
-											<input class="page__input" type="phone" name="phone" placeholder="Ваш номер" required><span class="page__label-text page__text page__text_bold">Телефон</span>
-										</label>
-							<div class="page-form__action">
-								<button class="page__btn">Заказать обратный звонок</button>
-							</div>
-						</form>
+						<h2 class="page__title-h2">Связаться со мной</h2>
+						<p class="page__text">Свяжитесь со мной любым из способов ниже</p>
+						<div class="social"><a class="social__item-link social__item-icon" href="89680548333" target="_blank"><img class="page__img" src="assets/img/social/icon-social-phone.svg"></a><a class="social__item-link social__item-icon" href="89680548333" target="_blank"><img class="page__img" src="assets/img/social/icon-social-email.svg"></a><a class="social__item-link social__item-icon" href="https://www.facebook.com/profile.php?id=100013452931335&amp;ref=bookmarks" target="_blank"><img class="page__img" src="assets/img/social/icon-social-fb.svg"></a><a class="social__item-link social__item-icon" href="https://vk.com/gromov.ilia" target="_blank"><img class="page__img" src="assets/img/social/icon-social-vk.svg"></a><a class="social__item-link social__item-icon" href="https://join.skype.com/invite/fcSLPdcmNNcH" target="_blank"><img class="page__img" src="assets/img/social/icon-social-skype.svg"></a><a class="social__item-link social__item-icon" href="https://t.me/gromov_ilia" target="_blank"><img class="page__img" src="assets/img/social/icon-social-telegram.svg"></a>
+						</div>
+						<p class="page__text">Любую сделку Вы можете оформить безопасным способом через <a class="page__link" href="https://freelance.habr.com/info/safe_deal">Freelansim </a></p>
 					</div>
-					<div class="img-bg img-bg_serfer"><img class="page__img" src="assets/img/img-serfer-2.png" alt=""></div>
 				</div>
 			</section>
-			<section class="modal modal-menu page_hidden" id="modal-menu">
+			<section class="modal modal-skills page_hidden" id="modal-skills">
 				<div class="modal-container">
 					<div class="modal__action">
-						<button class="page__btn page__btn_close close-modal" data-modal="modal-menu"></button>
+						<button class="page__btn page__btn_circle page__btn_close close-modal" data-modal="modal-skills"></button>
 					</div>
 					<div class="modal__content">
-						<nav class="page__nav"><a class="page__link" href="#rationMenu">Программа </a><a class="page__link" href="#rationForm">Доставка </a><a class="page__link" href="#menu">Меню </a><a class="page__link" href="#ecoSlider">О компании</a></nav>
+						<ul class="page__lists">
+							<li class="page__list page__list_text">Адаптивная верстка, даже если не&nbsp;имеете макеты сделаю адаптив&nbsp;по <strong class="page_bold">методологии responsive;</strong></li>
+							<li class="page__list page__list_text">Внедрю микроразметку <strong class="page_bold">schema.org и&nbsp;Open Graph, </strong>а&nbsp;также семантическую верстку;</li>
+							<li class="page__list page__list_text">Веду <strong class="page_bold">компонентный </strong>подход разработки;</li>
+							<li class="page__list page__list_text">Произвожу оптимизацию кода и&nbsp;изображений, перед сдачей проекта смотрю на&nbsp;показатели <strong class="page_bold">Google Pagespeed;</strong></li>
+							<li class="page__list page__list_text">Разрабатываю исключительно через <strong class="page_bold">git;</strong></li>
+							<li class="page__list page__list_text">Использую flexbox и&nbsp;самописную библиотеку mixin's.</li>
+							<li class="page__list page__list_text">На больших проектах использую делегирование задач через trello</li>
+							<li class="page__list page__list_text">Работа с фреймворком <strong class="page_bold">Angular 2+;</strong></li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">TypeScript, </strong>понимание типизации;</li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">JavaScript </strong>уровень middle(понимание контекст, замыкание, итд);</li>
+							<li class="page__list page__list_text">Реализация логике на <strong class="page_bold">JS;</strong></li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">DOM;</strong></li>
+							<li class="page__list page__list_text">Применение в работе <strong class="page_bold">jQuery</strong>(при крайней необходимости);</li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">npm, yarn, gulp, webpack;</strong></li>
+							<li class="page__list page__list_text">Применение в работе <strong class="page_bold">Git, </strong>Работа по модели Git Flow(Работа с GitHub, GitLab, Bitbucket);</li>
+							<li class="page__list page__list_text">Навык разработке в команде больше 1-ого года. (Применение review code)</li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">HTML 5 API;</strong></li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">CSS 3 </strong>фреймворками <strong class="page_bold">SmartGrid, bootsrtap 3/4;</strong></li>
+							<li class="page__list page__list_text">Работа с препроцессорами <strong class="page_bold">Less, Sass/Scss;</strong></li>
+							<li class="page__list page__list_text">Написание классов и ведение структры по <strong class="page_bold">БЭМ </strong>методологии;</li>
+							<li class="page__list page__list_text">Понимание модели <strong class="page_bold">table, block, Inline-block, Flexbox, Grid-system;</strong></li>
+							<li class="page__list page__list_text">Понимание позиционирования;</li>
+							<li class="page__list page__list_text"> <strong class="page_bold">Кроссбраузерная вёрстка </strong>on default;</li>
+							<li class="page__list page__list_text">Работа с <strong class="page_bold">CSS animations;</strong></li>
+							<li class="page__list page__list_text">Работа с CMS: <strong class="page_bold">1C Bitrix, Wordpress, MODx;</strong></li>
+							<li class="page__list page__list_text">Умение брать всю необходимую информацию из макетов от дизайнеров.</li>
+							<li class="page__list page__list_text">Работа с графическим редактором <strong class="page_bold">Photoshop, Figma, Zeplin.</strong></li>
+							<li class="page__list page__list_text">Базовые знания <strong class="page_bold">SEO (в разработке).</strong></li>
+							<li class="page__list page__list_text">Настройка <strong class="page_bold">Yandex.Metrika Google.Analytics;</strong></li>
+							<li class="page__list page__list_text">Навык делегирование задач;</li>
+							<li class="page__list page__list_text">Навык декомпозиции задач;</li>
+							<li class="page__list page__list_text">Работа с task manager: <strong class="page_bold">JIRA, trello, bitrix24.</strong></li>
+							<li class="page__list page__list_text"> <strong class="page_bold">Здравая </strong>оценка сроков;</li>
+						</ul>
 					</div>
-					<div class="img-bg img-bg_serfer"><img class="page__img" src="assets/img/img-serfer-2.png" alt=""></div>
 				</div>
 			</section>
 		</main>
-		<script src="js/debug-grid-create.js"></script>
-		<script src="js/store-scroll.js"></script>
-		<script src="js/scroll-anchors.js"></script>
-		<script src="js/modal.js"></script>
-		<script src="js/animations.js"></script>
-		<script src="js/tabs.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer-content">
+					<div class="footer-content__item">
+						<h2 class="page__title-h2 page_bold page_transform-uppercase">Контакты</h2>
+						<div class="page__copyright">Москва, 2020</div>
+					</div>
+					<div class="footer-content__item">
+						<div class="page__subtitle page_padding-bottom-25">телефон</div><a class="page__subtitle page__link page_bold" href="tel:+79680548333">+7 (968) 054-83-33</a>
+					</div>
+					<div class="footer-content__item">
+						<div class="page__subtitle page_padding-bottom-25">почта</div><a class="page__subtitle page__link page_bold" href="mailto:gromov.inc@yandex.ru">gromov.inc@ya.ru</a>
+					</div>
+					<div class="footer-content__item">
+						<div class="page__subtitle page_padding-bottom-25">социальные сети</div>
+						<div class="social"><a class="social__item-link social__item-icon" href="https://www.facebook.com/profile.php?id=100013452931335&amp;ref=bookmarks" target="_blank"><img class="page__img" src="assets/img/social/icon-social-fb.svg"></a><a class="social__item-link social__item-icon" href="https://vk.com/gromov.ilia" target="_blank"><img class="page__img" src="assets/img/social/icon-social-vk.svg"></a><a class="social__item-link social__item-icon" href="https://join.skype.com/invite/fcSLPdcmNNcH" target="_blank"><img class="page__img" src="assets/img/social/icon-social-skype.svg"></a><a class="social__item-link social__item-icon" href="https://t.me/gromov_ilia" target="_blank"><img class="page__img" src="assets/img/social/icon-social-telegram.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- The core Firebase JS SDK is always required and must be listed first-->
+		<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-storage.js"></script>
+		<!--
+		TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries
+		-->
+		<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/scroll-up.js"></script>
+		<script src="js/store-scroll.js"></script>
+		<script src="js/animations.js"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/canvans-rings.js"></script>
+		<script src="js/scroll-anchors.js"></script>
 	</body>
 </html>
