@@ -33,13 +33,12 @@ function modalToggle(e) {
             }
         } else if (el.classList.contains('modal') && !el.classList.contains('page_hidden')) {
 
-            animationToggle(el, false);
-            setTimeout(() => {
-                el.classList.toggle('page_hidden');
-                body.classList.toggle('modal-open');
-            }, 100);
+            
+            el.classList.toggle('page_hidden');
+            body.classList.toggle('modal-open');
 
         } else if (e.key === 'Escape' && el.classList.contains('modal-open')) {
+            
             let modals = document.querySelectorAll('.modal');
             modals.forEach((e) => {
                 if (!e.classList.contains('page_hidden')) {
