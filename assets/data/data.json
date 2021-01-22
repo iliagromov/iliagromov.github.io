@@ -6,7 +6,7 @@
             "format": "Landing-Page",
             "miniature":"assets/img/projects/yoga/yoga-miniature.jpg",
             "title": "Yoga",
-            "description": "Разработка Landing-Page для амерениканской компании. yoga Landing-Page. ",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/yoga.github.io/",
             "site_short_link": "https://yoga.github.io/",
@@ -45,7 +45,7 @@
             "format": "Многостраничный сайт",
             "miniature": "assets/img/projects/ids/idsmedia-miniature.png",
             "title": "IDS",
-            "description": "IDS desc",
+            "description": "Разработка Новостного портала idsmedia. ",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq",
             "site_link": "https://idsmedia.ru/",
             "pages":[
@@ -130,12 +130,12 @@
             "date":"1 января 2020"
         },
         {
-            "name": "fitnes",
+            "name": "Fitnes",
             "code": "fitnes",
             "format": "Landing-Page",
             "miniature": "assets/img/projects/fitnes/fitnes-miniature.jpg",
-            "title": "fitnes",
-            "description": "fitnes desc",
+            "title": "Fitnes",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/fitness.github.io/",
             "site_short_link": "https://fitness.github.io/",
@@ -145,7 +145,7 @@
                     "images":"assets/img/projects/fitnes/fitnes-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании fitnes.",
+            "task":"Разработка Landing-Page fitnes.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -178,7 +178,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/medical/medical-miniature.jpg",
             "title": "medical",
-            "description": "medical desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/medical.github.io/",
             "site_short_link": "https://medical.github.io/",
@@ -188,7 +188,7 @@
                     "images":"assets/img/projects/medical/medical-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании medicals.",
+            "task":"Разработка Landing-Page medicals.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -321,7 +321,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/hospital/hospital-miniature.jpg",
             "title": "hospital",
-            "description": "hospital desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/hospital.github.io/",
             "site_short_link": "https://hospital.github.io/",
@@ -331,7 +331,7 @@
                     "images":"assets/img/projects/hospital/hospital-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании hospital.",
+            "task":"Разработка Landing-Page hospital.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -364,7 +364,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/multi/multi-miniature.jpg",
             "title": "multi",
-            "description": "multi desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq",
             "site_link": "https://iliagromov.github.io/multipurpose.github.io/",
             "site_short_link": "https://multipurpose.github.io/",
@@ -374,7 +374,7 @@
                     "images":"assets/img/projects/multi/multi-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании multi.",
+            "task":"Разработка Landing-Page multi.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -407,7 +407,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/event/event-miniature.jpg",
             "title": "event",
-            "description": "event desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq",
             "site_link": "https://iliagromov.github.io/event.github.io/",
             "site_short_link": "https://event.github.io/",
@@ -417,7 +417,7 @@
                     "images":"assets/img/projects/event/event-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании event.",
+            "task":"Разработка Landing-Page event.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -450,7 +450,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/ebook/ebook-miniature.jpg",
             "title": "ebook",
-            "description": "ebook desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/ebook.github.io/",
             "site_short_link": "https://ebook.github.io/",
@@ -460,7 +460,7 @@
                     "images":"assets/img/projects/ebook/ebook-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании ebook.",
+            "task":"Разработка Landing-Page ebook.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -493,7 +493,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/edication/edication-miniature.jpg",
             "title": "edication",
-            "description": "edication desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/educational.github.io/",
             "site_short_link": "https://educational.github.io/",
@@ -503,7 +503,7 @@
                     "images":"assets/img/projects/edication/edication-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании edication.",
+            "task":"Разработка Landing-Page edication.",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -693,7 +693,7 @@
             "format": "Landing-Page",
             "miniature": "assets/img/projects/estate/estate-miniature.jpg",
             "title": "estate",
-            "description": "estate desc",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/estate.github.io/",
             "site_short_link": "https://estate.github.io/",
@@ -703,7 +703,7 @@
                     "images":"assets/img/projects/estate/estate-main.jpg"
                 }
             ],
-            "task":"Разработка Landing-Page для компании estate.",
+            "task":"Разработка Landing-Page estate.",
             "technology": [
                 {
                     "name": "Frontend:",
