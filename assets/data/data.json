@@ -9,7 +9,6 @@
             "description": "Разработка acpgame Задача разработать многостраничный сайт по дизайн макетам. Произвести интеграцию с cms instantCMS. На сайте были реализованы модальные окна с формой обратного звонка, слайдеры, уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. Весь frontend без использования jq только чистый js. Адаптивная верстка сделана по методологии responsive. Интеграция с панелью администратора произведена за 3 дня. Произведена разработка сайта с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid #php #cms Срок выполнения 2 недели",
             "short_description": "Pug, less, Smartgrid, JS, PHP",
             "site_link": "http://acpgame.ru",
-            "site_short_link": "http://acpgame.ru",
             "pages":[
                 {
                     "page":"Главная",
@@ -37,10 +36,24 @@
                         {
                             "name": "smartgrid",
                             "images": "assets/img/logos/img-smartgrid-logo.png"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "content": [
                         {
                             "name": "PHP",
                             "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "instantCMS",
+                            "images": "assets/img/logos/img-instantcms-logo.png"
                         }
                     ]
                 }
@@ -58,7 +71,7 @@
             "description": "Задача разработать landing page only Desktop для Канадской компании. Особенность данного landing page в резиновой верстке для всех Desktop экранов. разработка  Произведена с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid",
             "short_description": "Pug, less, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/rogersservices.github.io",
-            "site_short_link": "rogersservices.github.io",
+            "site_short_link": "rogersservices.io",
             "pages":[
                 {
                     "page":"Главная",
@@ -94,7 +107,68 @@
             "date":"1 декабря 2020"
         },
         
-        
+        {
+            "name": "Holybasil",
+            "code": "holybasil",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/holybasil/holybasil-miniature.png",
+            "title": "Holybasil",
+            "description": "Разработка Holybasil Задача разработать landing page для компании holybasil. Произвести интеграцию с cms WordPress. Выполнен большой объем работы по разработки анимации на первом экране на чистом js. Произведено множественное количество правок 'Хотелок' заказчика. Реализован Многоуровневый список для меню продукции на чистом js. Реализован Калькулятор стоимости продукции на чистом js. Подключен сбербанк эквайринг. Уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. Произведена разработка Адаптивная по дизайн макетам. Сделана интеграция с cms Wp а также частичная оптимизация для GP. разработка  Произведена  с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid #php #cms #WP Срок выполнения 3 недели",
+            "short_description": "Pug, less, Smartgrid, JS, PHP",
+            "site_link": "https://iliagromov.github.io/holybasil.github.io/",
+            "site_short_link": "https://holybasil.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/holybasil/holybasil-main.jpg"
+                }
+            ],
+            "task":"Разработать landing page для компании holybasil",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "PUG",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "Less",
+                            "images": "assets/img/logos/img-less-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                            
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Backend",
+                    "content": [
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "instantCMS",
+                            "images": "assets/img/logos/img-wordpress-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 21,
+            "date":"15 ноября 2020"
+        },
         {
             "name": "Yoga",
             "code": "yoga",
@@ -104,7 +178,7 @@
             "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
             "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/yoga.github.io/",
-            "site_short_link": "https://yoga.github.io/",
+            "site_short_link": "https://yoga.io/",
             "pages":[
                 {
                     "page":"Главная",
