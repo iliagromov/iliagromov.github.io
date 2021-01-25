@@ -1,6 +1,101 @@
 {
     "projects": [
         {
+            "name": "Acpgame",
+            "code": "acpgame",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/acpgame/acpgame-miniature.jpg",
+            "title": "Acpgame",
+            "description": "Разработка acpgame Задача разработать многостраничный сайт по дизайн макетам. Произвести интеграцию с cms instantCMS. На сайте были реализованы модальные окна с формой обратного звонка, слайдеры, уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. Весь frontend без использования jq только чистый js. Адаптивная верстка сделана по методологии responsive. Интеграция с панелью администратора произведена за 3 дня. Произведена разработка сайта с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid #php #cms Срок выполнения 2 недели",
+            "short_description": "Pug, less, Smartgrid, JS, PHP",
+            "site_link": "http://acpgame.ru",
+            "site_short_link": "http://acpgame.ru",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/acpgame/acpgame-main.jpg"
+                }
+            ],
+            "task":"Задача разработать многостраничный сайт по дизайн макетам.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "PUG",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "Less",
+                            "images": "assets/img/logos/img-less-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                            
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 14,
+            "date":"20 декабря 2020"
+        },
+       
+        {
+            "name": "Rogosservies",
+            "code": "rogosservies",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/rogosservies/rogosservies-miniature.png",
+            "title": "Rogosservies",
+            "description": "Задача разработать landing page only Desktop для Канадской компании. Особенность данного landing page в резиновой верстке для всех Desktop экранов. разработка  Произведена с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid",
+            "short_description": "Pug, less, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/rogersservices.github.io",
+            "site_short_link": "rogersservices.github.io",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/rogosservies/rogosservies-main.png"
+                }
+            ],
+            "task":"Разработка Landing-Page only Desktop",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "PUG",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "Less",
+                            "images": "assets/img/logos/img-less-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                            
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"1 декабря 2020"
+        },
+        
+        
+        {
             "name": "Yoga",
             "code": "yoga",
             "format": "Landing-Page",
