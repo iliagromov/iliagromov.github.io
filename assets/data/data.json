@@ -6,7 +6,7 @@
             "format": "Landing-Page",
             "miniature":"assets/img/projects/acpgame/acpgame-miniature.jpg",
             "title": "Acpgame",
-            "description": "Разработка acpgame Задача разработать многостраничный сайт по дизайн макетам. Произвести интеграцию с cms instantCMS. На сайте были реализованы модальные окна с формой обратного звонка, слайдеры, уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. Весь frontend без использования jq только чистый js. Адаптивная верстка сделана по методологии responsive. Интеграция с панелью администратора произведена за 3 дня. Произведена разработка сайта с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid #php #cms Срок выполнения 2 недели",
+            "description": "Разработка Acpgame. <br>Задача разработать многостраничный сайт по дизайн макетам. Произвести интеграцию с cms instantCMS. <br><br>На сайте были реализованы модальные окна с формой обратного звонка, слайдеры, уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. <br>Весь frontend без использования jq только чистый js. <br>Адаптивная верстка сделана по методологии responsive. <br>Интеграция с панелью администратора произведена за 3 дня. <br><br>Произведена разработка сайта с использованием сборки проекта на gulp с препроцессором pug, less и сеткой на библиотеке smartgrid. <br>#pug #less #js #smartgrid #php #cms <br>Срок выполнения 2 недели.",
             "short_description": "Pug, less, Smartgrid, JS, PHP",
             "site_link": "http://acpgame.ru",
             "pages":[
@@ -15,7 +15,7 @@
                     "images":"assets/img/projects/acpgame/acpgame-main.jpg"
                 }
             ],
-            "task":"Задача разработать многостраничный сайт по дизайн макетам.",
+            "task":"Задача разработать многостраничный сайт для Acpgame",
             "technology": [
                 {
                     "name": "Frontend:",
@@ -68,7 +68,7 @@
             "format": "Landing-Page",
             "miniature":"assets/img/projects/rogosservies/rogosservies-miniature.png",
             "title": "Rogosservies",
-            "description": "Задача разработать landing page only Desktop для Канадской компании. Особенность данного landing page в резиновой верстке для всех Desktop экранов. разработка  Произведена с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid",
+            "description": "Разработка Landing-page Rogosservies <br> Задача разработать Landing-page only Desktop для Канадской компании.<br> Особенность данного Landing-page в резиновой верстке для всех Desktop экранов. <br> <br> Разработка произведена с использованием сборки проекта на gulp с препроцессором pug, less и сеткой на библиотеке smartgrid. <br> #pug #less #js #smartgrid",
             "short_description": "Pug, less, Smartgrid, JavaScript",
             "site_link": "https://iliagromov.github.io/rogersservices.github.io",
             "site_short_link": "rogersservices.io",
@@ -113,7 +113,7 @@
             "format": "Landing-Page",
             "miniature":"assets/img/projects/holybasil/holybasil-miniature.png",
             "title": "Holybasil",
-            "description": "Разработка Holybasil Задача разработать landing page для компании holybasil. Произвести интеграцию с cms WordPress. Выполнен большой объем работы по разработки анимации на первом экране на чистом js. Произведено множественное количество правок 'Хотелок' заказчика. Реализован Многоуровневый список для меню продукции на чистом js. Реализован Калькулятор стоимости продукции на чистом js. Подключен сбербанк эквайринг. Уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. Произведена разработка Адаптивная по дизайн макетам. Сделана интеграция с cms Wp а также частичная оптимизация для GP. разработка  Произведена  с использованием сборки проекта на gulp с препроц pug less и сеткой на библиотеке smartgrid. #pug #less #js #smartgrid #php #cms #WP Срок выполнения 3 недели",
+            "description": "Разработка Holybasil.<br> Задача разработать landing page для компании holybasil. Произвести интеграцию с cms WordPress.<br> Выполнен большой объем работы по разработки анимации на первом экране на чистом js.<br> Произведено множественное количество правок 'Хотелок' заказчика. Реализован Многоуровневый список для меню продукции на чистом js. <br>Реализован Калькулятор стоимости продукции на чистом js. <br>Подключен сбербанк эквайринг. <br>Уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. <br>Произведена разработка Адаптивная по дизайн макетам. <br>Сделана интеграция с cms Wp, а также частичная оптимизация для Google Pagespeed. <br><br>Разработка произведена с использованием сборки проекта на gulp с препроцессор pug, less и сеткой на библиотеке smartgrid. <br><br>#pug #less #js #smartgrid #php #cms #WP.<br> Срок выполнения 3 недели.",
             "short_description": "Pug, less, Smartgrid, JS, PHP",
             "site_link": "https://iliagromov.github.io/holybasil.github.io/",
             "site_short_link": "https://holybasil.io/",
@@ -168,6 +168,49 @@
             ],
             "days": 21,
             "date":"15 ноября 2020"
+        },
+        {
+            "name": "Разработка UI CMS",
+            "code": "confidenceuicms",
+            "format": "CMS",
+            "miniature":"assets/img/projects/confidenceuicms/confidenceuicms-miniature.jpg",
+            "title": "Разработка UI CMS",
+            "description": "Задача собрать панель администратора из готовых шаблонов semantic ui для компании Confidence group.<br> Реализация drug and drop для таблиц.<br><br> Разработка произведена с использованием сборки проекта на gulp с препроцессором pug, less. <br>#pug #less  <br>Срок выполнения 2 недели.",
+            "short_description": "Pug, less, Semantic, JavaScript",
+            "site_link": "https://iliagromov.github.io/confidenceuicms.io/",
+            "site_short_link": "https://confidenceuicms.io/",
+            "pages":[
+                {
+                    "page":"Авторизация",
+                    "images":"assets/img/projects/confidenceuicms/confidenceuicms-login.jpg"
+                },
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/confidenceuicms/confidenceuicms-main.jpg"
+                }
+            ],
+            "task":"Разработка панели администратора для Confidence group",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"9 февраля 2020"
         },
         {
             "name": "Yoga",
