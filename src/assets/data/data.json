@@ -213,6 +213,45 @@
             "date":"9 февраля 2020"
         },
         {
+            "name": "Panda",
+            "code": "panda",
+            "format": "Template",
+            "miniature":"assets/img/projects/panda/panda-miniature.png",
+            "title": "Panda",
+            "description": "Разработка Страниц для чат бота телеграм. <br> Задача разработать интерактивный страницы для дневника активности в телеграмме с построением графика.<br> Так как страничка генерируется на сервере необходимо сделать максимально легкую верстку с минимальным использованием js <br><br> Особенность разработки в написание pug mixin для генерации страницы<br> #pug #css #js",
+            "short_description": "PUG, CSS 3, JavaScript",
+            "site_link": "https://iliagromov.github.io/panda.io/",
+            "site_short_link": "https://panda.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/panda/panda-main.png"
+                }
+            ],
+            "task":"Разработка Landing-Page yoga",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "Pug",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"15 ноября 2020"
+        },
+        {
             "name": "Yoga",
             "code": "yoga",
             "format": "Landing-Page",
