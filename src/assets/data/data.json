@@ -218,7 +218,7 @@
             "format": "Template",
             "miniature":"assets/img/projects/panda/panda-miniature.png",
             "title": "Panda",
-            "description": "Разработка Страниц для чат бота телеграм. <br> Задача разработать интерактивный страницы для дневника активности в телеграмме с построением графика.<br> Так как страничка генерируется на сервере необходимо сделать максимально легкую верстку с минимальным использованием js <br><br> Особенность разработки в написание pug mixin для генерации страницы<br> #pug #css #js",
+            "description": "Разработка Страниц для чат-бота телеграм. <br> Задача разработать интерактивный страницы для дневника активности в телеграмме с построением графика.<br> Так как страничка генерируется на сервере необходимо сделать максимально легкую верстку с минимальным использованием js <br><br> Особенность разработки в написание pug mixin для генерации страницы<br> #pug #css #js",
             "short_description": "PUG, CSS 3, JavaScript",
             "site_link": "https://iliagromov.github.io/panda.io/",
             "site_short_link": "https://panda.io/",
@@ -228,7 +228,7 @@
                     "images":"assets/img/projects/panda/panda-main.png"
                 }
             ],
-            "task":"Разработка Landing-Page yoga",
+            "task":"Разработка Страниц для чат-бота Panda",
             "technology": [
                 {
                     "name": "Frontend:",
