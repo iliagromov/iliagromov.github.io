@@ -1,0 +1,20 @@
+include blocks/banner
+include blocks/skills
+include blocks/services
+include blocks/advantages
+section.projects.isAnimate
+    include blocks/mixins/mixin-page-title
+    +page-title("Проекты")
+    .wrapper
+        .projects-content
+            include blocks/mixins/mixin-project
+            each item, index in projects
+                if index < 8
+                    +project(item.miniature,item.title,item.short_description,item.code)
+          
+
+.page__toogle
+    a.page__btn(href="projects/projects.html") Смотреть больше
+include blocks/about
+include blocks/modal/modal
+include blocks/modal/modal-skills

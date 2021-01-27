@@ -1,0 +1,55 @@
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='icon' type='image/x-icon' href='assets/img/favicon.ico')
+        meta(property="fb:app_id" content="764462494124576")
+        meta(property="og:title" content="Ilia Gromov")
+        meta(property="og:description" content="Frontend developer. Разработаю Вашу идею на профессиональном уровне!")
+        meta(property="og:type" content="website")
+        meta(property="og:url" content="https://iliagromov.github.io/")
+        meta(property="og:image" content="https://iliagromov.github.io/assets/img/img-about-2.jpg")
+        meta(property="vk:image" content="https://iliagromov.github.io/assets/img/img-about-2-vk.jpg")
+        meta(property="fb:image" content="https://iliagromov.github.io/assets/img/img-about-4.jpg")
+        meta(property="twitter:image" content="https://iliagromov.github.io/assets/img/img-about-3.jpg")
+        meta(property="og:image:secure_url" content="https://iliagromov.github.io/assets/img/img-about-2.jpg")
+        meta(property="og:image:type" content="image/jpg")
+        //- meta(property="og:image:width" content="400")
+        //- meta(property="og:image:width" content="400")
+        meta(property="twitter:card" content="summary")
+        meta(property="twitter:site" content="https://iliagromov.github.io/")
+        meta(property="twitter:creator" content="Ilia Gromov")
+        block base
+        block title
+        block style
+            link(rel='stylesheet', href='css/styles.css', type='text/css')
+        
+        include ../blocks/yandex
+    body
+        noscript
+            div
+                img(src='https://mc.yandex.ru/watch/68013103' style='position:absolute; left:-9999px;' alt='')
+
+        main.page
+            block content
+        include ../blocks/footer
+        //- pre#object
+        //- ul#list
+        //- input(type='file' onchange='uploadFile(this.files)')
+        //- img#img(src="")
+        block script
+            // The core Firebase JS SDK is always required and must be listed first
+            script(src='https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js')
+            script(src='https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js')
+            script(src='https://www.gstatic.com/firebasejs/7.14.0/firebase-storage.js')
+            //
+                TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries
+            script(src='https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js')
+            //- script(src='js/app.js')
+            //- script(src='js/debug-grid-create.js')
+            script(src='js/main.js')
+            script(src='js/scroll-up.js')
+            script(src='js/store-scroll.js')
+            script(src='js/animations.js')

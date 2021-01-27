@@ -1,0 +1,22 @@
+
+footer.footer
+    .wrapper
+        .footer-content
+            .footer-content__item
+                h2.page__title-h2.page_bold.page_transform-uppercase Контакты
+                .page__copyright Москва, 
+                    span#year.year  
+            .footer-content__item
+                .page__subtitle.page_padding-bottom-25 телефон
+                a(href="tel:+79680548333").page__subtitle.page__link.page_bold +7 (968) 054-83-33
+            .footer-content__item
+                .page__subtitle.page_padding-bottom-25 почта
+                a(href="mailto:studio.gromov.inc@yandex.ru").page__subtitle.page__link.page_bold studio.gromov.inc@ya.ru
+            .footer-content__item
+                .page__subtitle.page_padding-bottom-25 социальные сети
+                .social
+                    include mixins/mixin-social
+                    +social("assets/img/social/icon-social-fb.svg","https://www.facebook.com/ilia.gromow/")
+                    +social("assets/img/social/icon-social-vk.svg", "https://vk.com/gromov.ilia")
+                    +social("assets/img/social/icon-social-skype.svg", "https://join.skype.com/invite/fcSLPdcmNNcH")
+                    +social("assets/img/social/icon-social-telegram.svg", "https://t.me/gromov_ilia")

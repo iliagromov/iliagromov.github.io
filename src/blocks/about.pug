@@ -1,0 +1,37 @@
+section#about.about.isAnimate
+    include mixins/mixin-page-title
+    +page-title("Обо мне")
+    .wrapper
+        .about-content
+            #slides.page__img
+                img.slide.showing.delay(src="assets/img/img-about-1.jpg", alt="")
+            .page__content
+                p.page__text.page_padding-bottom-20 Frontend developer профессионально создаю сайты и веб-приложения, также имею навыки в интернет-маркетинге(понимание того что необходимо для сайта с точки зрения бизнеса).
+
+                p.page__text.page_padding-bottom-20 Считаю важным и правильным на этапе прототипирования, 
+                    strong.page_bold совещаться с разработчиком!
+
+                p.page__text 
+                    strong.page_bold On default: 
+                ul.page__lists
+                    li.page__list.page__list_text Адаптивная верстка, даже если не&nbsp;имеете макеты сделаю адаптив&nbsp;по 
+                        strong.page_bold методологии responsive;
+                    li.page__list.page__list_text Внедрю микроразметку 
+                        strong.page_bold schema.org и&nbsp;Open Graph, 
+                        | а&nbsp;также семантическую верстку;
+                    //- li.page__list.page__list_text Веду 
+                    //-     strong.page_bold компонентный 
+                    //-     | подход разработки;
+                    //- li.page__list.page__list_text Произвожу оптимизацию кода и&nbsp;изображенией, перед сдачей проекта смотрю на&nbsp;показатели 
+                    //-     strong.page_bold Google Pagespeed.
+                    //- li.page__list.page__list_text Разрабатываю исключительно через 
+                    //-     strong.page_bold git.
+                    //- li.page__list.page__list_text Использую flexbox и&nbsp;самописную библиотеку mixin's.
+                a.page__link.page__link_active.open-modal(href="", data-modal="modal-skills") Открыть полный список
+
+                p.page__text В моей команде есть web-дизайнер, верстальщик, seo-специалист, маркетолог.
+                p.page__text.page_padding-bottom-20 В веб-разработке более 3-х лет.
+
+                p.page__text.page_padding-bottom-20 Если вы из Москвы, то при сотрудничестве буду рад встретиться лично для обсуждения тонкостей работы!
+
+                button.page__btn.js__create-modal.open-modal(data-modal="modal-callback") Связаться со мной

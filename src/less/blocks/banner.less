@@ -1,0 +1,29 @@
+.banner{
+    position: relative;
+    // top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 80px;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    &__logo{
+        position: absolute;
+       
+    }
+    .page__subtitle{
+        padding-bottom: 18px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .page__subtitle,
+    .page__img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    &.animated{
+        opacity: 1;
+       
+    }
+}
