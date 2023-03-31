@@ -1,0 +1,43 @@
+@import '../../../styles/_imports'
+.footer
+
+    position: sticky
+    bottom: 0
+    padding: 50px 0
+    +sm(position, relative)
+    &-content
+        +row-flex()
+        &__item
+            +size(1)
+            +size-md(1.32)
+            +size-sm(4)
+            +sm(margin, 20px 0)
+
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+
+            &:first-child
+                +size-md(4)
+
+           
+            .page
+                &__title-h2
+                    padding-bottom: 20px
+                    +md(padding-bottom, 40px)
+
+                &__subtitle
+                    &:not(.page__link)
+                        padding-top: 15px
+                        color: $color_gray-4
+
+                    &.page__link
+                        margin-bottom: 8px
+
+                &__copyright
+                    margin-bottom: 8px
+                    +md-block
+                        position: absolute
+                        bottom: 0
+                    

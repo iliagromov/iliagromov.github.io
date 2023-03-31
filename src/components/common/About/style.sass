@@ -1,0 +1,54 @@
+@import '../../../styles/_imports'
+
+.about
+    padding: 80px 0
+    // opacity: 0;
+    &-content
+        padding-top: 65px
+        +row-flex()
+        .page__img
+            +size(2)
+            +size-sm(4)
+            +sm(margin-bottom, 40px)
+            +xs(margin-bottom, 0)
+            display: flex
+            justify-content: center
+            height: 600px
+            img
+                object-fit: cover
+                height: 600px
+
+        .page__content
+            +size(2)
+            +size-sm(4)
+
+        .page__lists
+            padding-left: 26px
+            padding-top: 15px
+
+        .page__list
+            padding-left: 0
+
+        .page__link
+            padding-bottom: 10px
+            +sm(text-align, center)
+
+        .page__btn
+            +sm(margin, 0 auto)
+
+    &.animated
+        opacity: 1
+        .page__title-h2
+            // .animated(
+            //     .fadeInDown()
+            //     .delay(0.5s)
+            // });
+
+        .page__subtitle_big
+            opacity: 0.1
+
+        .about-content
+            // .animated(
+            //     .fadeIn()
+            //     .delay(1s)
+            // });

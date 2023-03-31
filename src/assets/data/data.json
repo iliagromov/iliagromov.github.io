@@ -1,0 +1,1630 @@
+{
+    "projects": [
+        {
+            "name": "Acpgame",
+            "code": "acpgame",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/acpgame/acpgame-miniature.jpg",
+            "title": "Acpgame",
+            "description": "Разработка Acpgame. <br>Задача разработать многостраничный сайт по дизайн макетам. Произвести интеграцию с cms instantCMS. <br><br>На сайте были реализованы модальные окна с формой обратного звонка, слайдеры, уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. <br>Весь frontend без использования jq только чистый js. <br>Адаптивная верстка сделана по методологии responsive. <br>Интеграция с панелью администратора произведена за 3 дня. <br><br>Произведена разработка сайта с использованием сборки проекта на gulp с препроцессором pug, less и сеткой на библиотеке smartgrid. <br>#pug #less #js #smartgrid #php #cms <br>Срок выполнения 2 недели.",
+            "short_description": "Pug, less, Smartgrid, JS, PHP",
+            "site_link": "http://acpgame.ru",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/acpgame/acpgame-main.jpg"
+                }
+            ],
+            "task":"Задача разработать многостраничный сайт для Acpgame",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "PUG",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "Less",
+                            "images": "assets/img/logos/img-less-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                            
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "content": [
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "instantCMS",
+                            "images": "assets/img/logos/img-instantcms-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 14,
+            "date":"20 декабря 2020"
+        },
+       
+        {
+            "name": "Rogosservies",
+            "code": "rogosservies",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/rogosservies/rogosservies-miniature.png",
+            "title": "Rogosservies",
+            "description": "Разработка Landing-page Rogosservies <br> Задача разработать Landing-page only Desktop для Канадской компании.<br> Особенность данного Landing-page в резиновой верстке для всех Desktop экранов. <br> <br> Разработка произведена с использованием сборки проекта на gulp с препроцессором pug, less и сеткой на библиотеке smartgrid. <br> #pug #less #js #smartgrid",
+            "short_description": "Pug, less, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/rogersservices.github.io",
+            "site_short_link": "rogersservices.io",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/rogosservies/rogosservies-main.png"
+                }
+            ],
+            "task":"Разработка Landing-Page only Desktop",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "PUG",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "Less",
+                            "images": "assets/img/logos/img-less-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                            
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"1 декабря 2020"
+        },
+        
+        {
+            "name": "Holybasil",
+            "code": "holybasil",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/holybasil/holybasil-miniature.png",
+            "title": "Holybasil",
+            "description": "Разработка Holybasil.<br> Задача разработать landing page для компании holybasil. Произвести интеграцию с cms WordPress.<br> Выполнен большой объем работы по разработки анимации на первом экране на чистом js.<br> Произведено множественное количество правок 'Хотелок' заказчика. Реализован Многоуровневый список для меню продукции на чистом js. <br>Реализован Калькулятор стоимости продукции на чистом js. <br>Подключен сбербанк эквайринг. <br>Уникальность и особенность дизайна, а также сложность верстки в его нестандартной сеточной системе. <br>Произведена разработка Адаптивная по дизайн макетам. <br>Сделана интеграция с cms Wp, а также частичная оптимизация для Google Pagespeed. <br><br>Разработка произведена с использованием сборки проекта на gulp с препроцессор pug, less и сеткой на библиотеке smartgrid. <br><br>#pug #less #js #smartgrid #php #cms #WP.<br> Срок выполнения 3 недели.",
+            "short_description": "Pug, less, Smartgrid, JS, PHP",
+            "site_link": "https://iliagromov.github.io/holybasil.github.io/",
+            "site_short_link": "https://holybasil.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/holybasil/holybasil-main.jpg"
+                }
+            ],
+            "task":"Разработать landing page для компании holybasil",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "PUG",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "Less",
+                            "images": "assets/img/logos/img-less-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                            
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "Backend",
+                    "content": [
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "instantCMS",
+                            "images": "assets/img/logos/img-wordpress-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 21,
+            "date":"15 ноября 2020"
+        },
+        {
+            "name": "Разработка UI CMS",
+            "code": "confidenceuicms",
+            "format": "CMS",
+            "miniature":"assets/img/projects/confidenceuicms/confidenceuicms-miniature.jpg",
+            "title": "Разработка UI CMS",
+            "description": "Задача собрать панель администратора из готовых шаблонов semantic ui для компании Confidence group.<br> Реализация drug and drop для таблиц.<br><br> Разработка произведена с использованием сборки проекта на gulp с препроцессором pug, less. <br>#pug #less  <br>Срок выполнения 2 недели.",
+            "short_description": "Pug, less, Semantic, JavaScript",
+            "site_link": "https://iliagromov.github.io/confidenceuicms.io/",
+            "site_short_link": "https://confidenceuicms.io/",
+            "pages":[
+                {
+                    "page":"Авторизация",
+                    "images":"assets/img/projects/confidenceuicms/confidenceuicms-login.jpg"
+                },
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/confidenceuicms/confidenceuicms-main.jpg"
+                }
+            ],
+            "task":"Разработка панели администратора для Confidence group",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "Panda",
+            "code": "panda",
+            "format": "Template",
+            "miniature":"assets/img/projects/panda/panda-miniature.png",
+            "title": "Panda",
+            "description": "Разработка Страниц для чат-бота телеграм. <br> Задача разработать интерактивный страницы для дневника активности в телеграмме с построением графика.<br> Так как страничка генерируется на сервере необходимо сделать максимально легкую верстку с минимальным использованием js <br><br> Особенность разработки в написание pug mixin для генерации страницы<br> #pug #css #js",
+            "short_description": "PUG, CSS 3, JavaScript",
+            "site_link": "https://iliagromov.github.io/panda.io/",
+            "site_short_link": "https://panda.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/panda/panda-main.png"
+                }
+            ],
+            "task":"Разработка Страниц для чат-бота Panda",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "Pug",
+                            "images": "assets/img/logos/img-pug-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"15 ноября 2020"
+        },
+        {
+            "name": "Yoga",
+            "code": "yoga",
+            "format": "Landing-Page",
+            "miniature":"assets/img/projects/yoga/yoga-miniature.jpg",
+            "title": "Yoga",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/yoga.github.io/",
+            "site_short_link": "https://yoga.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/yoga/yoga-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page yoga",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days": 1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "IDS",
+            "code": "ids",
+            "format": "Многостраничный сайт",
+            "miniature": "assets/img/projects/ids/idsmedia-miniature.png",
+            "title": "IDS",
+            "description": "Разработка Новостного портала idsmedia. ",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq",
+            "site_link": "https://idsmedia.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/ids/idsmedia-main.png"
+                },
+                {
+                    "page":"Новости",
+                    "images":"assets/img/projects/ids/idsmedia-news-category.png"
+                },
+                {
+                    "page":"Новость",
+                    "images":"assets/img/projects/ids/idsmedia-news-page.png"
+                },
+                {
+                    "page":"Журналы",
+                    "images":"assets/img/projects/ids/idsmedia-journal.png"
+                },
+                {
+                    "page":"О Журнале",
+                    "images":"assets/img/projects/ids/idsmedia-journal-ks.png"
+                },
+                {
+                    "page":"Контакты",
+                    "images":"assets/img/projects/ids/idsmedia-kontakty.png"
+                },
+                {
+                    "page":"О компании",
+                    "images":"assets/img/projects/ids/idsmedia-about.png"
+                },
+                {
+                    "page":"Партнеры",
+                    "images":"assets/img/projects/ids/idsmedia-partners.png"
+                },
+                {
+                    "page":"Рекламодетелям",
+                    "images":"assets/img/projects/ids/idsmedia-reklamodatelyam.png"
+                },
+                {
+                    "page":"Дипломы",
+                    "images":"assets/img/projects/ids/idsmedia-patent.png"
+                },
+                {
+                    "page":"Архив",
+                    "images":"assets/img/projects/ids/idsmedia-archive.png"
+                },
+                {
+                    "page":"PopUp",
+                    "images":"assets/img/projects/ids/idsmedia-popup.png"
+                }
+            ],
+            "task":"Разработка сайта для компании idsmedia.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":30,
+            "date":"1 января 2020"
+        },
+        {
+            "name": "Fitnes",
+            "code": "fitnes",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/fitnes/fitnes-miniature.jpg",
+            "title": "Fitnes",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/fitness.github.io/",
+            "site_short_link": "https://fitness.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/fitnes/fitnes-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page fitnes.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"1 января 2020"
+        },
+        {
+            "name": "medical",
+            "code": "medical",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/medical/medical-miniature.jpg",
+            "title": "medical",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/medical.github.io/",
+            "site_short_link": "https://medical.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/medical/medical-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page medicals.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"30 декабря 2020"
+        },
+        {
+            "name": "decoreto",
+            "code": "decoreto",
+            "format": "Интернет-Магазин",
+            "miniature": "assets/img/projects/decoreto/decoreto-miniature.png",
+            "title": "decoreto",
+            "description": "decoreto desc",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq, PhP, WP",
+            "site_link": "https://www.decoreto.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/decoreto/decoreto-main.png"
+                },
+                {
+                    "page":"Категории",
+                    "images":"assets/img/projects/decoreto/decoreto-category.png"
+                },
+                {
+                    "page":"Страница товара",
+                    "images":"assets/img/projects/decoreto/decoreto-product.png"
+                },
+                {
+                    "page":"Мебель",
+                    "images":"assets/img/projects/decoreto/decoreto-mebel.png"
+                },
+                {
+                    "page":"Перегородки",
+                    "images":"assets/img/projects/decoreto/decoreto-peregorodki.png"
+                },
+                {
+                    "page":"Фрезеровка",
+                    "images":"assets/img/projects/decoreto/decoreto-frezerovka.png"
+                },
+                {
+                    "page":"Доставка",
+                    "images":"assets/img/projects/decoreto/decoreto-dostavka.png"
+                },
+                {
+                    "page":"Партнерам",
+                    "images":"assets/img/projects/decoreto/decoreto-partneram.png"
+                },
+                {
+                    "page":"О Компании",
+                    "images":"assets/img/projects/decoreto/decoreto-o-kompanii.png"
+                },
+                {
+                    "page":"popUp",
+                    "images":"assets/img/projects/decoreto/decoreto-popup.png"
+                }
+            ],
+            "task":"Разработка сайта для компании decoreto.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Smartgrid",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "content": [
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "WordPress",
+                            "images": "assets/img/logos/img-wordpress-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":45,
+            "date":"9 июля 2019"
+        },
+        {
+            "name": "hospital",
+            "code": "hospital",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/hospital/hospital-miniature.jpg",
+            "title": "hospital",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/hospital.github.io/",
+            "site_short_link": "https://hospital.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/hospital/hospital-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page hospital.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Smartgrid",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "multi",
+            "code": "multi",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/multi/multi-miniature.jpg",
+            "title": "multi",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq",
+            "site_link": "https://iliagromov.github.io/multipurpose.github.io/",
+            "site_short_link": "https://multipurpose.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/multi/multi-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page multi.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Smartgrid",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "event",
+            "code": "event",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/event/event-miniature.jpg",
+            "title": "event",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript, jq",
+            "site_link": "https://iliagromov.github.io/event.github.io/",
+            "site_short_link": "https://event.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/event/event-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page event.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Smartgrid",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "ebook",
+            "code": "ebook",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/ebook/ebook-miniature.jpg",
+            "title": "ebook",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/ebook.github.io/",
+            "site_short_link": "https://ebook.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/ebook/ebook-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page ebook.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2017"
+        },
+        {
+            "name": "edication",
+            "code": "edication",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/edication/edication-miniature.jpg",
+            "title": "edication",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, Smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/educational.github.io/",
+            "site_short_link": "https://educational.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/edication/edication-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page edication.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "theopticalshop",
+            "code": "theopticalshop",
+            "format": "Интернет-Магазин",
+            "miniature": "assets/img/projects/theopticalshop/theopticalshop-miniature.png",
+            "title": "theopticalshop",
+            "description": "theopticalshop desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq, Wp",
+            "site_link": "https://www.theopticalshopbrookline.com/",
+            "site_short_link": "https://theopticalshop.com/",
+            "pages":[
+                {
+                    "page":"Home",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-main.png"
+                },
+                {
+                    "page":"Eyeglasses",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-eyeglasses.png"
+                },
+                {
+                    "page":"Sunglasses",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-sunglasses.png"
+                },
+                {
+                    "page":"Contact lenses",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-contact-lensess.png"
+                },
+                {
+                    "page":"Brands",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-brands.png"
+                },
+                {
+                    "page":"Services",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-services.png"
+                },
+                {
+                    "page":"Reviews",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-reviews.png"
+                },
+                {
+                    "page":"Contact US",
+                    "images":"assets/img/projects/theopticalshop/theopticalshop-contact-us.png"
+                }
+            ],
+            "task":"Разработка сайта для компании theopticalshop.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "content": [
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "WordPress",
+                            "images": "assets/img/logos/img-wordpress-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":60,
+            "date":"18 сентября 2018"
+        },
+        {
+            "name": "webclim",
+            "code": "webclim",
+            "format": "Интернет-Магазин",
+            "miniature": "assets/img/projects/webclim/webclim-miniature.png",
+            "title": "webclim",
+            "description": "webclim desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq, Bitrix",
+            "site_link": "webclim",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/webclim/webclim-main.png"
+                }
+            ],
+            "task":"Доработки сайта для компании webclim.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "content": [
+                        {
+                            "name": "PHP",
+                            "images": "assets/img/logos/img-php-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content": [
+                        {
+                            "name": "bitrix",
+                            "images": "assets/img/logos/img-1c-bitrix-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":60,
+            "date":"18 сентября 2018"
+        },
+        {
+            "name": "estate",
+            "code": "estate",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/estate/estate-miniature.jpg",
+            "title": "estate",
+            "description": "Разработка ряда шаблонных Landing-Page для Американской компании. Адаптивная верстка сделана по методологии responsive. Внедрена минимальная анимация.",
+            "short_description": "HTML 5, CSS 3, smartgrid, JavaScript",
+            "site_link": "https://iliagromov.github.io/estate.github.io/",
+            "site_short_link": "https://estate.github.io/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/estate/estate-main.jpg"
+                }
+            ],
+            "task":"Разработка Landing-Page estate.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "smartgrid",
+                            "images": "assets/img/logos/img-smartgrid-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2020"
+        },
+        {
+            "name": "VR Jazz",
+            "code": "vrjazz",
+            "format": "Многостраничный сайт",
+            "miniature": "assets/img/projects/vr-jazz/img-vr-jazz-miniature.png",
+            "title": "VR Jazz",
+            "description": "VR Jazz desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq, modX",
+            "site_link": "https://vrjazzagency.com/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/vr-jazz/vr-jazz-main.png"
+                },
+                {
+                    "page":"Услуги",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-service.png"
+                },
+                {
+                    "page":"Услуги popUp",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-service-popup.png"
+                },
+                {
+                    "page":"Программы",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-progs.png"
+                },
+                {
+                    "page":"Афиша",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-concerts.png"
+                },
+                {
+                    "page":"Новости",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-news.png"
+                },
+                {
+                    "page":"Звезды",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-stars.png"
+                },
+                {
+                    "page":"Мероприятия",
+                    "images":"assets/img/projects/vr-jazz/vrjazzagency-key.png"
+                }
+            ],
+            "task":"Разработка Многостраничного сайта для компании VR Jazz.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS",
+                    "content":[{
+                        "name": "modX",
+                        "images": "assets/img/logos/img-modx-logo.png"
+                    }]
+                }
+            ],
+            "days":60,
+            "date":"16 мая 2018"
+        },
+        {
+            "name": "finansinvest",
+            "code": "finansinvest",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/finansinvest/finansinvest-miniature.png",
+            "title": "finansvest",
+            "description": "finansvest desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap 4, JavaScript, jq",
+            "site_link": "https://finansvest.ru/masterclass/",
+            "site_short_link": "https:/finansvest.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/finansinvest/finansinvest-main.png"
+                }
+            ],
+            "task":"Разработка Landing-Page для компании finansinvest.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":7,
+            "date":"18 октября 2018"
+        },
+        {
+            "name": "evakuator",
+            "code": "evakuator",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/evakuator/evakuator-miniature.png",
+            "title": "evakuator",
+            "description": "evakuator desc",
+            "short_description": "HTML 5, CSS 3, JavaScript, jq",
+            "site_link": "evakuator",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/evakuator/evakuator-main.png"
+                }
+            ],
+            "task":"Разработка сайта для компании evakuator.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"20 октября 2017"
+        },
+        {
+            "name": "euchet",
+            "code": "euchet",
+            "format": "Интернет-Магазин",
+            "miniature": "assets/img/projects/euchet/euchet-miniature.png",
+            "title": "euchet",
+            "description": "euchet desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq",
+            "site_link": "https://euchet.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/euchet/euchet-main.png"
+                }
+            ],
+            "task":"Доработка Интернет-Магазина для компании euchet.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"23 сентября 2019"
+        },
+        {
+            "name": "akvahit",
+            "code": "akvahit",
+            "format": "Интернет-Магазин",
+            "miniature": "assets/img/projects/akvahit/akvahit-miniature.png",
+            "title": "akvahit",
+            "description": "akvahit desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq",
+            "site_link": "https://www.akvahit.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/akvahit/akvahit-main.png"
+                },
+                {
+                    "page":"О компании",
+                    "images":"assets/img/projects/akvahit/akvahit-about.png"
+                },
+                {
+                    "page":"Оплата",
+                    "images":"assets/img/projects/akvahit/akvahit-payment.png"
+                },
+                {
+                    "page":"Возврат",
+                    "images":"assets/img/projects/akvahit/akvahit-vozvrat.png"
+                },
+                {
+                    "page":"Доставка",
+                    "images":"assets/img/projects/akvahit/akvahit-delivery.png"
+                },
+                {
+                    "page":"Производители",
+                    "images":"assets/img/projects/akvahit/akvahit-brands.png"
+                },
+                {
+                    "page":"Гарантия",
+                    "images":"assets/img/projects/akvahit/akvahit-garantiya.png"
+                },
+                {
+                    "page":"Контакты",
+                    "images":"assets/img/projects/akvahit/akvahit-contacts.png"
+                },
+                {
+                    "page":"Корзина",
+                    "images":"assets/img/projects/akvahit/akvahit-cart.png"
+                },
+                {
+                    "page":"Оформление заказа",
+                    "images":"assets/img/projects/akvahit/akvahit-order.png"
+                }
+            ],
+            "task":"Разработка сайта для компании akvahit.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "CMS:",
+                    "content" : [ 
+                        {
+                        "name": "bitrix",
+                        "images": "assets/img/logos/img-1c-bitrix-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":628,
+            "date":"14 мая 2017"
+        },
+        {
+            "name": "pulsar",
+            "code": "pulsar",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/pulsar/pulsar-miniature.png",
+            "title": "pulsar",
+            "description": "pulsar desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq",
+            "site_link": "https://ustanovka-teploschetchika.akvahit.ru/",
+            "site_short_link": "https:/pulsar.akvahit.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/pulsar/pulsar-main.png"
+                }
+            ],
+            "task":"Разработка Landing-Page для компании akvahit.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"14 мая 2017"
+        },
+        {
+            "name": "danfoss",
+            "code": "danfoss",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/danfoss/danfoss-miniature.png",
+            "title": "danfoss",
+            "description": "danfoss desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq",
+            "site_link": "http://danfoss.akvahit.ru/",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/danfoss/danfoss-main.png"
+                }
+            ],
+            "task":"Разработка Landing-Page для компании akvahit.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"14 мая 2017"
+        },
+        {
+            "name": "furycoins",
+            "code": "furycoins",
+            "format": "Конвертер",
+            "miniature": "assets/img/projects/furycoins/furycoins-miniature.png",
+            "title": "furycoins",
+            "description": "furycoins desc",
+            "short_description": "HTML 5, CSS 3, Bootstrap, JavaScript, jq",
+            "site_link": "furycoins",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/furycoins/furycoins-main.png"
+                }
+            ],
+            "task":"Разработка сайта для компании furycoins.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        },
+                        {
+                            "name": "jq",
+                            "images": "assets/img/logos/img-jq-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2017"
+        },
+        {
+            "name": "obed-ru",
+            "code": "obed",
+            "format": "Landing-Page",
+            "miniature": "assets/img/projects/obed-ru/obed-ru-miniature.png",
+            "title": "obed-ru",
+            "description": "obed-ru desc",
+            "short_description": "HTML 5, CSS 3, JavaScript",
+            "site_link": "obed",
+            "pages":[
+                {
+                    "page":"Главная",
+                    "images":"assets/img/projects/obed-ru/obed-ru-main.png"
+                }
+            ],
+            "task":"Разработка сайта для компании obed-ru.",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "JavaScript",
+                            "images": "assets/img/logos/img-javascript-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"9 февраля 2017"
+        },
+        {
+            "name": "bookkeeping",
+            "code": "bookkeeping",
+            "format": "Project",
+            "miniature": "assets/img/projects/bookkeeping/bookkeeping-miniature.jpg",
+            "title": "bookkeeping",
+            "description": "bookkeeping desc",
+            "short_description": "Сетка Bootstrap4, flex, lightbox, owl, адаптив, изотоп, счётчик цифр.",
+            "site_link": "bookkeeping",
+            "pages":[
+                {
+                    "page":"Логин",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-login.png"
+                },
+                {
+                    "page":"Регистранция",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-registation.png"
+                },
+                {
+                    "page":"Страница счета",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-bill.png"
+                },
+                {
+                    "page":"Страница Истории",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-history.png"
+                },
+                {
+                    "page":"Фильтр",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-history-popup.png"
+                },
+                {
+                    "page":"Страница Истории Внутреняя",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-history-page.png"
+                },
+                {
+                    "page":"Страница Планирования",
+                    "images":"assets/img/projects/bookkeeping/bookkeeping-planning.png"
+                }
+            ],
+            "task":"Project bookkeeping",
+            "technology": [
+                {
+                    "name": "Frontend:",
+                    "content" : [
+                        {
+                            "name": "HTML 5",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        },
+                        {
+                            "name": "CSS 3",
+                            "images": "assets/img/logos/img-css-logo.png"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "images": "assets/img/logos/img-bootstrap-logo.png"
+                        },
+                        {
+                            "name": "TypeScript",
+                            "images": "assets/img/logos/img-angular-logo.png"
+                        },
+                        {
+                            "name": "Angular",
+                            "images": "assets/img/logos/img-angular-logo.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "Backend:",
+                    "content" :[
+                        {
+                            "name": "Firebase",
+                            "images": "assets/img/logos/img-html-logo.png"
+                        }
+                    ]
+                }
+            ],
+            "days":1,
+            "date":"1 декабря 2019"
+        }
+    ],
+    "technology": [
+        {
+            "name": "HTML 5",
+            "images": "assets/img/logos/img-html-logo.png"
+        },
+        {
+            "name": "CSS 3",
+            "images": "assets/img/logos/img-css-logo.png"
+        },
+        {
+            "name": "JavaScript",
+            "images": "assets/img/logos/img-javascript-logo.png"
+        },
+        {
+            "name": "TypeScript",
+            "images": "assets/img/logos/img-typescript-logo.png"
+        },
+        {
+            "name": "Git",
+            "images": "assets/img/logos/img-git-logo.png"
+        },
+        {
+            "name": "БЭМ",
+            "images": "assets/img/logos/img-bem-logo.png"
+        },
+        {
+            "name": "JQuery",
+            "images": "assets/img/logos/img-jq-logo.png"
+        },
+        {
+            "name": "Angular 2+",
+            "images": "assets/img/logos/img-angular-logo.png"
+        },
+        {
+            "name": "Less",
+            "images": "assets/img/logos/img-less-logo.png"
+        },
+        {
+            "name": "Sass",
+            "images": "assets/img/logos/img-sass-logo.png"
+        },
+        {
+            "name": "Gulp",
+            "images": "assets/img/logos/img-gulp-logo.png"
+        },
+        {
+            "name": "SmartGrid",
+            "images": "assets/img/logos/img-smartgrid-logo.png"
+        },
+        {
+            "name": "Pug",
+            "images": "assets/img/logos/img-pug-logo.png"
+        },
+        {
+            "name": "Bootstrap",
+            "images": "assets/img/logos/img-bootstrap-logo.png"
+        },
+        {
+            "name": "WebPack",
+            "images": "assets/img/logos/img-webpack-logo.png"
+        },
+        {
+            "name": "Node.js",
+            "images": "assets/img/logos/img-nodejs-logo.png"
+        },
+        {
+            "name": "Nest.js",
+            "images": "assets/img/logos/img-nestjs-logo.png"
+        },
+        {
+            "name": "Wordpress",
+            "images": "assets/img/logos/img-wordpress-logo.png"
+        },
+        {
+            "name": "1C Bitrix",
+            "images": "assets/img/logos/img-1c-bitrix-logo.png"
+        },
+        {
+            "name": "modx",
+            "images": "assets/img/logos/img-modx-logo.png"
+        },
+        {
+            "name": "Php",
+            "images": "assets/img/logos/img-php-logo.png"
+        }
+    ]
+}

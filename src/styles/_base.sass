@@ -1,0 +1,67 @@
++reset()
+/* __reset__ */
+/* __base__ */
+.wrapper
+  +wrapper()
+
++scrollbar($color_scrollbar-track, $color_scrollbar-thumb)
+
+
+
+@font-face 
+  +font($Font, $Regular)
+  
+@font-face 
+  +font($Font, $Bold)
+
+@font-face 
+  +font($Font, $Thin)
+@font-face 
+  +font($Font, $Black)
+
+html
+  scrollbar-color: $color_scrollbar-thumb $color_scrollbar-track
+  // scrollbar-width: thin
+
+html
+  // scroll-behavior: smooth;
+  &:not([data-scroll='0'])
+
+    header
+      background: rgba(2, 2, 2, 0.4)
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1)
+
+body
+  font-family: $Regular
+  color: $color_white
+  background: $color_bg
+
+a
+  color: $color_white
+  text-decoration: none
+
+a, button
+  cursor: pointer
+  transition: all .15s ease-in-out
+  &:focus
+    outline: none
+
+  &:hover
+    color: $color_theme-1
+
+
+input
+  cursor: text
+  &:focus
+    outline: none
+
+.theme-color
+  &-1
+    color: $color_theme-1
+
+  &-2
+    color: $color_theme-2
+
+  &-3
+    color: $color_theme-3
+

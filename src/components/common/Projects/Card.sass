@@ -1,0 +1,134 @@
+@import '../../../styles/_imports'
+
+
+
+.swiperCardPages
+    // width: 240px
+    height: 320px
+    padding: 16px 22px !important
+.swiperCardPage
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    border-radius: 18px
+    font-size: 22px
+    font-weight: bold
+    color: #fff
+    // background-color: $color_yellow-3
+    // background-color: $color_yellow-3
+    // background-color: rgba($color_violet, .2)
+    // background-color: rgba($color_orange, .5)
+    background-color: rgba($color_violet, .5)
+
+    &:nth-child(1n)
+        // background-color: rgb(206, 17, 17)
+        // background-color: rgba($color_violet, .2)
+        background-color: rgba($color_violet, .7)
+    
+.card-list
+    display: flex
+    padding: 3rem
+    overflow-x: scroll
+    &::-webkit-scrollbar
+        width: 10px
+        height: 10px
+    &::-webkit-scrollbar-thumb
+        background: #201c29
+        border-radius: 10px
+        // box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25)
+    &::-webkit-scrollbar-track
+        // background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d)
+
+.card
+    cursor: pointer
+    display: flex
+    position: relative
+    flex-direction: column
+    // height: 350px
+    width: 400px
+    min-width: 250px
+    padding: 1.5rem
+    border-radius: 16px
+    background: $color_gray-3
+    box-shadow: -1rem 0 3rem #000
+    z-index: 10
+    transition: .2s
+    +size(1)
+    +size-md(1.32)
+    +size-sm(2)
+
+    &:hover
+        transform: translateY(-1rem)
+        z-index: 100
+        background: rgba($color_black-1, .8)
+        & ~ .card
+            transform: translateX(130px)
+
+    &:not(:first-child)
+        margin-left: -150px
+
+    &:nth-child(n+6)
+        // display: none
+
+    &-days
+        position: relative
+        
+        margin: 3rem 0 0
+        // display: none
+        &__count
+            position: absolute
+            top: 0
+            left: 20px
+            &-text
+                margin-left: 25px
+
+    &-header
+        margin-bottom: auto
+        p
+            font-size: 14px
+            margin: 0 0 1rem
+            color: #7a7a8c
+        h2
+            font-size: 20px
+            margin: .25rem 0 auto
+            cursor: pointer
+            &:hover
+                background: linear-gradient(90deg,#ff8a00,#e52e71)
+                text-shadow: none
+                background-clip: text
+    
+
+.half-circle
+    // position: absolute
+    bottom: 0
+    left: 0
+    width: 60px
+    height: 48px
+    fill: none
+    stroke: $color_violet
+    stroke-width: 8
+    stroke-linecap: round
+
+.tags
+    margin: 1rem 0 2rem
+    padding: .5rem 0 1rem
+    line-height: 2
+    margin-bottom: 0
+    span
+        font-style: normal
+        font-weight: 700
+        font-size: .5rem
+        color: #7a7a8c
+        text-transform: uppercase
+        font-size: .66rem
+        border: 3px solid #28242f
+        border-radius: 2rem
+        padding: .2rem .85rem .25rem
+        position: relative
+        &:hover
+            background: linear-gradient(90deg,#ff8a00,#e52e71)
+            text-shadow: none
+            background-clip: text
+            border-color: white
+

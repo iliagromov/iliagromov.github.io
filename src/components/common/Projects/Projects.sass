@@ -1,0 +1,57 @@
+@import '../../../styles/_imports'
+// Делаю 4 карточки и конпку смотреть больше позже доработаю
+// делаю страницы в проекте для предпросмотра по клику переходим в проект
+// Делаю заголовок, дату, технология, формат, кол во дней
+// На общей странице или делать карусель или показывать все проекты ( лучше показывать все т.к. пользователь выберет самый интересный проект и посмотрит его )
+.projects
+    padding: 80px 0
+    // opacity: 0;
+    &-content
+        +row-flex()
+        // justify-content: space-around;
+        padding: 20px 0
+
+        .project
+            +size(1)
+            +size-md(1.32)
+            +size-sm(2)
+            +size-xs(4)
+            // margin: 0 7px;
+            // padding-top: 10px;
+
+            &:hover
+
+                .page__figure::before,
+                .page__figure::after
+                    opacity: 1
+                    transform: scale(1)
+
+    .page__btn
+        max-width: 180px
+        margin: 0 auto
+
+    &.animated
+        opacity: 1
+        .page__title-h2
+            // .animated(
+            //     .fadeInDown()
+            //     .delay(0.5s)
+            // });
+
+        .page__subtitle_big
+            opacity: 0.1
+
+        .project
+            // .animated(
+            //     .zoomIn()
+            //     .delay(1s)
+            // });
+
+.project:hover .page__figcaption::before
+
+    border-top: 1px solid $color_theme-1 !important
+    border-bottom: 1px solid $color_theme-1 !important
+
+.project:hover .page__figcaption::after
+    border-right: 1px solid $color_theme-1 !important
+    border-left: 1px solid $color_theme-1 !important
