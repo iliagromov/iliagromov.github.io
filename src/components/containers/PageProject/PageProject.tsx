@@ -24,7 +24,7 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 	const wpFields = props.wpQueryData.allWpProject.nodes[0];
 	//FIXME: поправить доступ к объекту
 
-	// let directionMedia = window.innerWidth >=768 ? 'vertical' : 'horizontal';
+	
 
 	// useEffect(() => {
 	// 	window.addEventListener('resize', function(){
@@ -40,16 +40,21 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 		days,
 		pages
 	} = wpFields.blockProject;
+	const hasWindow = typeof window !== 'undefined';
+	// let pagesArr; 
 
-	const pageInit = pages.length;
-	const pagesArr = pages.reverse();
+    const width = hasWindow ? window.innerWidth : 0;
+	const numberInitPageMedia = width >=768 ? pages.reverse() : pages;
+	console.log(numberInitPageMedia);
+	// const pageInit = pages.length;
+
 	const renderPagesLink = pages.map((page: projectPage, idx: number) => {
 		return (
 			<div className="tab-link" key={`pagetitle${idx}`}>{page.pagetitle}</div>
 		)
 	});
 
-	const renderPagesImage = pagesArr.map((page: projectPage, idx: number) => {
+	const renderPagesImage = numberInitPageMedia.map((page: projectPage, idx: number) => {
 		const selfLayout = page.pageLayouts ? page.pageLayouts : null;
 		
 		const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
@@ -86,7 +91,7 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 						</div>
 						<div className="project-page-content__description">
 							<Swiper
-								initialSlide={pageInit}
+								initialSlide={1}
 								effect={"cards"}
 								grabCursor={true}
 								modules={[EffectCards]}
