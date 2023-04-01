@@ -31,7 +31,7 @@ const About: FC<AboutProps> = (props) => {
 				<div className="wrapper">
 					<div className="about-content">
 						<div className="page__img" >
-                            <StaticImage  width={600} height={600} src="../../../assets/img/img-about-1.jpg" alt='logo' />
+                            <StaticImage  width={600} height={700} src="../../../assets/img/img-about-1.jpg" alt='logo' />
                         </div>
 						<div className="page__content">
 							<p className="page__text page_padding-bottom-20">Frontend developer профессионально создаю сайты и веб-приложения, также имею навыки в интернет-маркетинге(понимание того что необходимо для сайта с точки зрения бизнеса).</p>

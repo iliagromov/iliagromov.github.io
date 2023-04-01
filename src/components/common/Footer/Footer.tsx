@@ -18,7 +18,7 @@ const Footer: FC<FooterProps> = () => {
 						<div className="page__copyright">Москва, <span className="year" >  © {new Date().getFullYear()}</span></div>
 					</div>
 					<div className="footer-content__item">
-						<div className="page__subtitle page_padding-bottom-25">телефон</div><a className="page__subtitle page__link page_bold" href="tel:+79680548333">+7 (977) 775-82-88</a>
+						<div className="page__subtitle page_padding-bottom-25">телефон</div><a className="page__subtitle page__link page_bold" href="tel:+7 (977) 775-82-88">+7 (977) 775-82-88</a>
 					</div>
 					<div className="footer-content__item">
 						<div className="page__subtitle page_padding-bottom-25">почта</div><a className="page__subtitle page__link page_bold" href="mailto:i@gromov-studio.ru">i@gromov-studio.ru</a>
@@ -35,7 +35,7 @@ const Footer: FC<FooterProps> = () => {
                                 <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-skype.svg'} alt="social" title="social"/>
                             </a>
 
-                            <a className="social__item-link social__item-icon" href="https://t.me/gromov_ilia" target="_blank">
+                            <a className="social__item-link social__item-icon" href="https://t.me/gromov_ilia_web" target="_blank">
                                 <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-telegram.svg'} alt="social" title="social"/>
                             </a>
 						</div>

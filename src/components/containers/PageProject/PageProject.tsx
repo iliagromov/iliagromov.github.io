@@ -45,7 +45,7 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 
     const width = hasWindow ? window.innerWidth : 0;
 	const numberInitPageMedia = width >=768 ? pages.reverse() : pages;
-	console.log(numberInitPageMedia);
+	// console.log(numberInitPageMedia);
 	// const pageInit = pages.length;
 
 	const renderPagesLink = pages.map((page: projectPage, idx: number) => {

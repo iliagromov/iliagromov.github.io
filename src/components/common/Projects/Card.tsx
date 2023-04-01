@@ -30,8 +30,13 @@ const Card: FC<CardProps> = (props) => {
     const link = projectLink ? projectLink : '/projects';
 
     const renderPages = pages && pages.map((page: projectPage, idx: number) => {
-        const image = page.image ? page.image.sourceUrl : '';
-        const imageAlt = page.image ? page.image.alt : page.title;
+        const selfLayout = page.pageLayouts ? page.pageLayouts : null;
+		
+		const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
+
+		const imageAlt = selfLayout ? selfLayout[0].layout?.altText : '';
+
+        
         return (
             <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {page.pagetitle} {idx+1}
                 <img src={image} alt={imageAlt} />

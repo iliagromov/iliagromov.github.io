@@ -21,6 +21,7 @@ const Services: FC<ServicesProps> = (props) => {
             blockServices {
                 service {
                     title
+                    description
                     image {
                         altText
                         title

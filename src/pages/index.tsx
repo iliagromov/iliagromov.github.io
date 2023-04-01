@@ -56,6 +56,13 @@ export const query = graphql`
                     title
                     sourceUrl
                   }
+                  pageLayouts {
+                    layout {
+                      altText
+                      title
+                      sourceUrl
+                    }
+                  }
                 }
                 title
                 task
