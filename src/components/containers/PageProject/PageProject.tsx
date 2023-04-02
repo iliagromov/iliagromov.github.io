@@ -91,7 +91,7 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 						</div>
 						<div className="project-page-content__description">
 							<Swiper
-								initialSlide={1}
+								initialSlide={0}
 								effect={"cards"}
 								grabCursor={true}
 								modules={[EffectCards]}

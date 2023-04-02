@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, StaticImage, } from "gatsby-plugin-image";
 
 import { blockProject, projectPage } from '../../../shared/types';
 
@@ -29,17 +29,18 @@ const Card: FC<CardProps> = (props) => {
 
     const link = projectLink ? projectLink : '/projects';
 
-    const renderPages = pages && [pages || []].map((page: projectPage, idx: number) => {
+    const renderPages = pages && pages.map((page: projectPage, idx: number) => {
         const selfLayout = page.pageLayouts ? page.pageLayouts : null;
 		
 		const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
 
 		const imageAlt = selfLayout ? selfLayout[0].layout?.altText : '';
 
-        
+        // console.log(img);
         return (
             <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {page.pagetitle} {idx+1}
-                <img src={image} alt={imageAlt} />
+             
+                <img src={image} alt={imageAlt}  />
             </SwiperSlide>
         );
     });

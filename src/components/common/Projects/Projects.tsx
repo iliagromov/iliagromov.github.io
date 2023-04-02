@@ -13,6 +13,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
+import { Navigation } from "swiper";
+
 import { Scrollbar } from "swiper";
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -24,15 +26,7 @@ type ProjectProps = {
 
 const Projects: FC<ProjectProps> = (props) => {
    
-    const {allWpProject: {nodes}}  = useStaticQuery(graphql`
-    query {
-      allWpProject {
-        nodes {
-          title
-        }
-      }
-    }
-  `);
+   
     function sliceIntoChunks(arr: Object[], chunkSize: number) {
         const res = [];
         for (let i = 0; i < arr.length; i += chunkSize) {
@@ -52,8 +46,12 @@ const Projects: FC<ProjectProps> = (props) => {
     const width = hasWindow ? window.innerWidth : 0;
     const locationPath = hasWindow ? window.location.pathname : '/';
     const isProjectPage = locationPath=== '/projects/';
+    const isMainPage = locationPath === '/';
+    const isDesktop = width >= 768;
+    const slideItemsMainPageMobile = !isDesktop ? 1 : 5;
+    const spaceMobile = !isDesktop ? -70 : -100;
 
-    const projectsGrouped = width >= 768 ? projectsGroupedDesktop : projectsGroupedMobile;
+    const projectsGrouped = ( isDesktop &&  !isMainPage) ? projectsGroupedDesktop : projectsGroupedMobile;
 
 
     const projectRenderDesktop = props.projectsArray && projectsGrouped.map((group: any, idx) => {
@@ -81,7 +79,7 @@ const Projects: FC<ProjectProps> = (props) => {
 
     const projectRenderMobileSlider = props.projectsArray && projectsGrouped.map((group: any, idx) => {
         const keyGroup = `groupMobile${idx}`;
-        const spaceBetweenGutter = props.projectsArray.length >=5 ? -100 : 0 ; 
+        const spaceBetweenGutter = props.projectsArray.length >= 5 ? spaceMobile : 0 ; 
         const projectRowRender = group.map((project: WpProjectPage, idx: number) => {
             const projectLink = project.uri;
             // console.log(project);
@@ -99,12 +97,12 @@ const Projects: FC<ProjectProps> = (props) => {
         return (
             <div className='projects-content row' key={keyGroup} >
                 <Swiper
-                    scrollbar={{
-                        hide: false,
-                    }}
+                   scrollbar={{
+                    hide: true,
+                  }}
+                  modules={[Scrollbar]}
                     spaceBetween={spaceBetweenGutter}
-
-                    modules={[Scrollbar]}
+                    slidesPerView={slideItemsMainPageMobile}
                     className="projectsSwiper"
                 >
 
@@ -116,14 +114,14 @@ const Projects: FC<ProjectProps> = (props) => {
 
     });
 
-    const projectsRender = width >= 768 ? projectRenderDesktop : projectRenderMobileSlider;
+    const projectsRender = (isDesktop && !isMainPage) ? projectRenderDesktop : projectRenderMobileSlider;
 
 
     return (
         <section className="projects isAnimate animated">
             <div className="page__title page_transform-uppercase page_text-center">
                 <h2 className="page__subtitle_big">Проекты</h2>
-                <h2 className="page__title_main page__title-h2 page_bold">Проекты {nodes.length}+</h2>
+                <h2 className="page__title_main page__title-h2 page_bold">Проекты {50}+</h2>
             </div>
             <div className="wrapper">
                 <div className="inner">
