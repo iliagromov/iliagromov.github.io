@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PageProps, useStaticQuery } from "gatsby";
+import { Link, PageProps, useStaticQuery } from "gatsby";
 import { graphql } from "gatsby";
 import { Banner } from "../../common/Banner/Banner";
 import Skills from "../../common/Skills/Skills";
@@ -26,6 +26,7 @@ const PageMain: React.FC<PageMainProps> = (props) => {
       <Services />
       <Advanatages/>
       <Projects projectsArray={projects}/>
+      
       <About />  
     </>
   )

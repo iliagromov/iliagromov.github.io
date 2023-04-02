@@ -29,7 +29,7 @@ const Card: FC<CardProps> = (props) => {
 
     const link = projectLink ? projectLink : '/projects';
 
-    const renderPages = pages && pages.map((page: projectPage, idx: number) => {
+    const renderPages = pages && [pages || []].map((page: projectPage, idx: number) => {
         const selfLayout = page.pageLayouts ? page.pageLayouts : null;
 		
 		const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
@@ -61,7 +61,7 @@ const Card: FC<CardProps> = (props) => {
 
                 <div className="card-days">
                     <div className="card-days__count">
-                        {pages.length} 
+                      <span className="card-days__count-number"> {pages.length} </span> 
                         <span className="card-days__count-text">
                         Страниц разработано
                         </span>

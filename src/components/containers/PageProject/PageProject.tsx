@@ -48,7 +48,7 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 	// console.log(numberInitPageMedia);
 	// const pageInit = pages.length;
 
-	const renderPagesLink = pages.map((page: projectPage, idx: number) => {
+	const renderPagesLink = pages?.map((page: projectPage, idx: number) => {
 		return (
 			<div className="tab-link" key={`pagetitle${idx}`}>{page.pagetitle}</div>
 		)

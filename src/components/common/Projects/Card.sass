@@ -1,7 +1,5 @@
 @import '../../../styles/_imports'
 
-
-
 .swiperCardPages
     // width: 240px
     height: 320px
@@ -25,7 +23,7 @@
         // background-color: rgb(206, 17, 17)
         // background-color: rgba($color_violet, .2)
         background-color: rgba($color_violet, .7)
-    
+
 .card-list
     display: flex
     padding: 3rem
@@ -56,7 +54,7 @@
     transition: .2s
     +size(1)
     +size-md(1.32)
-    +size-sm(2)
+    +size-sm(2.5)
 
     &:hover
         transform: translateY(-1rem)
@@ -73,13 +71,18 @@
 
     &-days
         position: relative
-        
+
         margin: 3rem 0 0
         // display: none
         &__count
             position: absolute
             top: 0
-            left: 20px
+            left: 15px
+            &-number
+                // stroke: $color_violet
+                font-size: 20px
+                font-family: $Black
+
             &-text
                 margin-left: 25px
 
@@ -97,13 +100,12 @@
                 background: linear-gradient(90deg,#ff8a00,#e52e71)
                 text-shadow: none
                 background-clip: text
-    
 
 .half-circle
     // position: absolute
     bottom: 0
     left: 0
-    width: 60px
+    width: 50px
     height: 48px
     fill: none
     stroke: $color_violet
@@ -131,4 +133,3 @@
             text-shadow: none
             background-clip: text
             border-color: white
-
