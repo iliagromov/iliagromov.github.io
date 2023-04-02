@@ -37,6 +37,13 @@ const config: GatsbyConfig = {
         url:  "https://gromov-studio.site/graphql",
         // url:  "http://localhost:8080/graphql",
         baseUrl: `gromov-studio.site`,
+        type: {
+          MediaItem: {
+            localFile: {
+              requestConcurrency: 50
+            }
+          }
+        },
         // protocol: `https`,
         hostingWPCOM: false,
         useACF: true,
@@ -60,7 +67,7 @@ const config: GatsbyConfig = {
         },
         develop: {
           // server wp update  5min times
-          nodeUpdateInterval: 300000,
+          nodeUpdateInterval: 30000,
         },
         catchLinks: false,
       },
