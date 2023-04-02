@@ -1,0 +1,37 @@
+export const query = graphql`
+  query {
+    allWpProject {
+      nodes {
+        slug
+        title
+        link
+        uri
+        blockProject {
+          days
+          description
+          format
+          pages {
+            pagetitle
+            image {
+              altText
+              title
+              sourceUrl
+            }
+            pageLayouts {
+              layout {
+                altText
+                title
+                sourceUrl
+              }
+            }
+          }
+          title
+          task
+          sitelink
+          shortdescription
+        }
+        
+      }
+    }
+  }
+`;

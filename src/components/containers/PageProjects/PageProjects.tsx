@@ -3,16 +3,20 @@ import { PageProps, useStaticQuery } from "gatsby";
 import { graphql } from "gatsby";
 
 import Projects from "../../common/Projects/Projects";
+import { wpPage } from "../../../shared/types";
 
 type PageProjectsProps = {
-  wpQueryData: any
+  wpPage: wpPage
 }
 
 
 const PageProjects: React.FC<PageProjectsProps> = (props) => {
 
-
-  const projects = props.wpQueryData.allWpProject.nodes
+  // console.log(props);
+  // const projects = props.wpQueryData.allWpProject.nodes;
+  // const projects = [];
+  const {projects} = props.wpPage.blockProjects;
+  // console.log(projects);
   return (
     <>
       <Projects projectsArray={projects}/>

@@ -5,55 +5,64 @@ import Layout from "../layouts/Default"
 import SEO from "../components/seo"
 // import { StaticImage, GatsbyImage, getImage, withArtDirection  } from "gatsby-plugin-image";
 import PageProjects from "../components/containers/PageProjects/PageProjects";
+import { wpPage } from "../shared/types";
 
 
 export const query = graphql`
   query {
-    allWpProject {
-      nodes {
-        slug
+      wpPage(uri: {eq: "/projects-page/"}) {
+        id
         title
-        link
-        uri
-        blockProject {
-          days
-          description
-          format
-          pages {
-            pagetitle
-            image {
-              altText
+        content
+        blockProjects {
+          projects {
+            ... on WpProject {
+              id
+              uri
               title
-              sourceUrl
-            }
-            pageLayouts {
-              layout {
-                altText
+              slug
+              link
+              blockProject {
                 title
-                sourceUrl
+                task
+                sitelink
+                shortdescription
+                days
+                description
+                format
+                pages {
+                  pagetitle
+                  image {
+                    altText
+                    title
+                    sourceUrl
+                  }
+                  pageLayouts {
+                    layout {
+                      altText
+                      title
+                      sourceUrl
+                    }
+                  }
+                }
+                
               }
             }
           }
-          title
-          task
-          sitelink
-          shortdescription
         }
-        
       }
     }
-  }
 `;
 
-const ProjectsPage: React.FC<PageProps> = ({data}) => {
+const ProjectsPage: React.FC<PageProps> = (props) => {
   // console.log(data);
-
+  const data: wpPage = props.data?.wpPage;
 
   return (
     <Layout>
       <SEO title="Projects" />
       <PageProjects
-        wpQueryData={data}
+        wpPage={data}
       />
      
     </Layout>

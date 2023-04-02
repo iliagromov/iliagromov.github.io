@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions: { createPage }  }) => {
       }
      }
    `).then(result => {
-    console.log(result);
+    console.log(result.data.allWpProject.nodes);
     result.data.allWpProject.nodes.forEach(node => {
       createPage({
         path: `projects/${node.slug}`,
