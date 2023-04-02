@@ -62,7 +62,7 @@ const config: GatsbyConfig = {
         },
         develop: {
           // server wp update  5min times
-          nodeUpdateInterval: 300000,
+          nodeUpdateInterval: 10000,
         },
         catchLinks: false,
       },
