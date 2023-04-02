@@ -1,0 +1,88 @@
+query PREVIEW_QUERY($id: ID!) {
+  project(id: $id, idType: ID, asPreview: true) {
+    blockProject {
+      days
+      description
+      fieldGroupName
+      format
+
+      pages {
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        pageLayouts {
+          fieldGroupName
+
+          layout {
+            __typename
+            id
+          }
+        }
+
+        pagetitle
+      }
+
+      shortdescription
+      sitelink
+      task
+      title
+    }
+
+    content
+
+    contentType {
+      node {
+        __typename
+        id
+      }
+    }
+
+    contentTypeName
+    databaseId
+    date
+    dateGmt
+    desiredSlug
+    enclosure
+
+    featuredImage {
+      node {
+        __typename
+        id
+      }
+    }
+
+    featuredImageDatabaseId
+    featuredImageId
+    guid
+    id
+    isContentNode
+    isTermNode
+
+    lastEditedBy {
+      node {
+        __typename
+        id
+      }
+    }
+
+    link
+    modified
+    modifiedGmt
+    slug
+    status
+
+    template {
+      templateName
+
+      __typename
+    }
+
+    title
+    uri
+    __typename
+  }
+}

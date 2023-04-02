@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g id="SkillItemImg" clip-path="url(#clip0_364_676)">
+    <g id="js_webpack-icon 1">
+      <path id="Vector" d="M118.16 98.652L66.2799 128V105.148L98.5999 87.364L118.16 98.652ZM121.712 95.44V34.08L102.736 45.048V84.496L121.712 95.44ZM9.8479 98.652L61.7199 128V105.148L29.3799 87.36L9.8479 98.652ZM6.2959 95.44V34.08L25.2719 45.048V84.496L6.2959 95.44ZM8.5199 30.096L61.7199 0V22.088L27.3599 41L8.5199 30.096ZM119.48 30.096L66.2799 0V22.088L100.64 40.98L119.48 30.096Z" fill="#8ED6FB"></path>
+      <path id="Vector_2" d="M61.72 100.948L29.824 83.4V48.664L61.72 67.08V100.948ZM66.28 100.948L98.18 83.416V48.656L66.28 67.08V100.948ZM31.984 44.648L64 27.052L96.016 44.652L64 63.132L31.984 44.648Z" fill="#1C78C0"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_364_676">
+      <rect width="128" height="128" fill="white"></rect>
+    </clipPath>
+  </defs>
+</svg>

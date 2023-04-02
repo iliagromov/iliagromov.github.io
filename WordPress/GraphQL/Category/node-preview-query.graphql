@@ -1,0 +1,65 @@
+query PREVIEW_QUERY($id: ID!) {
+  category(id: $id, idType: ID, asPreview: true) {
+    ancestors(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    wpChildren: children(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    contentNodes(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    count
+    databaseId
+    description
+    id
+    isContentNode
+    isTermNode
+    link
+    name
+
+    wpParent: parent {
+      node {
+        __typename
+        id
+      }
+    }
+
+    parentDatabaseId
+    parentId
+
+    posts(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    slug
+
+    taxonomy {
+      node {
+        __typename
+        id
+      }
+    }
+
+    taxonomyName
+    termGroupId
+    termTaxonomyId
+    uri
+    __typename
+  }
+}

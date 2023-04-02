@@ -1,0 +1,47 @@
+query NODE_LIST_QUERY($first: Int!, $after: String) {
+  tags(first: $first, after: $after) {
+    nodes {
+      contentNodes(first: 100) {
+        nodes {
+          __typename
+          id
+        }
+      }
+
+      count
+      databaseId
+      description
+      id
+      isContentNode
+      isTermNode
+      link
+      name
+
+      posts(first: 100) {
+        nodes {
+          __typename
+          id
+        }
+      }
+
+      slug
+
+      taxonomy {
+        node {
+          __typename
+          id
+        }
+      }
+
+      taxonomyName
+      termGroupId
+      termTaxonomyId
+      uri
+      __typename
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

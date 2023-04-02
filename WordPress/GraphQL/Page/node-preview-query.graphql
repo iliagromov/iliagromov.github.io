@@ -1,0 +1,162 @@
+query PREVIEW_QUERY($id: ID!) {
+  page(id: $id, idType: ID, asPreview: true) {
+    ancestors(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    author {
+      node {
+        __typename
+        id
+      }
+    }
+
+    authorDatabaseId
+    authorId
+
+    blockAbout {
+      about
+      fieldGroupName
+    }
+
+    blockAdvantages {
+      advantages {
+        fieldGroupName
+        title
+      }
+
+      fieldGroupName
+    }
+
+    blockProjects {
+      fieldGroupName
+
+      projects {
+        __typename
+
+        ... on Project {
+          id
+        }
+      }
+    }
+
+    blockServices {
+      fieldGroupName
+
+      service {
+        description
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        title
+      }
+    }
+
+    blockSkills {
+      fieldGroupName
+
+      skills {
+        fieldGroupName
+
+        image {
+          __typename
+          id
+        }
+
+        title
+      }
+    }
+
+    wpChildren: children(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    commentCount
+    commentStatus
+
+    comments(first: 100) {
+      nodes {
+        __typename
+        id
+      }
+    }
+
+    content
+
+    contentType {
+      node {
+        __typename
+        id
+      }
+    }
+
+    contentTypeName
+    databaseId
+    date
+    dateGmt
+    desiredSlug
+    enclosure
+
+    featuredImage {
+      node {
+        __typename
+        id
+      }
+    }
+
+    featuredImageDatabaseId
+    featuredImageId
+    guid
+    id
+    isContentNode
+    isFrontPage
+    isPostsPage
+    isPrivacyPage
+    isRevision
+    isTermNode
+
+    lastEditedBy {
+      node {
+        __typename
+        id
+      }
+    }
+
+    link
+    menuOrder
+    modified
+    modifiedGmt
+
+    wpParent: parent {
+      node {
+        __typename
+        id
+      }
+    }
+
+    parentDatabaseId
+    parentId
+    slug
+    status
+
+    template {
+      templateName
+
+      __typename
+    }
+
+    title
+    uri
+    __typename
+  }
+}

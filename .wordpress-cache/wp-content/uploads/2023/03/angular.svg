@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g id="SkillItemImg" clip-path="url(#clip0_362_548)">
+    <g id="angular-icon 1">
+      <path id="Vector" d="M4 21.2L63.568 0L124.704 20.872L114.824 99.648L63.568 128L13.144 100.016L4 21.2Z" fill="#E23237"></path>
+      <path id="Vector_2" d="M124.704 20.872L63.5681 0V128L114.824 99.648L124.704 20.872Z" fill="#B52E31"></path>
+      <path id="Vector_3" d="M63.66 14.96L26.54 97.52L40.392 97.24L47.872 78.584H81.072L89.2 97.384L102.408 97.664L63.66 14.96ZM63.752 41.464L76.312 67.692H52.8L63.788 41.464H63.752Z" fill="white"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_362_548">
+      <rect width="128" height="128" fill="white"></rect>
+    </clipPath>
+  </defs>
+</svg>

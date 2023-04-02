@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g id="SkillItemImg" clip-path="url(#clip0_364_638)">
+    <g id="nuxt-seeklogo.com 1" clip-path="url(#clip1_364_638)">
+      <g id="Group">
+        <path id="Vector" d="M54.888 8.00049L-0.000488281 112.57H109.776L54.888 8.00049Z" fill="#48B884"></path>
+        <path id="Vector_2" d="M36.418 112.57H127.999L82.209 25.332L36.418 112.57Z" fill="#3F7F70"></path>
+        <path id="Vector_3" d="M36.418 112.57H109.776L73.097 42.6909L36.418 112.57Z" fill="#36495D"></path>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_364_638">
+      <rect width="128" height="128" fill="white"></rect>
+    </clipPath>
+    <clipPath id="clip1_364_638">
+      <rect width="128" height="105" fill="white" transform="translate(0 8)"></rect>
+    </clipPath>
+  </defs>
+</svg>
