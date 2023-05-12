@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
-import { StaticImage } from "gatsby-plugin-image";
+
+import { StaticImage, GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
+
 
 import './style.sass';
 import { graphql, PageProps, useStaticQuery } from 'gatsby';
@@ -9,7 +11,11 @@ type AboutProps = {
 }
 
 const About: FC<AboutProps> = (props) => {
-    const { wpPage: {blockAbout} } : { wpPage: wpPage} = useStaticQuery(
+	
+    const { 
+		wpPage: {blockAbout},
+		imgAbout
+	} : { wpPage: wpPage, imgAbout: any} = useStaticQuery(
         graphql` {
           wpPage(uri: {eq: "/"}) {
             id
@@ -18,8 +24,19 @@ const About: FC<AboutProps> = (props) => {
 				about
 			}
           }
+		  imgAbout:  file(relativePath: { eq: "imgAbout.jpg" }) {
+				childImageSharp {
+					gatsbyImageData(
+						width: 500
+						placeholder: BLURRED
+						formats: [AUTO, WEBP, AVIF]
+					)
+				}
+			}
         }
     `);
+	const image = getImage(imgAbout)
+
 	const desc = blockAbout && blockAbout.about;
 	// console.log(desc);
     return (
@@ -31,7 +48,8 @@ const About: FC<AboutProps> = (props) => {
 				<div className="wrapper">
 					<div className="about-content">
 						<div className="page__img" >
-                            <StaticImage  width={600} height={700} src="../../../assets/img/img-about-1.jpg" alt='logo' />
+                            {/* <StaticImage  width={600} height={700} src="../../../assets/img/img-about-1.jpg" alt='logo' /> */}
+							<GatsbyImage image={image} alt={'img'} />
                         </div>
 						<div className="page__content">
 							<p className="page__text page_padding-bottom-20">Frontend developer профессионально создаю сайты и веб-приложения, также имею навыки в интернет-маркетинге(понимание того что необходимо для сайта с точки зрения бизнеса).</p>

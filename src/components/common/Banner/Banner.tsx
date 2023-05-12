@@ -27,6 +27,7 @@ const CanvasRings: React.FC = (props) => {
       let ringRadius = 400;
       const waveOffset = 15;
       const colors = ['#D03AFF', '#9724ba', '#560d6d'];
+      // const colors = ['#CEF500', '#89be21', '#70a900'];
       let startAngle = 0;
 
       const maxWavesAmplitude = 17;
@@ -137,6 +138,8 @@ export const Banner: FC = () => {
           <span className="page_bold">Gromov</span>
         </div>
         <h1 className="page__title">
+          {/* <div className="page__title_first" >iGromov <span>developer</span></div>
+          <div>Digital</div> */}
           <div className="page__title_first" >Full <span>developer</span></div>
           <div>Stack</div>
         </h1>

@@ -7,19 +7,23 @@
         padding-top: 65px
         +row-flex()
         .page__img
-            +size(2)
+
+            width: calc(50% - 10px)
+            padding-right: 10px 
+
             +size-sm(4)
             +sm(margin-bottom, 40px)
             +xs(margin-bottom, 0)
             display: flex
             justify-content: center
-            height: 600px
+            // max-height: 600px
             img
-                object-fit: cover
-                height: 600px
+                // object-fit: cover
+                // height: 600px
 
         .page__content
-            +size(2)
+            width: calc(50% - 10px)
+            padding-left: 10px 
             +size-sm(4)
 
         .page__lists
