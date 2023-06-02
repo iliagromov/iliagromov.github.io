@@ -20,7 +20,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 
 type ProjectProps = {
-    projectsArray: WpProjectPage[],
+    projectsArray?: WpProjectPage[],
 
 }
 
@@ -29,10 +29,13 @@ const Projects: FC<ProjectProps> = (props) => {
    
     function sliceIntoChunks(arr: Object[], chunkSize: number) {
         const res = [];
-        for (let i = 0; i < arr.length; i += chunkSize) {
-            const chunk = arr.slice(i, i + chunkSize);
-            res.push(chunk);
+        if(arr){
+            for (let i = 0; i < arr.length; i += chunkSize) {
+                const chunk = arr.slice(i, i + chunkSize);
+                res.push(chunk);
+            }
         }
+        
         return res;
     }
 

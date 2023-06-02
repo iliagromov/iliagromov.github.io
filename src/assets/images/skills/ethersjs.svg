@@ -1,0 +1,73 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SkillItemImg" clip-path="url(#clip0_362_588)">
+<g id="ethereum-icon 1">
+<g id="Group">
+<g id="Group_2" opacity="0.6">
+<g id="Clip path group">
+<mask id="mask0_362_588" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="47" width="80" height="42">
+<g id="B">
+<path id="Vector" d="M24.6975 47.326H103.27V88.412H24.6975V47.326Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_362_588)">
+<path id="Vector_2" d="M63.9917 47.326L24.6975 65.1969L63.9917 88.412L103.27 65.1969L63.9917 47.326Z" fill="#010101"/>
+</g>
+</g>
+</g>
+<g id="Group_3" opacity="0.45">
+<g id="Clip path group_2">
+<mask id="mask1_362_588" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="0" width="40" height="89">
+<g id="D">
+<path id="Vector_3" d="M24.6975 0H63.9917V88.4119H24.6975V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1_362_588)">
+<path id="Vector_4" d="M24.6975 65.1968L63.9917 88.4119V0L24.6975 65.1968Z" fill="#010101"/>
+</g>
+</g>
+</g>
+<g id="Group_4" opacity="0.8">
+<g id="Clip path group_3">
+<mask id="mask2_362_588" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="63" y="0" width="41" height="89">
+<g id="F">
+<path id="Vector_5" d="M63.9917 0H103.286V88.4119H63.9917V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask2_362_588)">
+<path id="Vector_6" d="M63.9917 0V88.4119L103.27 65.1968L63.9917 0Z" fill="#010101"/>
+</g>
+</g>
+</g>
+<g id="Group_5" opacity="0.45">
+<g id="Clip path group_4">
+<mask id="mask3_362_588" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="72" width="40" height="56">
+<g id="H">
+<path id="Vector_7" d="M24.6975 72.6417H63.9917V128H24.6975V72.6417Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask3_362_588)">
+<path id="Vector_8" d="M24.6975 72.6417L63.9917 128V95.8568L24.6975 72.6417Z" fill="#010101"/>
+</g>
+</g>
+</g>
+<g id="Group_6" opacity="0.8">
+<g id="Clip path group_5">
+<mask id="mask4_362_588" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="63" y="72" width="41" height="56">
+<g id="J">
+<path id="Vector_9" d="M63.9917 72.6417H103.301V128H63.9917V72.6417Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask4_362_588)">
+<path id="Vector_10" d="M63.9917 95.8568V128L103.301 72.6417L63.9917 95.8568Z" fill="#010101"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_362_588">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

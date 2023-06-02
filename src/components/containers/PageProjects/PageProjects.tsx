@@ -15,11 +15,11 @@ const PageProjects: React.FC<PageProjectsProps> = (props) => {
   // console.log(props);
   // const projects = props.wpQueryData.allWpProject.nodes;
   // const projects = [];
-  const {projects} = props.wpPage.blockProjects;
+  // const {projects} = props.wpPage.blockProjects;
   // console.log(projects);
   return (
     <>
-      <Projects projectsArray={projects}/>
+      <Projects/>
      
 
     </>

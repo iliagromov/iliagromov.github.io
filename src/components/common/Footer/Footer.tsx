@@ -28,15 +28,15 @@ const Footer: FC<FooterProps> = () => {
 						<div className="social">
                             
                             <a className="social__item-link social__item-icon" href="https://vk.com/gromov.ilia" target="_blank">
-                                <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-vk.svg'} alt="social" title="social"/>
+                                {/* <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-vk.svg'} alt="social" title="social"/> */}
                             </a>
                                 
                             <a className="social__item-link social__item-icon" href="https://join.skype.com/invite/fcSLPdcmNNcH" target="_blank">
-                                <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-skype.svg'} alt="social" title="social"/>
+                                {/* <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-skype.svg'} alt="social" title="social"/> */}
                             </a>
 
                             <a className="social__item-link social__item-icon" href="https://t.me/gromov_ilia_web" target="_blank">
-                                <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-telegram.svg'} alt="social" title="social"/>
+                                {/* <StaticImage className="page__img" src={'../../../assets/img/social/icon-social-telegram.svg'} alt="social" title="social"/> */}
                             </a>
 						</div>
 					</div>

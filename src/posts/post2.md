@@ -2,7 +2,8 @@
 title: Римские Каникулы
 category: italy
 url: italy-trip2
-image: ../images/gatsby-icon.png
+image: ../assets/images/gatsby-icon.png
+sortIdx: 14
 ---
 
 # Римские Каникулы

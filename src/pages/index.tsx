@@ -6,75 +6,75 @@ import PageMain  from "../components/containers/PageMain/PageMain";
 import { wpPage } from "../shared/types";
 
 
-export const query = graphql`
-  query {
-      wpPage(uri: {eq: "/"}) {
-        id
-        title
-        content
-        blockSkills {
-          skills {
-            title
-            image {
-              sourceUrl
-              title
-              altText
-            }
-          }
-        }
-        blockServices {
-          service {
-            title
-            image {
-              altText
-              title
-              sourceUrl
-            }
-          }
-        }
-        blockAdvantages {
-          advantages {
-            title
-          }
-        }
-        blockProjects {
-          projects {
-            ... on WpProject {
-              id
-              uri
-              title
-              slug
-              link
-              blockProject {
-                days
-                description
-                format
-                pages {
-                  pagetitle
-                  image {
-                    altText
-                    title
-                    sourceUrl
-                  }
-                  pageLayouts {
-                    layout {
-                      altText
-                      title
-                      sourceUrl
-                    }
-                  }
-                }
-                title
-                task
-                sitelink
-                shortdescription
-              }
-            }
-          }
-        }
-      }
-    }
-`;
+// export const query = graphql`
+//   query {
+//       wpPage(uri: {eq: "/"}) {
+//         id
+//         title
+//         content
+//         blockSkills {
+//           skills {
+//             title
+//             image {
+//               sourceUrl
+//               title
+//               altText
+//             }
+//           }
+//         }
+//         blockServices {
+//           service {
+//             title
+//             image {
+//               altText
+//               title
+//               sourceUrl
+//             }
+//           }
+//         }
+//         blockAdvantages {
+//           advantages {
+//             title
+//           }
+//         }
+//         blockProjects {
+//           projects {
+//             ... on WpProject {
+//               id
+//               uri
+//               title
+//               slug
+//               link
+//               blockProject {
+//                 days
+//                 description
+//                 format
+//                 pages {
+//                   pagetitle
+//                   image {
+//                     altText
+//                     title
+//                     sourceUrl
+//                   }
+//                   pageLayouts {
+//                     layout {
+//                       altText
+//                       title
+//                       sourceUrl
+//                     }
+//                   }
+//                 }
+//                 title
+//                 task
+//                 sitelink
+//                 shortdescription
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+// `;
 
 
 const IndexPage: React.FC<PageProps> = (props) => {

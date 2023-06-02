@@ -17,15 +17,14 @@ type PageMainProps = {
 const PageMain: React.FC<PageMainProps> = (props) => {
 
 
- 
-  const {projects} = props.wpPage.blockProjects;
+
   return (
     <>
       <Banner />
       <Skills />
       <Services />
       <Advanatages/>
-      <Projects projectsArray={projects}/>
+      <Projects/>
       
       <About />  
     </>

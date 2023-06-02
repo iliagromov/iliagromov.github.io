@@ -1,29 +1,20 @@
 import React, { FC } from 'react';
 
-import { StaticImage, GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from 'gatsby';
 
 
 import './style.sass';
-import { graphql, PageProps, useStaticQuery } from 'gatsby';
-import { wpPage } from '../../../shared/types';
-
 type AboutProps = {
 }
 
 const About: FC<AboutProps> = (props) => {
 	
     const { 
-		wpPage: {blockAbout},
 		imgAbout
-	} : { wpPage: wpPage, imgAbout: any} = useStaticQuery(
+	} : {  imgAbout: any} = useStaticQuery(
         graphql` {
-          wpPage(uri: {eq: "/"}) {
-            id
-            title   
-			blockAbout {
-				about
-			}
-          }
+        
 		  imgAbout:  file(relativePath: { eq: "imgAbout.jpg" }) {
 				childImageSharp {
 					gatsbyImageData(
@@ -37,8 +28,6 @@ const About: FC<AboutProps> = (props) => {
     `);
 	const image = getImage(imgAbout)
 
-	const desc = blockAbout && blockAbout.about;
-	// console.log(desc);
     return (
         <section className="about isAnimate animated" id="about">
 								<div className="page__title page_transform-uppercase page_text-center">

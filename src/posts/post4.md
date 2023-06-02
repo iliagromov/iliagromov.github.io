@@ -2,7 +2,8 @@
 title: Афины
 category: italy
 url: italy-trip4
-image: ../images/gatsby-icon.png
+image: ../assets/images/gatsby-icon.png
+sortIdx: 14
 ---
 
 # Афины

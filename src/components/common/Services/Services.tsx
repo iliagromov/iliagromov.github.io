@@ -5,6 +5,7 @@ import React, { FC, useEffect, useRef } from 'react';
 import './style.sass';
 
 import { wpPage } from "../../../shared/types";
+import { ReactSVG } from 'react-svg';
 
 
 type ServicesProps = {
@@ -13,40 +14,56 @@ type ServicesProps = {
 
 
 const Services: FC<ServicesProps> = (props) => {
-    const { wpPage: { blockServices } }: { wpPage: wpPage } = useStaticQuery(
-        graphql` {
-          wpPage(uri: {eq: "/"}) {
-            id
-            title   
-            blockServices {
-                service {
-                    title
-                    description
-                    image {
-                        altText
-                        title
-                        sourceUrl
-                    }
+    const { allMarkdownRemark: {nodes} } = useStaticQuery(
+        graphql` 
+          
+          query GetAllSvgService {
+            allMarkdownRemark(
+                filter: {frontmatter: {category: {eq: "services"}}}
+                sort: {frontmatter: {sortIdx: ASC}}
+                ) {
+              nodes {
+                frontmatter {
+                  title
+                  description
+                  image {
+                    id
+                    publicURL
+                  }
                 }
+              }
             }
           }
-        }
-    `);
-
-    const services = blockServices.service;
+        `);
+    // console.log(nodes);
+    const services = nodes;
 
     const serviceRender = services && services.map((service: any, i: number) => {
-        let imgSrc = service.image ? service.image.sourceUrl : '';
+        let svgSrc = service.frontmatter.image.publicURL ? service.frontmatter.image.publicURL : '';
+        let title = service.frontmatter.title;
+        let description = service.frontmatter.description;
+        
         return (
             <div className="service" key={`service${i}`}>
                 <div className="page__img">
-                    <img src={imgSrc} alt={service.title} title={service.title} />
+                <ReactSVG 
+                src={svgSrc} 
+                    title={title}
+                    desc="Description"
+                    className="wrapper-class-name"
+                    useRequestCache={false}
+                    wrapper="span"
+
+                    beforeInjection={(svg) => {
+                    svg.classList.add('svg-class-name')
+                    }}
+                />
 
                 </div>
-                <h4 className="page__subtitle">{service.title}</h4>
+                <h4 className="page__subtitle">{title}</h4>
                 <div className="page__description">
-                    <h4 className="page__subtitle page_text-center">{service.title}</h4>
-                    <p className="page__text">{service.description}</p>
+                    <h4 className="page__subtitle page_text-center">{title}</h4>
+                    <p className="page__text">{description}</p>
                 </div>
             </div>
         )

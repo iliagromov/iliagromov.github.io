@@ -4,20 +4,20 @@ import Header from "../../components/common/Header/Header";
 import Footer from "../../components/common/Footer/Footer";
 
 const Layout = ({ children }) => {
-  const {
-    wp: {
-      generalSettings: { title },
-    },
-  } = useStaticQuery(graphql`
-    query LayoutQuery {
-      wp {
-        generalSettings {
-          title
-          description
-        }
-      }
-    }
-  `);
+  // const {
+  //   wp: {
+  //     generalSettings: { title },
+  //   },
+  // } = useStaticQuery(graphql`
+  //   query LayoutQuery {
+  //     wp {
+  //       generalSettings {
+  //         title
+  //         description
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <>

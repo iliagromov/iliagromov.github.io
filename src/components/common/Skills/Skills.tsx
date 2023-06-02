@@ -1,48 +1,68 @@
 import React, { FC } from 'react';
-import { StaticImage } from "gatsby-plugin-image";
-
-import './style.sass';
 import { graphql, useStaticQuery } from 'gatsby';
+import { ReactSVG } from 'react-svg';
+import './style.sass';
 
-import { wpPage } from "../../../shared/types";
+// import WEB3JS from '../../../assets/images/svg/web3js.svg';
 
 type SkillsProps = {
 }
-
-
+/**
+ * 
+ *  query MyQuery {
+        allFile(filter: {extension: {in: "svg"}, relativeDirectory: {eq: "skills"}}) {
+          nodes {
+            publicURL
+            relativeDirectory
+          }
+        }
+      }
+ */
 const Skills: FC<SkillsProps> = () => {
-  const { wpPage: { blockSkills }}: { wpPage: wpPage } = useStaticQuery(
-    graphql` {
-          wpPage(uri: {eq: "/"}) {
-            id
-            title   
-            blockSkills {
-              skills {
-                title
-                image {
-                  sourceUrl
-                  title
-                  altText
-                }
+  const { allMarkdownRemark: {nodes} } = useStaticQuery(
+    graphql` 
+      
+      query GetAllSvgSkill {
+        allMarkdownRemark(
+            filter: {frontmatter: {category: {eq: "skills"}}}
+            sort: {frontmatter: {sortIdx: ASC}}
+            ) {
+          nodes {
+            frontmatter {
+              title
+              image {
+                id
+                publicURL
               }
             }
           }
         }
+      }
     `);
-
-
-  const skillsCount = blockSkills.skills.length;
-  const skills = blockSkills.skills;
+  const skillsCount = nodes.length;
+  const skills = nodes;
 
   const skillsRender = skills && skills.map((skill: any, i: number) => {
-    let imgSrc = skill.image ? skill.image.sourceUrl : '';
+
+    let svgSrc = skill.frontmatter.image.publicURL ? skill.frontmatter.image.publicURL : '';
+    let title = skill.frontmatter.title
     return (
       <div className="skill" key={`skill${i}`}>
-        <div className="pagehristina cosmhristina cosmeticsetics__img">
-          {/* <StaticImage  alt='HTML 5' title="HTML 5" /> */}
-          <img src={imgSrc} alt="" />
+        <div className="page__img">
+          <ReactSVG 
+          src={svgSrc} 
+            title={title}
+            desc="Description"
+            className="wrapper-class-name"
+            useRequestCache={false}
+            wrapper="span"
+
+            beforeInjection={(svg) => {
+              svg.classList.add('svg-class-name')
+            }}
+          />
         </div>
-        <div className="page__subtitle">{skill.title}</div>
+        <div className="page__subtitle">{title}</div>
       </div>
     )
   });

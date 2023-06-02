@@ -2,7 +2,8 @@
 title: Цезарь
 category: italy
 url: italy-trip3
-image: ../images/gatsby-icon.png
+image: ../assets/images/gatsby-icon.png
+sortIdx: 14
 ---
 
 # Цезарь
