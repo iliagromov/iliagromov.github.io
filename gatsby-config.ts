@@ -31,86 +31,121 @@ const config: GatsbyConfig = {
         defer: false,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-source-wordpress',
-      options: {
-        url:  "https://gromov-studio.site/graphql",
-        // url:  "http://localhost:8080/graphql",
-        baseUrl: `gromov-studio.site`,
-        // protocol: `https`,
-        verbose: true,
-        develop: {
-          hardCacheMediaFiles: true,
+    // BUG: есть проблемы с большим объёмом файлов и кешированием.
+    // если домен ломается пропадает вся информация с сайта.
+    //  пока проще сделать на md фалах
+    // {
+    //   resolve: 'gatsby-source-wordpress',
+    //   options: {
+    //     // url:  "https://gromov-studio.site/graphql",
+    //     url:  "http://fullstack.io/graphql",
+    //     baseUrl: `fullstack.io`,
+    //     // protocol: `https`,
+    //     verbose: true,
+    //     develop: {
+    //       hardCacheMediaFiles: true,
 
-          // server wp update  5min times
-          nodeUpdateInterval: 1000,
-        },
-        debug: {
-          graphql: {
-            writeQueriesToDisk: true,
-            showQueryVarsOnError: true,
-            panicOnError: true,
-          },
-        },
-        useACF: true,
+    //       // server wp update  5min times
+    //       nodeUpdateInterval: 1000,
+    //     },
+    //     debug: {
+    //       graphql: {
+    //         writeQueriesToDisk: true,
+    //         showQueryVarsOnError: true,
+    //         panicOnError: true,
+    //       },
+    //     },
+    //     useACF: true,
         
 
-        excludeFieldNames: ['comments', 'blocksJSON', 'previewBlocks', 'previewBlocksJSON'],
-        type: {
-          Post: {
-            limit:
-              process.env.NODE_ENV === `development`
-                ? // The number of posts to fetch on development
-                  30
-                : // ... and on build
-                  null,
-          },
-          Comment: {
-            limit: 0,
-          },
-          MediaItem: {
-            localFile: {
-              requestConcurrency: 5,
-            },
-            lazyNodes: false,
-          },
-        },
-        html: {
-          useGatsbyImage: true,
-          fallbackImageMaxWidth: 200,
-          createStaticFiles: true,
-          imageMaxWidth: 756,
-        },
-        schema: {
-          timeout: 3000000,
-          requestConcurrency: 1,
-          previewRequestConcurrency: 1,
-          perPage: 1,
-        },
-        // production: {
-        //   allow404Images: true,
-        //   hardCacheMediaFiles: true,
-        // },
-      },
-    }, 
+    //     excludeFieldNames: ['comments', 'blocksJSON', 'previewBlocks', 'previewBlocksJSON'],
+    //     type: {
+    //       Post: {
+    //         limit:
+    //           process.env.NODE_ENV === `development`
+    //             ? // The number of posts to fetch on development
+    //               30
+    //             : // ... and on build
+    //               null,
+    //       },
+    //       Comment: {
+    //         limit: 0,
+    //       },
+    //       MediaItem: {
+    //         localFile: {
+    //           requestConcurrency: 5,
+    //         },
+    //         lazyNodes: false,
+    //       },
+    //     },
+    //     html: {
+    //       useGatsbyImage: true,
+    //       fallbackImageMaxWidth: 200,
+    //       createStaticFiles: true,
+    //       imageMaxWidth: 756,
+    //     },
+    //     schema: {
+    //       timeout: 3000000,
+    //       requestConcurrency: 1,
+    //       previewRequestConcurrency: 1,
+    //       perPage: 1,
+    //     },
+    //     // production: {
+    //     //   allow404Images: true,
+    //     //   hardCacheMediaFiles: true,
+    //     // },
+    //   },
+    // }, 
+
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
+
     "gatsby-plugin-image", 
+
     "gatsby-plugin-sharp", 
     "gatsby-transformer-sharp", 
+
     "gatsby-plugin-sass", 
     "gatsby-plugin-sitemap", 
+    "gatsby-plugin-react-svg",
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: '/images\/.*\.svg/,',
+          options: {
+            tag: "symbol",
+            name: "MyIcon",
+            props: {
+              className: "my-class",
+              title: "example"
+            },
+            filters: [value => console.log(value)]
+          }
+        },
+        
+      },
+    },
+    // {
+    //     resolve: 'gatsby-plugin-svgr-loader',
+    //     options: {
+    //         rule: {
+    //           include: /assets/
+    //         }
+    //     }
+    // },
+
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "src/assets/images/icon.png"
       }
     }, 
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
-        "path": `${__dirname}/src/images/`
+        "path": `${__dirname}/src/assets/images/`
       },
     __key: "images"
     },
@@ -120,7 +155,7 @@ const config: GatsbyConfig = {
         "name": "posts",
         "path": `${__dirname}/src/posts/`
       },
-    __key: "images"
+    __key: "posts"
     }
 ]
 };
