@@ -20,12 +20,11 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 
 type ProjectProps = {
-    projectsArray?: WpProjectPage[],
+    projectsArray?: any
 
 }
 
 const Projects: FC<ProjectProps> = (props) => {
-   
    
     function sliceIntoChunks(arr: Object[], chunkSize: number) {
         const res = [];
@@ -61,13 +60,12 @@ const Projects: FC<ProjectProps> = (props) => {
         const keyGroup = `groupDesktop${idx}`;
 
         const projectRowRender = group.map((project: WpProjectPage, idx: number) => {
-            const projectLink = project.uri;
+            // const projectLink = project.uri;
             // console.log(project);
             const keyProject = `${keyGroup}__project${idx}`;
             return (
                 <Card
-                    projectLink={projectLink}
-                    blockProject={project.blockProject}
+                    blockProject={project}
                     key={keyProject} />
             )
         });
@@ -84,14 +82,12 @@ const Projects: FC<ProjectProps> = (props) => {
         const keyGroup = `groupMobile${idx}`;
         const spaceBetweenGutter = props.projectsArray.length >= 5 ? spaceMobile : 0 ; 
         const projectRowRender = group.map((project: WpProjectPage, idx: number) => {
-            const projectLink = project.uri;
             // console.log(project);
             const keyProject = `${keyGroup}__project${idx}`;
             return (
                 <SwiperSlide key={keyProject} >
                     <Card
-                        projectLink={projectLink}
-                        blockProject={project.blockProject}
+                        blockProject={project}
                     />
                 </SwiperSlide>
             )

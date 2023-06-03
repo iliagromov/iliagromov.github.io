@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../layouts/Default";
 import SEO from "../components/seo";
-import { graphql } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 import PageProject from "../components/containers/PageProject/PageProject";
+import { MDXProvider } from "@mdx-js/react"
 
 // export const query = graphql`
 //   query($slug: String!) {
@@ -39,14 +40,33 @@ import PageProject from "../components/containers/PageProject/PageProject";
 //   }
 // `;
 
-export default function BlogPost() {
-  // const post = data.allWpProject.nodes[0];
+export const query = graphql`
+  query GetCurrentProject($id: String!) {
+    mdx( id: { eq: $id } ) {
+        frontmatter {
+          title
+          pages{
+            page{
+              image
+              title
+            }
+          }
+        }
+      }
+  }
+`;
+
+const BlogPost: React.FC<PageProps> = (props) => {
+ 
   const title = ` Project `;
+  const SelfProject = props.data.mdx.frontmatter;
+  console.log(SelfProject);
   return (
     <Layout>
       <SEO title={title}  />
       {/* <PageProject wpQueryData={data}/> */}
-
+      {/* <h1>{SelfProject.title}</h1> */}
     </Layout>
   )
 }
+export default BlogPost;

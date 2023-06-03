@@ -19,11 +19,11 @@ type SkillsProps = {
       }
  */
 const Skills: FC<SkillsProps> = () => {
-  const { allMarkdownRemark: {nodes} } = useStaticQuery(
+  const { allMdx: {nodes} } = useStaticQuery(
     graphql` 
       
       query GetAllSvgSkill {
-        allMarkdownRemark(
+        allMdx(
             filter: {frontmatter: {category: {eq: "skills"}}}
             sort: {frontmatter: {sortIdx: ASC}}
             ) {

@@ -12,49 +12,49 @@ import "swiper/css/effect-cards";
 import './Card.sass';
 
 type CardProps = {
-    blockProject: blockProject,
-    projectLink: string,
+    blockProject: any,
 }
 
 const Card: FC<CardProps> = (props) => {
     const {
-        blockProject: {
-            title,
-            days,
-            technology,
-            pages
-        },
-        projectLink,
-    } = props;
+        title,
+        publicData,
+        pagesCount,
+        pages,
+        link
+    } = props.blockProject.frontmatter;
 
-    const link = projectLink ? projectLink : '/projects';
+    // console.log(props.blockProject.frontmatter);
+
+    const projectLink = link ? link : '/projects';
 
     const renderPages = pages && pages.map((page: projectPage, idx: number) => {
-        const selfLayout = page.pageLayouts ? page.pageLayouts : null;
+        // const selfLayout = page.pageLayouts ? page.pageLayouts : null;
 		
-		const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
+		// const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
 
-		const imageAlt = selfLayout ? selfLayout[0].layout?.altText : '';
+		// const imageAlt = selfLayout ? selfLayout[0].layout?.altText : '';
 
         // console.log(img);
         return (
             <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {page.pagetitle} {idx+1}
              
-                <img src={image} alt={imageAlt}  />
+                {/* <img src={image} alt={imageAlt}  /> */}
+                1
             </SwiperSlide>
         );
     });
 
 
-    const renderTechnology = technology && technology.map((item, i) => {
-        return (<span key={`technology${i}`} >{item.name}</span>)
-    });
+    // const renderTechnology = technology && technology.map((item, i) => {
+    //     return (<span key={`technology${i}`} >{item.name}</span>)
+    // });
 
     return (
         <article className="card">
-            <Link className="card-link" to={link}>
+            <Link className="card-link" to={projectLink}>
                 <div className="card-header">
-                    <p>Sep 11th 2020</p>
+                    <p>{publicData}</p>
                     <h2>
                         {title}
                     </h2>
@@ -62,7 +62,7 @@ const Card: FC<CardProps> = (props) => {
 
                 <div className="card-days">
                     <div className="card-days__count">
-                      <span className="card-days__count-number"> {pages.length} </span> 
+                      <span className="card-days__count-number"> {pagesCount} </span> 
                         <span className="card-days__count-text">
                         Страниц разработано
                         </span>
@@ -86,7 +86,7 @@ const Card: FC<CardProps> = (props) => {
                 </div>
 
                 <div className="tags">
-                    {renderTechnology}
+                    {/* {renderTechnology} */}
                 </div>
             </Link>
         </article>

@@ -14,11 +14,11 @@ type ServicesProps = {
 
 
 const Services: FC<ServicesProps> = (props) => {
-    const { allMarkdownRemark: {nodes} } = useStaticQuery(
+    const { allMdx: {nodes} } = useStaticQuery(
         graphql` 
           
           query GetAllSvgService {
-            allMarkdownRemark(
+            allMdx(
                 filter: {frontmatter: {category: {eq: "services"}}}
                 sort: {frontmatter: {sortIdx: ASC}}
                 ) {
