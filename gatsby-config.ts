@@ -59,37 +59,23 @@ const config: GatsbyConfig = {
         
 
     //     excludeFieldNames: ['comments', 'blocksJSON', 'previewBlocks', 'previewBlocksJSON'],
-    //     type: {
-    //       Post: {
-    //         limit:
-    //           process.env.NODE_ENV === `development`
-    //             ? // The number of posts to fetch on development
-    //               30
-    //             : // ... and on build
-    //               null,
-    //       },
-    //       Comment: {
-    //         limit: 0,
-    //       },
-    //       MediaItem: {
-    //         localFile: {
-    //           requestConcurrency: 5,
-    //         },
-    //         lazyNodes: false,
-    //       },
-    //     },
-    //     html: {
-    //       useGatsbyImage: true,
-    //       fallbackImageMaxWidth: 200,
-    //       createStaticFiles: true,
-    //       imageMaxWidth: 756,
-    //     },
-    //     schema: {
-    //       timeout: 3000000,
-    //       requestConcurrency: 1,
-    //       previewRequestConcurrency: 1,
-    //       perPage: 1,
-    //     },
+    //     // type: {
+    //     //   MediaItem: {
+    //     //     exclude: true,
+    //     //   },
+    //     // },
+    //     // html: {
+    //     //   useGatsbyImage: true,
+    //     //   fallbackImageMaxWidth: 200,
+    //     //   createStaticFiles: true,
+    //     //   imageMaxWidth: 756,
+    //     // },
+    //     // schema: {
+    //     //   timeout: 3000000,
+    //     //   requestConcurrency: 1,
+    //     //   previewRequestConcurrency: 1,
+    //     //   perPage: 1,
+    //     // },
     //     // production: {
     //     //   allow404Images: true,
     //     //   hardCacheMediaFiles: true,
@@ -108,6 +94,12 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sass", 
     "gatsby-plugin-sitemap", 
     "gatsby-plugin-react-svg",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -147,16 +139,21 @@ const config: GatsbyConfig = {
         "name": "images",
         "path": `${__dirname}/src/assets/images/`
       },
-    __key: "images"
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "posts",
-        "path": `${__dirname}/src/posts/`
+        "path": `${__dirname}/src/posts`
       },
-    __key: "posts"
-    }
+    },
+    // {
+    //   resolve: 'gatsby-plugin-page-creator',
+    //   options: {
+    //     "name": "posts",
+    //     "path": `${__dirname}/src/posts`
+    //   },
+    // }
 ]
 };
 

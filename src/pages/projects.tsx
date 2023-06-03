@@ -54,16 +54,42 @@ import { wpPage } from "../shared/types";
 //     }
 // `;
 
-const ProjectsPage: React.FC<PageProps> = (props) => {
-  // console.log(data);
-  const data: wpPage = props.data?.wpPage;
+
+export const query = graphql`
+  query GetAllProjects {
+    allMdx(
+      filter: {frontmatter: {category: {eq: "projects"}}}
+      sort: {frontmatter: {sortIdx: ASC}}
+    ) {
+      nodes {
+        frontmatter {
+          link
+          title
+          publicData
+          pagesCount
+          pages{
+            page{
+              title
+              image
+            }
+          }
+        }
+      }
+    }
+  }
+  `
+
+
+
+
+const ProjectsPage: React.FC<PageProps> = ({data}) => {
+  // console.log(props);
+  // const data: wpPage = props.data?.wpPage;
 
   return (
     <Layout>
       <SEO title="Projects" />
-      <PageProjects
-        wpPage={data}
-      />
+      <PageProjects pageData={data}/>
      
     </Layout>
   )

@@ -44,13 +44,6 @@ query NON_NODE_QUERY {
     showOnFront
   }
 
-  schemaMd5
-
-  viewer {
-    __typename
-    id
-  }
-
   wpGatsby {
     arePrettyPermalinksEnabled
     isPreviewFrontendOnline

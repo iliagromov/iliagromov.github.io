@@ -10,21 +10,23 @@ import About from "../../common/About/About";
 import { wpPage } from "../../../shared/types";
 
 type PageMainProps = {
-  wpPage: wpPage
+  pageData?:  any
 }
 
 
-const PageMain: React.FC<PageMainProps> = (props) => {
 
 
-
+const PageMain: React.FC<PageMainProps> = ({pageData}) => {
+  
+   const projects = pageData.allMdx.nodes;
+ 
   return (
     <>
       <Banner />
       <Skills />
       <Services />
       <Advanatages/>
-      <Projects/>
+      <Projects projectsArray={projects}/>
       
       <About />  
     </>

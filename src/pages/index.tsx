@@ -12,31 +12,6 @@ import { wpPage } from "../shared/types";
 //         id
 //         title
 //         content
-//         blockSkills {
-//           skills {
-//             title
-//             image {
-//               sourceUrl
-//               title
-//               altText
-//             }
-//           }
-//         }
-//         blockServices {
-//           service {
-//             title
-//             image {
-//               altText
-//               title
-//               sourceUrl
-//             }
-//           }
-//         }
-//         blockAdvantages {
-//           advantages {
-//             title
-//           }
-//         }
 //         blockProjects {
 //           projects {
 //             ... on WpProject {
@@ -76,17 +51,37 @@ import { wpPage } from "../shared/types";
 //     }
 // `;
 
+export const query = graphql`
+  query GetAllProjects {
+        allMdx(
+          filter: {frontmatter: {category: {eq: "projects"}}}
+          sort: {frontmatter: {sortIdx: ASC}}
+          limit: 10
+        ) {
+          nodes {
+            frontmatter {
+              link
+              title
+              publicData
+              pagesCount
+              pages{
+                page{
+                  title
+                  image
+                }
+              }
+            }
+          }
+        }
+      }
+  `
 
-const IndexPage: React.FC<PageProps> = (props) => {
-  // console.log(props);
-  const data: wpPage = props.data?.wpPage;
+const IndexPage: React.FC<PageProps> = ({data}) => {
   return (
     <Layout>
 
       <SEO title="Iila Gromov" />
-      <PageMain 
-      wpPage={data}
-      />
+      <PageMain pageData={data}/>
       {/* <Link to="/">Russian</Link>
       <Link to="/en">English</Link> */}
      

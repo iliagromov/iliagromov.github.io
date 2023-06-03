@@ -1,4 +1,6 @@
 const fs = require('fs');
+const path = require("path");
+const projectsJSON = require('./projects.json');
 
 function createSkills(){
     let arrSkils = [
@@ -124,3 +126,41 @@ function createAdvanteges(){
         'Ответственное исполнение'
     ]
 }
+
+
+
+      
+
+function createProjects(){
+
+    projectsJSON.projects.forEach((project, idx) => {
+        let sortIdx = `${idx}0`;
+        console.log(sortIdx);
+
+let pagesObj = project.blockProject.pages.map(page =>{
+    return  `
+        - page:
+            - image: test
+            - title: ${page.pagetitle}`
+})
+let content = `---
+slug: ${project.slug}
+link: ${project.link}
+category: 'projects'
+title: ${project.blockProject.title}
+publicData: Sep 11th 2020
+pagesCount: ${project.blockProject.pages.length}
+pages: ${pagesObj}
+sortIdx: ${sortIdx}
+---`
+        fs.writeFileSync(`/home/user/Projects/iliagromov.github.io/src/posts/projects/project-${sortIdx}-${project.slug}.mdx`, content);
+    });
+
+
+
+   
+
+}
+
+
+createProjects()
