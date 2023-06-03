@@ -47,7 +47,12 @@ export const query = graphql`
           title
           pages{
             page{
-              image
+              image{
+                id
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
               title
             }
           }

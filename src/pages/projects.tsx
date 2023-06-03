@@ -70,7 +70,12 @@ export const query = graphql`
           pages{
             page{
               title
-              image
+              image{
+                id
+                childImageSharp {
+                  gatsbyImageData(placeholder: BLURRED)
+                }
+              }
             }
           }
         }

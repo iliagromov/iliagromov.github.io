@@ -140,7 +140,7 @@ function createProjects(){
 let pagesObj = project.blockProject.pages.map(page =>{
     return  `
         - page:
-            - image: test
+            - image: ../../assets/images/projects/project-0-openfactoring/1.jpg
             - title: ${page.pagetitle}`
 })
 let content = `---

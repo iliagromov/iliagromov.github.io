@@ -28,19 +28,21 @@ const Card: FC<CardProps> = (props) => {
 
     const projectLink = link ? link : '/projects';
 
-    const renderPages = pages && pages.map((page: projectPage, idx: number) => {
-        // const selfLayout = page.pageLayouts ? page.pageLayouts : null;
-		
-		// const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
+    const renderPages = pages && pages.map((item: any, idx: number) => {
+       
 
-		// const imageAlt = selfLayout ? selfLayout[0].layout?.altText : '';
-
-        // console.log(img);
+        let img = item.page.map((img:any)=>img.image);
+        let title = item.page.map((img:any)=>img.title);
+        let childImageSharp =img[0].childImageSharp;
+        let imgSrc = getImage(childImageSharp);
+        let imgTitle = title[1];
         return (
-            <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {page.pagetitle} {idx+1}
+            <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {imgTitle} 
              
-                {/* <img src={image} alt={imageAlt}  /> */}
-                1
+                <GatsbyImage
+                    image={imgSrc}
+                    alt={imgTitle}
+                />
             </SwiperSlide>
         );
     });
