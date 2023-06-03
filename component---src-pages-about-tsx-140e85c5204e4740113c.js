@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[49],{4956:function(e,t,n){n.r(t),n.d(t,{default:function(){return f}});var l=n(7294),r=n(5881),a=n(2825),u=n(8691);var c=e=>l.createElement(l.Fragment,null,l.createElement(u.Z,null));var f=e=>{let{data:t}=e;return l.createElement(r.Z,null,l.createElement(a.Z,{title:"About"}),l.createElement(c,null))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-140e85c5204e4740113c.js.map
