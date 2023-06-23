@@ -3,21 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { ReactSVG } from 'react-svg';
 import './style.sass';
 
-// import WEB3JS from '../../../assets/images/svg/web3js.svg';
 
 type SkillsProps = {
 }
-/**
- * 
- *  query MyQuery {
-        allFile(filter: {extension: {in: "svg"}, relativeDirectory: {eq: "skills"}}) {
-          nodes {
-            publicURL
-            relativeDirectory
-          }
-        }
-      }
- */
+
 const Skills: FC<SkillsProps> = () => {
   const { allMdx: {nodes} } = useStaticQuery(
     graphql` 

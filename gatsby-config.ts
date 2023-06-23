@@ -88,12 +88,22 @@ const config: GatsbyConfig = {
 
     "gatsby-plugin-image", 
 
-    "gatsby-plugin-sharp", 
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`],
+          placeholder: `blurred`,
+          quality: 100,
+          backgroundColor: `transparent`,
+        },
+      },
+    },
+    
     "gatsby-transformer-sharp", 
 
     "gatsby-plugin-sass", 
     "gatsby-plugin-sitemap", 
-    "gatsby-plugin-react-svg",
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

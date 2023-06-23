@@ -1,31 +1,51 @@
-import React, { FC, useEffect, useRef, useState } from "react";
-import { PageProps, useStaticQuery } from "gatsby";
-import { Link, navigate } from "gatsby";
+import React from "react";
+
+import { Link, graphql, navigate, useStaticQuery } from "gatsby";
 import './PageProject.sass';
-import { projectPage, WpProjectPage } from "../../../shared/types";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards } from "swiper";
+import { EffectCards, Navigation, Pagination  } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { ReactSVG } from "react-svg";
+import { SwiperToggles } from "../../common/Projects/SwiperToggles";
 
 //FIXME: описать тип проекта
+type PageDataProjectProps = {
+	pageData: {
+		title: string,
+		publicData: string,
+		pagesCount: number,
+		pages: [PageProjectProps]
+	}
+}
+
 type PageProjectProps = {
-	wpQueryData: {
-		allWpProject: {
-			nodes: WpProjectPage[]
+	title: string,
+	image: {
+		childImageSharp: {
+			gatsbyImageData: any
 		}
 	}
 }
 
 
-const PageProject: React.FC<PageProjectProps> = (props) => {
-
-	const wpFields = props.wpQueryData.allWpProject.nodes[0];
-	//FIXME: поправить доступ к объекту
-
-	
-
+const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
+	const format = 'Site';
+	const {
+		iconArrow
+	} = useStaticQuery(graphql`
+		query  {
+			iconArrow: file(relativePath: { eq: "icon-arrow.svg" }) {
+			  publicURL
+			  name
+		  	}
+		}`);
+		
 	// useEffect(() => {
 	// 	window.addEventListener('resize', function(){
 	// 		directionMedia = window.innerWidth >=768 ? 'vertical' : 'horizontal';
@@ -34,57 +54,48 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 
 	const {
 		title,
-		format,
-		description,
-		shortdescription,
-		days,
 		pages
-	} = wpFields.blockProject;
-	const hasWindow = typeof window !== 'undefined';
-	// let pagesArr; 
+	} = pageData;
+	const pageInit = pages.length;
 
-    const width = hasWindow ? window.innerWidth : 0;
-	const numberInitPageMedia = width >=768 ? pages.reverse() : pages;
-	// console.log(numberInitPageMedia);
-	// const pageInit = pages.length;
-
-	const renderPagesLink = pages?.map((page: projectPage, idx: number) => {
+	const renderPagesLink = pages?.map((page: PageProjectProps, idx: number) => {
 		return (
-			<div className="tab-link" key={`pagetitle${idx}`}>{page.pagetitle}</div>
+			<div className="tab-link" key={`pagetitle${idx}`}>{page.title}</div>
 		)
 	});
 
-	const renderPagesImage = numberInitPageMedia.map((page: projectPage, idx: number) => {
-		const selfLayout = page.pageLayouts ? page.pageLayouts : null;
-		
-		const image = selfLayout ? selfLayout[0].layout?.sourceUrl : '';
+	const renderPagesImage = pages.map((page: PageProjectProps, idx: number) => {
 
-		const imageAlt = selfLayout ? selfLayout[0].layout?.altText : '';
+		const image = getImage(page.image);
 
 		return (
-			<SwiperSlide key={`page${idx+1}`}>
-                <li className="SwiperSlideProjectCardPage" key={`page${idx}`}>
-					<h1>{page.pagetitle} </h1>
-					<img src={image} alt={imageAlt} />
+			<SwiperSlide key={`page${idx + 1}`}>
+				<li className="SwiperSlideProjectCardPage" key={`page${idx}`}>
+					<h1>{page.title} </h1>
+					<GatsbyImage
+						image={image}
+						alt={'img'}
+					/>
 				</li>
-            </SwiperSlide>
-			
+			</SwiperSlide>
+
 		)
 	});
 
 	return (
 		<>
-			<button className="btn-scrollTop page__btn">
-				<div className="page__btn_icon_arrow-top">
-				</div>
-				<span>наверх</span>
-			</button>
+			
 			<Link to={'/projects'} className="btn-back page__btn">
-				<div className="page__btn_icon_arrow-left"></div><span>назад</span>
+				<div className="page__btn_icon_arrow-left"> 
+					<ReactSVG 
+                        className="page-svg" 
+                        src={iconArrow.publicURL} />
+				</div>
+				<span>назад</span>
 			</Link>
 			<section className="project-page">
 				<div className="wrapper">
-					<div className="project-page-content tab-contents" id="tabs">
+					<div className="project-page-content" >
 						<div className="page__title page_transform-uppercase">
 							<h2 className="page__subtitle_big">{format}</h2>
 							<h2 className="page__title_main page__title-h2 page_bold">{title}</h2>
@@ -94,11 +105,13 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 								initialSlide={0}
 								effect={"cards"}
 								grabCursor={true}
-								modules={[EffectCards]}
+								modules={[EffectCards, Navigation, Pagination]}
 								className="swiperProjectCardPages"
-								direction={'vertical'}
+								direction={'horizontal'}
 							>
 								{renderPagesImage}
+
+								<SwiperToggles />
 							</Swiper>
 						</div>
 
@@ -125,7 +138,7 @@ const PageProject: React.FC<PageProjectProps> = (props) => {
 								<div className="project-info__element project-info__days">
 									<h3 className="page__title-h3">Сроки:</h3>
 									<p className="page__text">
-										<span className="page__number_days">{days} </span>
+										{/* <span className="page__number_days">{days} </span> */}
 										&nbsp;<span className="page__number_days_text">дней.</span></p>
 								</div>
 								<div className="project-info__element project-info__date">

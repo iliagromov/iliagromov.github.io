@@ -8,6 +8,7 @@
             padding-bottom: 25px
             .page__title
                 width: 100%
+                margin-bottom: 50px
 
             .page__subtitle_big
                 font-size: 60px
@@ -16,7 +17,16 @@
 
             &__description
                 +size(3)
-                +size-sm(4)
+                +size-sm(3.2)
+                box-sizing: border-box
+                +sm-block
+                    margin: 0 auto
+                +from($break_sm)
+                    padding-right: 15%
+                .project-slider__toggles
+                    top: -54px
+                    right: 50%
+                    transform: translate(50%)
                 .page__text
                     font-size: 18px
                     line-height: 24px

@@ -7,16 +7,17 @@ import './Card.sass';
 import Card from './Card';
 import { blockProject, WpProjectPage } from '../../../shared/types';
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Scrollbar, Navigation, Pagination  } from "swiper";
+import { SwiperToggles } from './SwiperToggles';
+
+
 import './SwiperCard.sass'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-// import required modules
-import { Navigation } from "swiper";
-
-import { Scrollbar } from "swiper";
-import { graphql, useStaticQuery } from 'gatsby';
 
 
 type ProjectProps = {
@@ -49,32 +50,21 @@ const Projects: FC<ProjectProps> = (props) => {
     const locationPath = hasWindow ? window.location.pathname : '/';
     const isProjectPage = locationPath=== '/projects/';
     const isMainPage = locationPath === '/';
-    const isDesktop = width >= 768;
+    const isDesktop = width >= 1024;
     const slideItemsMainPageMobile = !isDesktop ? 1 : 5;
     const spaceMobile = !isDesktop ? -70 : -100;
 
     const projectsGrouped = ( isDesktop &&  !isMainPage) ? projectsGroupedDesktop : projectsGroupedMobile;
 
 
-    const projectRenderDesktop = props.projectsArray && projectsGrouped.map((group: any, idx) => {
+    const projectRenderDesktop = props.projectsArray.map((project: WpProjectPage, idx: number) => {
         const keyGroup = `groupDesktop${idx}`;
 
-        const projectRowRender = group.map((project: WpProjectPage, idx: number) => {
-            // const projectLink = project.uri;
-            // console.log(project);
-            const keyProject = `${keyGroup}__project${idx}`;
-            return (
-                <Card
-                    blockProject={project}
-                    key={keyProject} />
-            )
-        });
+     
+        return <Card
+                blockProject={project}
+                key={keyGroup} />
 
-        return (
-            <div className='projects-content row' key={keyGroup} >
-                {projectRowRender}
-            </div>
-        )
 
     });
 
@@ -99,13 +89,14 @@ const Projects: FC<ProjectProps> = (props) => {
                    scrollbar={{
                     hide: true,
                   }}
-                  modules={[Scrollbar]}
+                  modules={[Navigation, Pagination, Scrollbar]}
                     spaceBetween={spaceBetweenGutter}
                     slidesPerView={slideItemsMainPageMobile}
                     className="projectsSwiper"
                 >
 
                     {projectRowRender}
+                    <SwiperToggles />
                 </Swiper>
 
             </div>
@@ -114,7 +105,7 @@ const Projects: FC<ProjectProps> = (props) => {
     });
 
     const projectsRender = (isDesktop && !isMainPage) ? projectRenderDesktop : projectRenderMobileSlider;
-
+    
 
     return (
         <section className="projects isAnimate animated">
@@ -123,7 +114,7 @@ const Projects: FC<ProjectProps> = (props) => {
                 <h2 className="page__title_main page__title-h2 page_bold">Проекты {50}+</h2>
             </div>
             <div className="wrapper">
-                <div className="inner">
+                <div className={`inner ${(isDesktop && !isMainPage) ? 'projects-inner' :''}`}>
                     {projectsRender}
                 </div>
             </div>

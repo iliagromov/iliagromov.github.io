@@ -39,12 +39,14 @@
         // background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d)
 
 .card
+    +size-sm(2.7)
+    +size(1)
     cursor: pointer
     display: flex
     position: relative
     flex-direction: column
     // height: 350px
-    width: 400px
+    // width: 400px
     min-width: 250px
     padding: 1.5rem
     border-radius: 16px
@@ -52,11 +54,8 @@
     box-shadow: -1rem 0 3rem #000
     z-index: 10
     transition: .2s
-    +size(1)
-    +size-md(1.32)
-    +size-sm(2.5)
-    +size-xs(2.7)
-
+    margin-bottom: 25px
+   
     &:hover
         // transform: translateY(-1rem)
         // z-index: 100
@@ -64,8 +63,8 @@
         // & ~ .card
         //     transform: translateX(130px)
 
-    &:not(:first-child)
-        margin-left: -150px
+    &:not(:nth-child(5n+1))
+        margin-left: -150px    
 
     &:nth-child(n+6)
         // display: none

@@ -45,15 +45,17 @@ export const query = graphql`
     mdx( id: { eq: $id } ) {
         frontmatter {
           title
+          publicData
+          pagesCount
           pages{
             page{
+              title
               image{
                 id
                 childImageSharp {
                   gatsbyImageData
                 }
               }
-              title
             }
           }
         }
@@ -62,15 +64,29 @@ export const query = graphql`
 `;
 
 const BlogPost: React.FC<PageProps> = (props) => {
- 
-  const title = ` Project `;
-  const SelfProject = props.data.mdx.frontmatter;
-  console.log(SelfProject);
+
+  
+  const title = ` Project ${props.data.mdx.frontmatter.title}`;
+
+  const pages = props.data.mdx.frontmatter.pages.map((project: any)=>{
+    const obj1 = project.page[0];
+    const obj2 = project.page[1];
+    const merged = {};
+    Object.keys(obj1).forEach((key) => merged[key] = obj1[key] ? obj1[key] : obj2[key]);
+    return merged
+  })
+  
+  const SelfProject = {
+    title: props.data.mdx.frontmatter.title,
+    publicData: props.data.mdx.frontmatter.publicData,
+    pagesCount: props.data.mdx.frontmatter.pagesCount,
+    pages: pages,
+  }
+
   return (
     <Layout>
       <SEO title={title}  />
-      {/* <PageProject wpQueryData={data}/> */}
-      {/* <h1>{SelfProject.title}</h1> */}
+      <PageProject pageData={SelfProject}/>
     </Layout>
   )
 }

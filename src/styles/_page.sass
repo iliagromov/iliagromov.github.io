@@ -342,6 +342,12 @@
 
     left: 0
     transition: all 0.5s ease-out
+
+    span
+        position: absolute
+        font-size: 14px
+        display: none
+
     &:hover,
     &:focus
 
@@ -349,20 +355,17 @@
         .page__btn_icon_arrow-top,
         .page__btn_icon_arrow-left
             filter: $color_filter-1
-            bottom: 50px
+            // bottom: 50px
 
         span
             color: $color_theme-1
 
-        span
-            position: absolute
-
-            font-size: 14px
+   
             color: $color_gray-4
 
 .btn-back
     z-index: 2
-    top: 110px
+    top: 0
     padding: 33px
 
     span

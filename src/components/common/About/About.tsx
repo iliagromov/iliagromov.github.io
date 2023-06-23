@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql, useStaticQuery } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
 
 
 import './style.sass';
@@ -10,24 +9,6 @@ type AboutProps = {
 
 const About: FC<AboutProps> = (props) => {
 	
-    const { 
-		imgAbout
-	} : {  imgAbout: any} = useStaticQuery(
-        graphql` {
-        
-		  imgAbout:  file(relativePath: { eq: "imgAbout.jpg" }) {
-				childImageSharp {
-					gatsbyImageData(
-						width: 500
-						placeholder: BLURRED
-						formats: [AUTO, WEBP, AVIF]
-					)
-				}
-			}
-        }
-    `);
-	const image = getImage(imgAbout)
-
     return (
         <section className="about isAnimate animated" id="about">
 								<div className="page__title page_transform-uppercase page_text-center">
@@ -37,8 +18,9 @@ const About: FC<AboutProps> = (props) => {
 				<div className="wrapper">
 					<div className="about-content">
 						<div className="page__img" >
-                            {/* <StaticImage  width={600} height={700} src="../../../assets/img/img-about-1.jpg" alt='logo' /> */}
-							<GatsbyImage image={image} alt={'img'} />
+							<StaticImage
+							 src={'../../../assets/images/imgAbout.jpg'} 
+							 alt={'img'} />
                         </div>
 						<div className="page__content">
 							<p className="page__text page_padding-bottom-20">Frontend developer профессионально создаю сайты и веб-приложения, также имею навыки в интернет-маркетинге(понимание того что необходимо для сайта с точки зрения бизнеса).</p>
