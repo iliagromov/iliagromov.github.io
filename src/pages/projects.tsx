@@ -23,7 +23,6 @@ export const query = graphql`
           pagesCount
           pages{
             page{
-              title
               image{
                 id
                 childImageSharp {

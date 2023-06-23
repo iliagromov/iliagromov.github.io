@@ -30,12 +30,9 @@ const Card: FC<CardProps> = (props) => {
 
     const renderPages = pages && pages.map((item: any, idx: number) => {
        
-
-        let img = item.page.map((img:any)=>img.image);
-        let title = item.page.map((img:any)=>img.title);
-        let childImageSharp =img[0].childImageSharp;
-        let imgSrc = getImage(childImageSharp);
-        let imgTitle = title[1];
+        let imgSrc = getImage(item.image);
+        let imgTitle = item.title;
+        // console.log(item);
         return (
             <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {imgTitle} 
              

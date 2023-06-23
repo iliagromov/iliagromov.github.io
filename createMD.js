@@ -137,11 +137,12 @@ function createProjects(){
         let sortIdx = `${idx}0`;
         console.log(sortIdx);
 
-let pagesObj = project.blockProject.pages.map(page =>{
+let pagesObj = project.blockProject.pages.map((page, i) =>{
     return  `
-        - page:
-            - image: ../../assets/images/projects/project-0-openfactoring/1.jpg
-            - title: ${page.pagetitle}`
+    - page:
+        - image: ../../assets/images/projects/project-${sortIdx}-${project.slug}/${project.slug}-${i}.png
+        - title: ${page.pagetitle}`
+
 })
 let content = `---
 slug: ${project.slug}
