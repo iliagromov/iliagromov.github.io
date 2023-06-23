@@ -60,7 +60,8 @@ const Projects: FC<ProjectProps> = (props) => {
     const projectRenderDesktop = props.projectsArray.map((project: WpProjectPage, idx: number) => {
         const keyGroup = `groupDesktop${idx}`;
 
-     
+        // console.log(project);
+
         return <Card
                 blockProject={project}
                 key={keyGroup} />

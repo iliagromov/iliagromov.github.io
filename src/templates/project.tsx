@@ -5,40 +5,6 @@ import { PageProps, graphql } from "gatsby";
 import PageProject from "../components/containers/PageProject/PageProject";
 import { MDXProvider } from "@mdx-js/react"
 
-// export const query = graphql`
-//   query($slug: String!) {
-//     allWpProject(filter: { slug: { eq: $slug } }) {
-//       nodes {
-//         title
-//         content
-//         blockProject {
-//           days
-//           description
-//           format
-//           pages {
-//             pagetitle
-//             image {
-//               altText
-//               title
-//               sourceUrl
-//             }
-//             pageLayouts {
-//               layout {
-//                 altText
-//                 title
-//                 sourceUrl
-//               }
-//             }
-//           }
-//           shortdescription
-//           sitelink
-//           task
-//           title
-//         }
-//       }
-//     }
-//   }
-// `;
 
 export const query = graphql`
   query GetCurrentProject($id: String!) {
@@ -49,10 +15,13 @@ export const query = graphql`
           pagesCount
           pages{
             page{
+              title
               image{
                 id
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                  )
                 }
               }
             }

@@ -28,13 +28,22 @@ const Card: FC<CardProps> = (props) => {
 
     const projectLink = link ? link : '/projects';
 
-    const renderPages = pages && pages.map((item: any, idx: number) => {
+    const pagesAr = pages.map((project: any)=>{
+        const obj1 = project.page[0];
+        const obj2 = project.page[1];
+        const merged = {};
+        Object.keys(obj1).forEach((key) => merged[key] = obj1[key] ? obj1[key] : obj2[key]);
+        return merged
+      })
+    // console.log(pagesAr);
+
+    const renderPages = pagesAr && pagesAr.map((item: any, idx: number) => {
        
         let imgSrc = getImage(item.image);
         let imgTitle = item.title;
         // console.log(item);
         return (
-            <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> {imgTitle} 
+            <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> 
              
                 <GatsbyImage
                     image={imgSrc}

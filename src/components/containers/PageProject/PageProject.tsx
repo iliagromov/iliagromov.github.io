@@ -75,6 +75,7 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
 					<GatsbyImage
 						image={image}
 						alt={'img'}
+						imgStyle={{ height: 'auto' }}
 					/>
 				</li>
 			</SwiperSlide>

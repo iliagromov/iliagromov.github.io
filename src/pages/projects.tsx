@@ -23,10 +23,14 @@ export const query = graphql`
           pagesCount
           pages{
             page{
+              title
               image{
                 id
                 childImageSharp {
-                  gatsbyImageData(placeholder: BLURRED)
+                  gatsbyImageData(
+                    placeholder: BLURRED 
+                    layout: FULL_WIDTH
+                    )
                 }
               }
             }
