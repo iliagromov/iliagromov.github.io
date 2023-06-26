@@ -41,7 +41,6 @@ const Card: FC<CardProps> = (props) => {
        
         let imgSrc = getImage(item.image);
         let imgTitle = item.title;
-        // console.log(item);
         return (
             <SwiperSlide className="swiperCardPage" key={`page${idx+1}`}> 
              

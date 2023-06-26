@@ -10,9 +10,11 @@ export const query = graphql`
   query GetCurrentProject($id: String!) {
     mdx( id: { eq: $id } ) {
         frontmatter {
+          slug
           title
           publicData
           pagesCount
+          siteLink
           pages{
             page{
               title
@@ -20,8 +22,17 @@ export const query = graphql`
                 id
                 childImageSharp {
                   gatsbyImageData(
-                    placeholder: BLURRED
-                  )
+                        layout: CONSTRAINED
+                        placeholder: BLURRED
+                        quality: 90
+                        formats: [WEBP, JPG]
+                        jpgOptions: {progressive: true, quality: 90}
+                        webpOptions: {quality: 90}
+                        transformOptions: { 
+                          fit: COVER,
+                        }
+                        outputPixelDensities: [0.25, 0.5, 1]
+                      )
                 }
               }
             }
@@ -45,9 +56,11 @@ const BlogPost: React.FC<PageProps> = (props) => {
   })
   
   const SelfProject = {
+    slug: props.data.mdx.frontmatter.slug,
     title: props.data.mdx.frontmatter.title,
     publicData: props.data.mdx.frontmatter.publicData,
     pagesCount: props.data.mdx.frontmatter.pagesCount,
+    siteLink: props.data.mdx.frontmatter.siteLink,
     pages: pages,
   }
 

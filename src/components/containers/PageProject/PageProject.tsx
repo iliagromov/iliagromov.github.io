@@ -17,8 +17,10 @@ import { SwiperToggles } from "../../common/Projects/SwiperToggles";
 //FIXME: описать тип проекта
 type PageDataProjectProps = {
 	pageData: {
+		slug: string,
 		title: string,
 		publicData: string,
+		siteLink: string,
 		pagesCount: number,
 		pages: [PageProjectProps]
 	}
@@ -53,8 +55,10 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
 	// });
 
 	const {
+		slug,
 		title,
-		pages
+		pages,
+		siteLink,
 	} = pageData;
 	const pageInit = pages.length;
 
@@ -120,7 +124,7 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
 							<aside className="project-info">
 								<div className="project-info__element">
 									<h3 className="page__title-h3">Ссылка:</h3>
-									<a className="page__link page__link_site" href="#" target="_blank">site.com</a>
+									<a className="page__link page__link_site" href={siteLink} target="_blank">{`${slug}.io`}</a>
 								</div>
 								<div className="project-info__element project-info__element_list">
 									<h3 className="page__title-h3">Список страниц:</h3>

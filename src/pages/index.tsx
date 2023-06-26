@@ -26,7 +26,13 @@ export const query = graphql`
                   image{
                     id
                     childImageSharp {
-                      gatsbyImageData(placeholder: BLURRED height: 320)
+                      gatsbyImageData(
+                        layout: CONSTRAINED
+                        formats: [WEBP, JPG]
+                        transformOptions: { 
+                          fit: INSIDE,
+                        }
+                      )
                     }
                   }
                 }
@@ -38,7 +44,7 @@ export const query = graphql`
   `
 
 const IndexPage: React.FC<PageProps> = ({data}) => {
-  console.log(data);
+  // console.log(data);
   return (
     <Layout>
 
