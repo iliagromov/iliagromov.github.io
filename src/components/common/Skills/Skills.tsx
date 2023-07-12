@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { ReactSVG } from 'react-svg';
 import './style.sass';
+import { GatsbyImage, StaticImage, getImage } from 'gatsby-plugin-image';
 
 
 type SkillsProps = {
@@ -10,7 +11,6 @@ type SkillsProps = {
 const Skills: FC<SkillsProps> = () => {
   const { allMdx: {nodes} } = useStaticQuery(
     graphql` 
-      
       query GetAllSvgSkill {
         allMdx(
             filter: {frontmatter: {category: {eq: "skills"}}}
@@ -22,6 +22,9 @@ const Skills: FC<SkillsProps> = () => {
               image {
                 id
                 publicURL
+                childImageSharp {
+                  gatsbyImageData
+                }
               }
             }
           }
@@ -33,23 +36,18 @@ const Skills: FC<SkillsProps> = () => {
 
   const skillsRender = skills && skills.map((skill: any, i: number) => {
 
-    let svgSrc = skill.frontmatter.image.publicURL ? skill.frontmatter.image.publicURL : '';
+    let svgSrc = skill.frontmatter.image ? skill.frontmatter.image.publicURL : '';
     let title = skill.frontmatter.title
+
+    // let image = getImage(skill.frontmatter.image.childImageSharp.gatsbyImageData);
+    // console.log("🚀 ~ file: Skills.tsx:40 ~ skillsRender ~ image:",  image)
+
     return (
       <div className="skill" key={`skill${i}`}>
         <div className="page__img">
-          <ReactSVG 
-          src={svgSrc} 
-            title={title}
-            desc="Description"
-            className="wrapper-class-name"
-            useRequestCache={false}
-            wrapper="span"
-
-            beforeInjection={(svg) => {
-              svg.classList.add('svg-class-name')
-            }}
-          />
+          <img 
+          src={svgSrc}
+          alt={title}/>
         </div>
         <div className="page__subtitle">{title}</div>
       </div>

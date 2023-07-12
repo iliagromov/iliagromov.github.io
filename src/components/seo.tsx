@@ -29,7 +29,7 @@ const Seo = ({ description, lang, meta, title }) => {
   //   `
   // )
 
-  const metaDescription = 'tets';
+  const metaDescription = 'Fullstak';
   const defaultTitle = 'ILia'
 
   return (

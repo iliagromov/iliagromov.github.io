@@ -1,6 +1,9 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
 
 import './Banner.sass';
+import { StaticImage } from 'gatsby-plugin-image';
+import { ReactSVG } from 'react-svg';
+import { graphql, useStaticQuery } from 'gatsby';
 
 
 const CanvasRings: React.FC = (props) => {
@@ -125,24 +128,39 @@ const CanvasRings: React.FC = (props) => {
 };
 
 
-export const Banner: FC = () => {
-
+export const BannerImg: FC = () => {
+    const { photo } = useStaticQuery(
+        graphql` 
+          query  {
+            photo: file(relativePath: { eq: "avatar-transparent.svg" }) {
+                publicURL
+                name
+            }
+          }
+        `);
   return (
     <section className="banner">
 
       <div className="canvas">
-        {/* <CanvasRings /> */}
+        <CanvasRings />
       </div>
       <div className="banner__logo">
-        <div className="page__subtitle">Ilia
-          <span className="page_bold">Gromov</span>
-        </div>
-        <h1 className="page__title">
-          {/* <div className="page__title_first" >iGromov <span>developer</span></div>
-          <div>Digital</div> */}
-          <div className="page__title_first" >Full <span>developer</span></div>
-          <div>Stack</div>
-        </h1>
+        {/* <StaticImage
+            src={'../../../assets/images/banner1.png'}
+            alt='img'
+        /> */}
+        <ReactSVG 
+          src={photo.publicURL} 
+            title={'title'}
+            desc="Description"
+            className="wrapper-class-name"
+            useRequestCache={false}
+            wrapper="span"
+
+            beforeInjection={(svg) => {
+              svg.classList.add('banner__logo-svg')
+            }}
+          />
       </div>
     </section>
   )
