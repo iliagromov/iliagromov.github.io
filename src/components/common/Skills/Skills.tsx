@@ -22,9 +22,6 @@ const Skills: FC<SkillsProps> = () => {
               image {
                 id
                 publicURL
-                childImageSharp {
-                  gatsbyImageData
-                }
               }
             }
           }
