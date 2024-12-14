@@ -1,13 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
 
-
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `frontend`,
-    author: 'iliagromov',
+    title: `Ilia Gromov`,
+    author: "Ilia Gromov",
     siteUrl: `https://iliagromov.github.io/`,
-    blog: 'my blog',
-
+    blog: "my blog",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -56,7 +54,6 @@ const config: GatsbyConfig = {
     //       },
     //     },
     //     useACF: true,
-        
 
     //     excludeFieldNames: ['comments', 'blocksJSON', 'previewBlocks', 'previewBlocksJSON'],
     //     // type: {
@@ -81,12 +78,12 @@ const config: GatsbyConfig = {
     //     //   hardCacheMediaFiles: true,
     //     // },
     //   },
-    // }, 
+    // },
 
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
 
-    "gatsby-plugin-image", 
+    "gatsby-plugin-image",
 
     {
       resolve: `gatsby-plugin-sharp`,
@@ -99,35 +96,35 @@ const config: GatsbyConfig = {
         },
       },
     },
-    
-    "gatsby-transformer-sharp", 
 
-    "gatsby-plugin-sass", 
-    "gatsby-plugin-sitemap", 
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: '/images\/.*\.svg/,',
-          options: {
-            tag: "symbol",
-            name: "MyIcon",
-            props: {
-              className: "my-class",
-              title: "example"
-            },
-            filters: [value => console.log(value)]
-          }
-        },
-        
-      },
-    },
+    "gatsby-transformer-sharp",
+
+    "gatsby-plugin-sass",
+    // "gatsby-plugin-sitemap",
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: [`.mdx`, `.md`],
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: '/images\/.*\.svg/,',
+    //       options: {
+    //         tag: "symbol",
+    //         name: "MyIcon",
+    //         props: {
+    //           className: "my-class",
+    //           title: "example"
+    //         },
+    //         filters: [value => console.log(value)]
+    //       }
+    //     },
+
+    //   },
+    // },
     // {
     //     resolve: 'gatsby-plugin-svgr-loader',
     //     options: {
@@ -137,26 +134,26 @@ const config: GatsbyConfig = {
     //     }
     // },
 
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        "icon": "src/assets/images/icon.png"
-      }
-    }, 
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "images",
-        "path": `${__dirname}/src/assets/images/`
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "posts",
-        "path": `${__dirname}/src/posts`
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-manifest',
+    //   options: {
+    //     "icon": "src/assets/images/icon.png"
+    //   }
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     "name": "images",
+    //     "path": `${__dirname}/src/assets/images/`
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     "name": "posts",
+    //     "path": `${__dirname}/src/posts`
+    //   },
+    // },
     // {
     //   resolve: 'gatsby-plugin-page-creator',
     //   options: {
@@ -164,7 +161,7 @@ const config: GatsbyConfig = {
     //     "path": `${__dirname}/src/posts`
     //   },
     // }
-]
+  ],
 };
 
 export default config;
