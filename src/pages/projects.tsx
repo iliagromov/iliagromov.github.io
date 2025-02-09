@@ -1,19 +1,16 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Link, graphql } from "gatsby";
-import Layout from "../layouts/Default"
-import SEO from "../components/seo"
+import Layout from "../layouts/Default";
+import SEO from "../components/seo";
 import PageProjects from "../components/containers/PageProjects/PageProjects";
 import { wpPage } from "../shared/types";
-
-
-
 
 export const query = graphql`
   query GetAllProjects {
     allMdx(
-      filter: {frontmatter: {category: {eq: "projects"}}}
-      sort: {frontmatter: {sortIdx: ASC}}
+      filter: { frontmatter: { category: { eq: "projects" } } }
+      sort: { frontmatter: { sortIdx: ASC } }
     ) {
       nodes {
         frontmatter {
@@ -21,19 +18,20 @@ export const query = graphql`
           title
           publicData
           pagesCount
-          pages{
-            page{
+          pages {
+            page {
               title
-              image{
+              image {
                 id
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: BLURRED
-                    layout: CONSTRAINED
-                    formats: [WEBP, JPG]
-                    transformOptions: { 
-                      fit: INSIDE,
-                    }
+                    layout: FIXED
+                    formats: [WEBP]
+                    transformOptions: { fit: COVER, cropFocus: CENTER }
+                    quality: 100
+                    height: 320
+                    width: 203
                   )
                 }
               }
@@ -43,23 +41,18 @@ export const query = graphql`
       }
     }
   }
-  `
+`;
 
-
-
-
-const ProjectsPage: React.FC<PageProps> = ({data}) => {
+const ProjectsPage: React.FC<PageProps> = ({ data }) => {
   // console.log(props);
   // const data: wpPage = props.data?.wpPage;
 
   return (
     <Layout>
       <SEO title="Projects" />
-      <PageProjects pageData={data}/>
-     
+      <PageProjects pageData={data} />
     </Layout>
-  )
-}
+  );
+};
 
 export default ProjectsPage;
-

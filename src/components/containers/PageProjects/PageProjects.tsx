@@ -5,17 +5,16 @@ import { graphql } from "gatsby";
 import Projects from "../../common/Projects/Projects";
 
 type PageProjectsProps = {
-  pageData?:  any
-}
+  pageData?: any;
+};
 
-const PageProjects: React.FC<PageProjectsProps> = ({pageData}) => {
-
+const PageProjects: React.FC<PageProjectsProps> = ({ pageData }) => {
   const projects = pageData.allMdx.nodes;
- 
+
   return (
-    <>
-      <Projects projectsArray={projects}/>
-    </>
-  )
-}
+    <div>
+      <Projects projectsArray={projects} />
+    </div>
+  );
+};
 export default PageProjects;

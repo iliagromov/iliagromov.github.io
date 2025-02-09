@@ -37,6 +37,7 @@ const Card: FC<CardProps> = (props) => {
   const renderPages =
     pagesAr &&
     pagesAr.map((item: any, idx: number) => {
+      console.log("🚀 ~ pagesAr.map ~ item:", item);
       let imgSrc = getImage(item.image);
       let imgTitle = item.title;
       return (

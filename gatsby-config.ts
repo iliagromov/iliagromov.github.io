@@ -89,7 +89,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          formats: [`auto`],
+          formats: [`webp`],
           placeholder: `blurred`,
           quality: 100,
           backgroundColor: `transparent`,
@@ -101,12 +101,12 @@ const config: GatsbyConfig = {
 
     "gatsby-plugin-sass",
     // "gatsby-plugin-sitemap",
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     extensions: [`.mdx`, `.md`],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
     // {
     //   resolve: 'gatsby-plugin-react-svg',
     //   options: {
@@ -140,20 +140,20 @@ const config: GatsbyConfig = {
     //     "icon": "src/assets/images/icon.png"
     //   }
     // },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     "name": "images",
-    //     "path": `${__dirname}/src/assets/images/`
-    //   },
-    // },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     "name": "posts",
-    //     "path": `${__dirname}/src/posts`
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/assets/images/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+    },
     // {
     //   resolve: 'gatsby-plugin-page-creator',
     //   options: {

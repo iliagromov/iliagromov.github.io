@@ -8,27 +8,24 @@ import About from "../../common/About/About";
 import { ExperienceCount } from "../../common/ExperienceCount/ExperienceCount";
 
 type PageMainProps = {
-  pageData?:  any
-}
+  pageData?: any;
+};
 
+const PageMain: React.FC<PageMainProps> = ({ pageData }) => {
+  const projects = pageData.allMdx.nodes;
+  console.log("🚀 ~ projects:", projects);
 
-
-
-const PageMain: React.FC<PageMainProps> = ({pageData}) => {
-  
-   const projects = pageData.allMdx.nodes;
- 
   return (
     <>
       <Banner />
       {/* <ExperienceCount /> */}
       <Skills />
       <Services />
-      <Advanatages/>
-      <Projects projectsArray={projects}/>
-      
-      <About />  
+      <Advanatages />
+      <Projects projectsArray={projects} />
+
+      <About />
     </>
-  )
-}
+  );
+};
 export default PageMain;
