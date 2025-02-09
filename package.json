@@ -4,9 +4,6 @@
   "private": true,
   "description": "frontend",
   "author": "iliagromov",
-  "engines": {
-    "node": "18.18.2"
-  },
   "keywords": [
     "gatsby"
   ],
