@@ -3,9 +3,39 @@
 .experience
 
     position: relative
-    min-height: 100vh
+    min-height: 50vh
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     padding: 0 0 80px
+
+    .page__subtitle_big
+        opacity: 0.1
+    .page__title
+        color: #fff
+        +sm-block
+            margin-bottom: 50px
+    &-count
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 50px
+        font-family: Montserrat-Black
+        font-weight: 900
+        font-size: 43px
+        line-height: 58px
+        letter-spacing: 3.5px
+        text-transform: uppercase
+        +sm-block
+            flex-direction: column
+            gap: 40px
+        &__num
+
+            display: flex
+            flex-direction: column
+            align-items: center
+        &._hours
+
+            font-size: 100px
+            line-height: 110px

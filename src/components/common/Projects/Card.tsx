@@ -61,14 +61,10 @@ const Card: FC<CardProps> = (props) => {
         <div className="card-days">
           <div className="card-days__count">
             <span className="card-days__count-number"> {pagesCount} </span>
-            <span className="card-days__count-text">Страниц разработано</span>
           </div>
-          <div className="card-days__svg">
-            <svg className="half-circle" viewBox="0 0 106 57">
-              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-            </svg>
-          </div>
+          <div className="card-days__count-text">Страниц разработано</div>
         </div>
+
         <div className="card-pages">
           <Swiper
             effect={"cards"}

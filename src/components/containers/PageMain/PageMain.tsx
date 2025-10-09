@@ -18,7 +18,7 @@ const PageMain: React.FC<PageMainProps> = ({ pageData }) => {
   return (
     <>
       <Banner />
-      {/* <ExperienceCount /> */}
+      <ExperienceCount />
       <Skills />
       <Services />
       <Advanatages />

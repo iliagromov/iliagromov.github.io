@@ -6,17 +6,15 @@
 
 +scrollbar($color_scrollbar-track, $color_scrollbar-thumb)
 
-
-
-@font-face 
+@font-face
   +font($Font, $Regular)
-  
-@font-face 
+
+@font-face
   +font($Font, $Bold)
 
-@font-face 
+@font-face
   +font($Font, $Thin)
-@font-face 
+@font-face
   +font($Font, $Black)
 
 html
@@ -49,12 +47,13 @@ a, button
   &:hover
     color: $color_theme-1
 
-
 input
   cursor: text
   &:focus
     outline: none
-
+.color
+  &-violet
+    color: $color_violet
 .theme-color
   &-1
     color: $color_theme-1
@@ -64,4 +63,3 @@ input
 
   &-3
     color: $color_theme-3
-

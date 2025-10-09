@@ -55,7 +55,7 @@
     z-index: 10
     transition: .2s
     margin-bottom: 25px
-   
+
     // &:hover
     //     transform: translateY(-1rem)
     //     z-index: 100
@@ -64,7 +64,7 @@
     //         transform: translateX(130px)
 
     &:not(:nth-child(5n+1))
-        margin-left: -150px    
+        margin-left: -150px
 
     &:nth-child(n+6)
         // display: none
@@ -74,17 +74,25 @@
 
         margin: 3rem 0 0
         // display: none
+        display: flex
+        align-items: center
+        gap: 20px
         &__count
-            position: absolute
+            // position: absolute
             top: 0
             left: 15px
+            width: 50px
+            height: 50px
+            border-radius: 100%
+            border: 5px solid $color_violet
+            display: flex
+            align-items: center
+            justify-content: center
             &-number
                 // stroke: $color_violet
                 font-size: 20px
-                font-family: $Black
 
-            &-text
-                margin-left: 25px
+                font-family: $Black
 
     &-header
         margin-bottom: auto
