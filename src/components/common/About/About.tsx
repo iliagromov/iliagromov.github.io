@@ -26,7 +26,7 @@ const About: FC<AboutProps> = (props) => {
               Мой опыт - ваше перимущество.{" "}
             </p>
             <p className="page__text page_padding-bottom-20">
-              6 лет разрабатываю с нуля сайты «под ключ».
+              8 лет разрабатываю с нуля сайты «под ключ».
             </p>
             <p className="page__text page_padding-bottom-20">
               Скорость разработки Лендинга = сутки
