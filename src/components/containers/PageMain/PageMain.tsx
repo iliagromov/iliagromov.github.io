@@ -9,9 +9,10 @@ import { ExperienceCount } from "../../common/ExperienceCount/ExperienceCount";
 
 type PageMainProps = {
   pageData?: any;
+  location?: any;
 };
 
-const PageMain: React.FC<PageMainProps> = ({ pageData }) => {
+const PageMain: React.FC<PageMainProps> = ({ pageData, location }) => {
   const projects = pageData.allMdx.nodes;
   console.log("🚀 ~ projects:", projects);
 
@@ -22,7 +23,7 @@ const PageMain: React.FC<PageMainProps> = ({ pageData }) => {
       <Skills />
       <Services />
       <Advanatages />
-      <Projects projectsArray={projects} />
+      <Projects projectsArray={projects} location={location} />
 
       <About />
     </>

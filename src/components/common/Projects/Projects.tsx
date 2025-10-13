@@ -16,12 +16,15 @@ import "./SwiperCard.sass";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useMobile, useTablet } from "../../../shared/media";
 
 type ProjectProps = {
   projectsArray?: any;
+  location?: any;
 };
 
 const Projects: FC<ProjectProps> = (props) => {
+  console.log("🚀 ~ Projects ~ props:", props);
   function sliceIntoChunks(arr: Object[], chunkSize: number) {
     const res = [];
     if (arr) {
@@ -37,19 +40,16 @@ const Projects: FC<ProjectProps> = (props) => {
   const projectsGroupedMobile = sliceIntoChunks(props.projectsArray, 100);
   const projectsGroupedDesktop = sliceIntoChunks(props.projectsArray, 5);
 
-  const hasWindow = typeof window !== "undefined";
   // let pagesArr;
 
-  const width = hasWindow ? window.innerWidth : 0;
-  const locationPath = hasWindow ? window.location.pathname : "/";
-  const isProjectPage = locationPath === "/projects/";
-  const isMainPage = locationPath === "/";
-  const isDesktop = width >= 1024;
-  const slideItemsMainPageMobile = !isDesktop ? 1 : 5;
-  const spaceMobile = !isDesktop ? -70 : -100;
+  const isProjectPage = location.pathname === "/projects/";
+  const isMainPage = location.pathname === "/";
+  const isMobile = useMobile();
+  const slideItemsMainPageMobile = !isMobile ? 1.5 : 5;
+  const spaceMobile = !isMobile ? -70 : -100;
 
   const projectsGrouped =
-    isDesktop && !isMainPage ? projectsGroupedDesktop : projectsGroupedMobile;
+    isMobile && !isMainPage ? projectsGroupedDesktop : projectsGroupedMobile;
 
   const projectRenderDesktop = props.projectsArray.map(
     (project: WpProjectPage, idx: number) => {
@@ -65,8 +65,7 @@ const Projects: FC<ProjectProps> = (props) => {
     props.projectsArray &&
     projectsGrouped.map((group: any, idx) => {
       const keyGroup = `groupMobile${idx}`;
-      const spaceBetweenGutter =
-        props.projectsArray.length >= 5 ? spaceMobile : 0;
+      const spaceBetweenGutter = 0;
       const projectRowRender = group.map(
         (project: WpProjectPage, idx: number) => {
           // console.log(project);
@@ -98,7 +97,7 @@ const Projects: FC<ProjectProps> = (props) => {
     });
 
   const projectsRender =
-    isDesktop && !isMainPage ? projectRenderDesktop : projectRenderMobileSlider;
+    isMobile && !isMainPage ? projectRenderDesktop : projectRenderMobileSlider;
 
   return (
     <section className="projects isAnimate animated">
@@ -110,9 +109,7 @@ const Projects: FC<ProjectProps> = (props) => {
       </div>
       <div className="wrapper">
         <div
-          className={`inner ${
-            isDesktop && !isMainPage ? "projects-inner" : ""
-          }`}
+          className={`inner ${isMobile && !isMainPage ? "projects-inner" : ""}`}
         >
           {projectsRender}
         </div>

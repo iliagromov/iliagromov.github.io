@@ -2,7 +2,9 @@ import React from "react";
 import Layout from "../layouts/Default";
 import SEO from "../components/seo";
 import { PageProps, graphql } from "gatsby";
-import PageProject from "../components/containers/PageProject/PageProject";
+import PageProject, {
+  PageProjectProps,
+} from "../components/containers/PageProject/PageProject";
 import { MDXProvider } from "@mdx-js/react";
 
 export const query = graphql`
@@ -17,6 +19,29 @@ export const query = graphql`
         pages {
           page {
             title
+            image {
+              id
+              childImageSharp {
+                gatsbyImageData(
+                  formats: [WEBP]
+                  transformOptions: { fit: COVER, cropFocus: CENTER }
+                  quality: 100
+                )
+              }
+            }
+            layout {
+              id
+              childImageSharp {
+                gatsbyImageData(
+                  width: 800
+                  height: 900
+                  formats: [WEBP]
+
+                  transformOptions: { fit: COVER, cropFocus: NORTH }
+                  quality: 100
+                )
+              }
+            }
           }
         }
       }
@@ -24,18 +49,34 @@ export const query = graphql`
   }
 `;
 
+type TProject = {
+  page: PageProjectProps[];
+};
+
 const BlogPost: React.FC<PageProps> = (props) => {
   const title = ` Project ${props.data.mdx.frontmatter.title}`;
 
-  const pages = props.data.mdx.frontmatter.pages.map((project: any) => {
-    const obj1 = project.page[0];
-    const obj2 = project.page[1];
-    const merged = {};
-    Object.keys(obj1).forEach(
-      (key) => (merged[key] = obj1[key] ? obj1[key] : obj2[key])
-    );
-    return merged;
-  });
+  const pages: PageProjectProps[] = props.data.mdx.frontmatter.pages.map(
+    (project: TProject) => {
+      const merged = {
+        title: "",
+        image: {},
+        layout: {},
+      };
+      project.page.forEach((item) => {
+        if (item?.title?.length) {
+          merged.title = item.title;
+        }
+        if (item?.image?.id?.length) {
+          merged.image = item.image;
+        }
+        if (item?.layout?.id?.length) {
+          merged.layout = item.layout;
+        }
+      });
+      return merged;
+    }
+  );
 
   const SelfProject = {
     slug: props.data.mdx.frontmatter.slug,

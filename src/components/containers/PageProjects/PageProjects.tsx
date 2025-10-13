@@ -6,6 +6,7 @@ import Projects from "../../common/Projects/Projects";
 
 type PageProjectsProps = {
   pageData?: any;
+  location?: any;
 };
 
 const PageProjects: React.FC<PageProjectsProps> = ({ pageData }) => {
@@ -13,7 +14,7 @@ const PageProjects: React.FC<PageProjectsProps> = ({ pageData }) => {
 
   return (
     <div>
-      <Projects projectsArray={projects} />
+      <Projects projectsArray={projects} location={location} />
     </div>
   );
 };

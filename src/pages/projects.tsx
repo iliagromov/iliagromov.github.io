@@ -26,12 +26,10 @@ export const query = graphql`
                 childImageSharp {
                   gatsbyImageData(
                     placeholder: BLURRED
-                    layout: FIXED
+                    layout: FULL_WIDTH
                     formats: [WEBP]
                     transformOptions: { fit: COVER, cropFocus: CENTER }
                     quality: 100
-                    height: 320
-                    width: 203
                   )
                 }
               }
@@ -43,14 +41,14 @@ export const query = graphql`
   }
 `;
 
-const ProjectsPage: React.FC<PageProps> = ({ data }) => {
+const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
   // console.log(props);
   // const data: wpPage = props.data?.wpPage;
 
   return (
     <Layout>
       <SEO title="Projects" />
-      <PageProjects pageData={data} />
+      <PageProjects pageData={data} location={location} />
     </Layout>
   );
 };

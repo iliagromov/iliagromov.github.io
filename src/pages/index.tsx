@@ -25,12 +25,10 @@ export const query = graphql`
                 id
                 childImageSharp {
                   gatsbyImageData(
-                    layout: FIXED
+                    layout: FULL_WIDTH
                     formats: [WEBP]
                     transformOptions: { fit: COVER, cropFocus: CENTER }
                     quality: 100
-                    height: 320
-                    width: 203
                   )
                 }
               }
@@ -42,12 +40,11 @@ export const query = graphql`
   }
 `;
 
-const IndexPage: React.FC<PageProps> = ({ data }) => {
+const IndexPage: React.FC<PageProps> = ({ data, location }) => {
   // console.log(data);
   return (
     <Layout>
-      <SEO title="Ilia Gromov" />
-      <PageMain pageData={data} />
+      <PageMain pageData={data} location={location} />
       {/* <Link to="/">Russian</Link>
       <Link to="/en">English</Link> */}
 
@@ -57,3 +54,5 @@ const IndexPage: React.FC<PageProps> = ({ data }) => {
 };
 
 export default IndexPage;
+
+export const Head = () => <SEO title="Fullstack developer " />;

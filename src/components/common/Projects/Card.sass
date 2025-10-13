@@ -39,8 +39,7 @@
         // background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d)
 
 .card
-    +size-sm(2.7)
-    +size(1)
+
     cursor: pointer
     display: flex
     position: relative
@@ -56,6 +55,12 @@
     transition: .2s
     margin-bottom: 25px
 
+    width: calc(25% - 60px)
+    +sm-block
+        width: calc(50% - 60px)
+    +xs-block
+        width: 100%
+
     // &:hover
     //     transform: translateY(-1rem)
     //     z-index: 100
@@ -64,10 +69,12 @@
     //         transform: translateX(130px)
 
     &:not(:nth-child(5n+1))
-        margin-left: -150px
+        margin-left: -15px
 
     &:nth-child(n+6)
         // display: none
+    &-pages
+        max-width: 300px
 
     &-days
         position: relative

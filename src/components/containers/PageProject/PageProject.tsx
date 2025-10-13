@@ -22,13 +22,20 @@ type PageDataProjectProps = {
     publicData: string;
     siteLink: string;
     pagesCount: number;
-    pages: [PageProjectProps];
+    pages: PageProjectProps[];
   };
 };
 
-type PageProjectProps = {
+export type PageProjectProps = {
   title: string;
   image: {
+    id?: string;
+    childImageSharp: {
+      gatsbyImageData: any;
+    };
+  };
+  layout: {
+    id?: string;
     childImageSharp: {
       gatsbyImageData: any;
     };
@@ -63,24 +70,18 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
     );
   });
 
-  // const renderPagesImage = pages.map((page: PageProjectProps, idx: number) => {
+  const renderPagesImage = pages.map((page: PageProjectProps, idx: number) => {
+    const layout = getImage(page.layout);
 
-  // 	const image = getImage(page.image);
-
-  // 	return (
-  // 		<SwiperSlide key={`page${idx + 1}`}>
-  // 			<li className="SwiperSlideProjectCardPage" key={`page${idx}`}>
-  // 				<h1>{page.title} </h1>
-  // 				<GatsbyImage
-  // 					image={image}
-  // 					alt={'img'}
-  // 					imgStyle={{ height: 'auto' }}
-  // 				/>
-  // 			</li>
-  // 		</SwiperSlide>
-
-  // 	)
-  // });
+    return (
+      <SwiperSlide key={`page${idx + 1}`}>
+        <div className="SwiperSlideProjectCardPage" key={`page${idx}`}>
+          <h1>{page.title} </h1>
+          <GatsbyImage image={layout} alt={"img"} />
+        </div>
+      </SwiperSlide>
+    );
+  });
 
   return (
     <>
@@ -108,7 +109,7 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
                 className="swiperProjectCardPages"
                 direction={"horizontal"}
               >
-                {/* {renderPagesImage} */}
+                {renderPagesImage}
 
                 <SwiperToggles />
               </Swiper>

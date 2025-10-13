@@ -5,7 +5,9 @@ const config: GatsbyConfig = {
     title: `Ilia Gromov`,
     author: "Ilia Gromov",
     siteUrl: `https://iliagromov.github.io/`,
-    blog: "my blog",
+    image: "/static/images/imgAbout.png",
+    blog: "",
+    twitterUsername: "Ilia Gromov | Fullstack developer",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -84,7 +86,12 @@ const config: GatsbyConfig = {
     `gatsby-plugin-react-helmet`,
 
     "gatsby-plugin-image",
-
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/assets/icons/favicon.svg",
+      },
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
