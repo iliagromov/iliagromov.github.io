@@ -41,8 +41,9 @@ const Projects: FC<ProjectProps> = (props) => {
 
   // let pagesArr;
 
-  const isProjectPage = location.pathname === "/projects/";
-  const isMainPage = location.pathname === "/";
+  const isProjectPage =
+    typeof window !== undefined && location.pathname === "/projects/";
+  const isMainPage = typeof window !== undefined && location.pathname === "/";
   const isMobile = useMobile();
   const slideItemsMainPageMobile = !isMobile ? 1.5 : 5;
   const spaceMobile = !isMobile ? -70 : -100;
