@@ -14,7 +14,6 @@ type PageMainProps = {
 
 const PageMain: React.FC<PageMainProps> = ({ pageData, location }) => {
   const projects = pageData.allMdx.nodes;
-  console.log("🚀 ~ projects:", projects);
 
   return (
     <>

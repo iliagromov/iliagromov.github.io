@@ -9,7 +9,7 @@ type PageProjectsProps = {
   location?: any;
 };
 
-const PageProjects: React.FC<PageProjectsProps> = ({ pageData }) => {
+const PageProjects: React.FC<PageProjectsProps> = ({ pageData, location }) => {
   const projects = pageData.allMdx.nodes;
 
   return (

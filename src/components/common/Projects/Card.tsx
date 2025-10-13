@@ -19,8 +19,6 @@ const Card: FC<CardProps> = (props) => {
   const { title, publicData, pagesCount, pages, link } =
     props.blockProject.frontmatter;
 
-  // console.log(props.blockProject.frontmatter);
-
   const projectLink = link ? link : "/projects";
 
   const pagesAr = pages.map((project: any) => {
@@ -32,12 +30,9 @@ const Card: FC<CardProps> = (props) => {
     );
     return merged;
   });
-  // console.log(pagesAr);
-
   const renderPages =
     pagesAr &&
     pagesAr.map((item: any, idx: number) => {
-      console.log("🚀 ~ pagesAr.map ~ item:", item);
       let imgSrc = getImage(item.image);
       let imgTitle = item.title;
       return (

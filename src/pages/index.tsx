@@ -41,7 +41,6 @@ export const query = graphql`
 `;
 
 const IndexPage: React.FC<PageProps> = ({ data, location }) => {
-  // console.log(data);
   return (
     <Layout>
       <PageMain pageData={data} location={location} />

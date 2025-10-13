@@ -24,7 +24,6 @@ type ProjectProps = {
 };
 
 const Projects: FC<ProjectProps> = (props) => {
-  console.log("🚀 ~ Projects ~ props:", props);
   function sliceIntoChunks(arr: Object[], chunkSize: number) {
     const res = [];
     if (arr) {
@@ -55,8 +54,6 @@ const Projects: FC<ProjectProps> = (props) => {
     (project: WpProjectPage, idx: number) => {
       const keyGroup = `groupDesktop${idx}`;
 
-      // console.log(project);
-
       return <Card blockProject={project} key={keyGroup} />;
     }
   );
@@ -68,7 +65,6 @@ const Projects: FC<ProjectProps> = (props) => {
       const spaceBetweenGutter = 0;
       const projectRowRender = group.map(
         (project: WpProjectPage, idx: number) => {
-          // console.log(project);
           const keyProject = `${keyGroup}__project${idx}`;
           return (
             <SwiperSlide key={keyProject}>

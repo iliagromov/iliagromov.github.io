@@ -42,9 +42,6 @@ export const query = graphql`
 `;
 
 const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
-  // console.log(props);
-  // const data: wpPage = props.data?.wpPage;
-
   return (
     <Layout>
       <SEO title="Projects" />
