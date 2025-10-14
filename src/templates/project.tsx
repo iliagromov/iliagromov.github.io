@@ -54,9 +54,11 @@ type TProject = {
 };
 
 const BlogPost: React.FC<PageProps> = (props) => {
-  const title = ` Project ${props.data.mdx.frontmatter.title}`;
+  const title = `Project ${
+    props.data.mdx.frontmatter?.title ? props.data.mdx.frontmatter?.title : ""
+  }`;
 
-  const pages: PageProjectProps[] = props.data.mdx.frontmatter.pages.map(
+  const pages: PageProjectProps[] = props.data.mdx?.frontmatter?.pages?.map(
     (project: TProject) => {
       const merged = {
         title: "",
