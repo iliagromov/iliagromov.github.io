@@ -54,21 +54,22 @@ const Projects: FC<ProjectProps> = (props) => {
       <div className="wrapper">
         <div className={`inner`}>
           <div className="projects-content row">
-            {!isMainPage && isDesk ? (
-              <>
-                {projectsGroupedDesktop.map((project, idx: number) => {
-                  return (
-                    <Card
-                      key={idx}
-                      pages={project.frontmatter.pages}
-                      title={project.frontmatter.title}
-                      link={project.frontmatter.link}
-                      pagesCount={project.frontmatter.pagesCount}
-                      publicData={project.frontmatter.publicData}
-                    />
-                  );
-                })}
-              </>
+            <>
+              {projectsGroupedDesktop.map((project, idx: number) => {
+                return (
+                  <Card
+                    key={idx}
+                    pages={project.frontmatter.pages}
+                    title={project.frontmatter.title}
+                    link={project.frontmatter.link}
+                    pagesCount={project.frontmatter.pagesCount}
+                    publicData={project.frontmatter.publicData}
+                  />
+                );
+              })}
+            </>
+            {/* {!isMainPage && isDesk ? (
+            
             ) : (
               <Swiper
                 scrollbar={{
@@ -114,7 +115,7 @@ const Projects: FC<ProjectProps> = (props) => {
                 })}
                 <SwiperToggles />
               </Swiper>
-            )}
+            )} */}
           </div>
         </div>
       </div>
