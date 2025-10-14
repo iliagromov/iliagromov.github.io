@@ -22,10 +22,6 @@ const About: FC<AboutProps> = (props) => {
           </div>
           <div className="page__content">
             <p className="page__text page_padding-bottom-20">
-              {" "}
-              Мой опыт - ваше перимущество.{" "}
-            </p>
-            <p className="page__text page_padding-bottom-20">
               8 лет разрабатываю с нуля сайты «под ключ».
             </p>
             <p className="page__text page_padding-bottom-20">
@@ -44,7 +40,7 @@ const About: FC<AboutProps> = (props) => {
             </p>
             <ul className="page__lists">
               <li className="page__list page__list_text">
-                6 лет разрабатываю с нуля сайты «под ключ»
+                8 лет разрабатываю с нуля сайты «под ключ»
               </li>
               <li className="page__list page__list_text">
                 Делаю верстку, дизайн, маркетинг тоже

@@ -17,85 +17,31 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useMobile, useTablet } from "../../../shared/media";
-
+type TprojectsArray = {
+  frontmatter: {
+    pagesCount: number;
+    publicData: string;
+    title: string;
+    link: string;
+    pages: any[];
+  };
+};
 type ProjectProps = {
-  projectsArray?: any;
+  projectsArray: TprojectsArray[];
   location?: any;
 };
 
 const Projects: FC<ProjectProps> = (props) => {
-  function sliceIntoChunks(arr: Object[], chunkSize: number) {
-    const res = [];
-    if (arr) {
-      for (let i = 0; i < arr.length; i += chunkSize) {
-        const chunk = arr.slice(i, i + chunkSize);
-        res.push(chunk);
-      }
-    }
+  console.log("🚀 ~ Projects ~ props:", props);
 
-    return res;
-  }
-
-  const projectsGroupedMobile = sliceIntoChunks(props.projectsArray, 100);
-  const projectsGroupedDesktop = sliceIntoChunks(props.projectsArray, 5);
-
-  // let pagesArr;
+  const projectsGroupedMobile = props.projectsArray.slice(0, 10);
+  const projectsGroupedDesktop = props.projectsArray;
 
   const isProjectPage =
     typeof window !== undefined && props.location.pathname === "/projects/";
   const isMainPage =
     typeof window !== undefined && props.location.pathname === "/";
-  const isMobile = useMobile();
-  const slideItemsMainPageMobile = !isMobile ? 1.5 : 5;
-  const spaceMobile = !isMobile ? -70 : -100;
-
-  const projectsGrouped =
-    isMobile && !isMainPage ? projectsGroupedDesktop : projectsGroupedMobile;
-
-  const projectRenderDesktop = props.projectsArray.map(
-    (project: WpProjectPage, idx: number) => {
-      const keyGroup = `groupDesktop${idx}`;
-
-      return <Card blockProject={project} key={keyGroup} />;
-    }
-  );
-
-  const projectRenderMobileSlider =
-    props.projectsArray &&
-    projectsGrouped.map((group: any, idx) => {
-      const keyGroup = `groupMobile${idx}`;
-      const spaceBetweenGutter = 0;
-      const projectRowRender = group.map(
-        (project: WpProjectPage, idx: number) => {
-          const keyProject = `${keyGroup}__project${idx}`;
-          return (
-            <SwiperSlide key={keyProject}>
-              <Card blockProject={project} />
-            </SwiperSlide>
-          );
-        }
-      );
-
-      return (
-        <div className="projects-content row" key={keyGroup}>
-          <Swiper
-            scrollbar={{
-              hide: true,
-            }}
-            modules={[Navigation, Pagination, Scrollbar]}
-            spaceBetween={spaceBetweenGutter}
-            slidesPerView={slideItemsMainPageMobile}
-            className="projectsSwiper"
-          >
-            {projectRowRender}
-            <SwiperToggles />
-          </Swiper>
-        </div>
-      );
-    });
-
-  const projectsRender =
-    isMobile && !isMainPage ? projectRenderDesktop : projectRenderMobileSlider;
+  const isDesk = useMobile();
 
   return (
     <section className="projects isAnimate animated">
@@ -106,10 +52,70 @@ const Projects: FC<ProjectProps> = (props) => {
         </h2>
       </div>
       <div className="wrapper">
-        <div
-          className={`inner ${isMobile && !isMainPage ? "projects-inner" : ""}`}
-        >
-          {projectsRender}
+        <div className={`inner`}>
+          <div className="projects-content row">
+            {!isMainPage && isDesk ? (
+              <>
+                {projectsGroupedDesktop.map((project, idx: number) => {
+                  return (
+                    <Card
+                      key={idx}
+                      pages={project.frontmatter.pages}
+                      title={project.frontmatter.title}
+                      link={project.frontmatter.link}
+                      pagesCount={project.frontmatter.pagesCount}
+                      publicData={project.frontmatter.publicData}
+                    />
+                  );
+                })}
+              </>
+            ) : (
+              <Swiper
+                scrollbar={{
+                  hide: true,
+                }}
+                modules={[Navigation, Pagination, Scrollbar]}
+                spaceBetween={0}
+                slidesPerView={1}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                  },
+                  400: {
+                    slidesPerView: 1.5,
+                  },
+                  600: {
+                    slidesPerView: 2.5,
+                  },
+                  768: {
+                    slidesPerView: 3.5,
+                  },
+                  1024: {
+                    slidesPerView: 4.5,
+                  },
+                  1100: {
+                    slidesPerView: 5,
+                  },
+                }}
+                className="projectsSwiper"
+              >
+                {projectsGroupedMobile.map((project, idx: number) => {
+                  return (
+                    <SwiperSlide key={`${`groupMobile${idx}`}__project${idx}`}>
+                      <Card
+                        pages={project.frontmatter.pages}
+                        title={project.frontmatter.title}
+                        link={project.frontmatter.link}
+                        pagesCount={project.frontmatter.pagesCount}
+                        publicData={project.frontmatter.publicData}
+                      />
+                    </SwiperSlide>
+                  );
+                })}
+                <SwiperToggles />
+              </Swiper>
+            )}
+          </div>
         </div>
       </div>
       {!isProjectPage && (

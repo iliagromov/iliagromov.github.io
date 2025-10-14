@@ -10,24 +10,44 @@ import { blockProject, projectPage } from "../../../shared/types";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "./Card.sass";
+import { PageProjectProps } from "../../containers/PageProject/PageProject";
 
 type CardProps = {
-  blockProject: any;
+  pagesCount: number;
+  publicData: string;
+  title: string;
+  link: string;
+  pages: any[];
 };
-
-const Card: FC<CardProps> = (props) => {
-  const { title, publicData, pagesCount, pages, link } =
-    props.blockProject.frontmatter;
-
+type TProject = {
+  page: PageProjectProps[];
+};
+const Card: FC<CardProps> = ({
+  title,
+  publicData,
+  pagesCount,
+  pages,
+  link,
+}) => {
   const projectLink = link ? link : "/projects";
 
-  const pagesAr = pages.map((project: any) => {
-    const obj1 = project.page[0];
-    const obj2 = project.page[1];
-    const merged = {};
-    Object.keys(obj1).forEach(
-      (key) => (merged[key] = obj1[key] ? obj1[key] : obj2[key])
-    );
+  const pagesAr: PageProjectProps[] = pages.map((project: TProject) => {
+    const merged = {
+      title: "",
+      image: {},
+      layout: {},
+    };
+    project.page.forEach((item) => {
+      if (item?.title?.length) {
+        merged.title = item.title;
+      }
+      if (item?.image?.id?.length) {
+        merged.image = item.image;
+      }
+      if (item?.layout?.id?.length) {
+        merged.layout = item.layout;
+      }
+    });
     return merged;
   });
   const renderPages =
@@ -70,8 +90,6 @@ const Card: FC<CardProps> = (props) => {
             {renderPages}
           </Swiper>
         </div>
-
-        <div className="tags">{/* {renderTechnology} */}</div>
       </Link>
     </article>
   );
