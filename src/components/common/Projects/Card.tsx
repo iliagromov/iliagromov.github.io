@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "./Card.sass";
 import { PageProjectProps } from "../../containers/PageProject/PageProject";
+import { createLabelEnding } from "../../../shared/createLabel";
 
 type CardProps = {
   pagesCount: number;
@@ -77,7 +78,15 @@ const Card: FC<CardProps> = ({
           <div className="card-days__count">
             <span className="card-days__count-number"> {pagesCount} </span>
           </div>
-          <div className="card-days__count-text">Страниц разработано</div>
+          <div className="card-days__count-text">
+            {createLabelEnding(pagesCount, ["Страница", "Страницы", "Страниц"])}
+            &nbsp;
+            {createLabelEnding(pagesCount, [
+              "разработана",
+              "разработаны",
+              "разработано",
+            ])}
+          </div>
         </div>
 
         <div className="card-pages">
