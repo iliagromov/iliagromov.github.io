@@ -9,7 +9,7 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    border-radius: 18px
+    border-radius: 30px
     font-size: 22px
     font-weight: bold
     color: #fff
@@ -59,7 +59,8 @@
     +sm-block
         width: calc(50% - 60px)
     +xs-block
-        width: 100%
+        // width: 100%
+        width: auto
 
     // &:hover
     //     transform: translateY(-1rem)
@@ -70,9 +71,15 @@
 
     &:not(:nth-child(5n+1))
         margin-left: -15px
+        +xs-block
+            margin-left: 0
 
     &:nth-child(n+6)
         // display: none
+    &-link
+        display: flex
+        flex-direction: column
+        align-items: center
     &-pages
         max-width: 300px
 

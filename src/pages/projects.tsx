@@ -44,10 +44,11 @@ export const query = graphql`
 const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
   return (
     <Layout>
-      <SEO title="Projects" />
       <PageProjects pageData={data} location={location} />
     </Layout>
   );
 };
 
 export default ProjectsPage;
+
+export const Head = () => <SEO title="Projects" />;

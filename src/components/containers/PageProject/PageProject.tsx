@@ -110,8 +110,7 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
                 direction={"horizontal"}
               >
                 {renderPagesImage}
-
-                <SwiperToggles />
+                {Boolean(renderPagesImage.length > 1) && <SwiperToggles />}
               </Swiper>
             </div>
 

@@ -3,9 +3,10 @@
 .project-slider
     &__toggles
         display: flex
-        position: absolute
-        top: 0
-        right: 0
+        +from(1023px)
+            position: absolute
+            top: 0
+            right: 0
         +md-block
             top: 0
             right: 0
@@ -14,7 +15,7 @@
 
         .swiper-button-next
             right: 0
-    
+
     &__btn
         display: flex
         position: relative
@@ -24,10 +25,10 @@
             width: 64px
             height: 64px
         &-prev
-            
+
             &:hover,
             &:active
-               filter: $color_filter-1
+                filter: $color_filter-1
             .page-svg
                 transform: rotate(-90deg)
 
@@ -36,15 +37,14 @@
                 background: #30303F
                 &::after
                     opacity: 0.35
-            
+
         &-next
             &:hover,
             &:active
-               filter: $color_filter-1
+                filter: $color_filter-1
             .page-svg
                 transform: rotate(90deg)
-            
-                
+
         &-progress-bar
             // border: 1px solid $color_orange !important
             position: absolute
@@ -74,7 +74,7 @@
             +md-block
                 width: 64px
                 height: 64px
-            
+
             &[disabled]
                 opacity: 1
                 background: #30303F
