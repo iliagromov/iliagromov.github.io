@@ -51,4 +51,6 @@ const ProjectsPage: React.FC<PageProps> = ({ data, location }) => {
 
 export default ProjectsPage;
 
-export const Head = () => <SEO title="Projects" />;
+export const Head = (props) => (
+  <SEO title="Проекты" pathname={props.location.pathname} />
+);

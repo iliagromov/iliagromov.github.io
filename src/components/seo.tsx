@@ -49,6 +49,7 @@ const SEO = ({ title, description, pathname, children }: ISEO) => {
           content={`${metaDescription} | ${defaultTitle}`}
         />
       )}
+      <link rel="canonical" href={`https://i.gromov.digital/${pathname}`} />
       <meta name="image" content={seo.image} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />

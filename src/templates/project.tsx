@@ -117,5 +117,11 @@ export const Head = (props: PageProps) => {
 
   const description = `${task} ${title} с использованием технологий ${skills}`;
 
-  return <SEO title={`Проект ${title}`} description={description} />;
+  return (
+    <SEO
+      title={`Проект ${title}`}
+      description={description}
+      pathname={props.location.pathname}
+    />
+  );
 };

@@ -54,4 +54,6 @@ const IndexPage: React.FC<PageProps> = ({ data, location }) => {
 
 export default IndexPage;
 
-export const Head = () => <SEO title="Fullstack developer " />;
+export const Head = (props) => (
+  <SEO title="Fullstack developer" pathname={props.location.pathname} />
+);

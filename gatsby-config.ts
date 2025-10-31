@@ -1,10 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
 
+type TResolvePages = { allSitePage: { nodes: any[] } };
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Ilia Gromov`,
     author: "Ilia Gromov",
-    siteUrl: `https://iliagromov.github.io/`,
+    siteUrl: `https://i.gromov.digital/`,
     image: "/static/images/imgAbout.png",
     blog: "",
     twitterUsername: "Ilia Gromov | Fullstack developer",
@@ -17,6 +18,70 @@ const config: GatsbyConfig = {
     DEV_SSR: true,
   },
   plugins: [
+    // `gatsby-plugin-no-index`,
+    {
+      resolve: "gatsby-plugin-htaccess",
+
+      // options: {
+      //   RewriteBase: "/custom/",
+      //   https: true,
+      //   www: true,
+      //   SymLinksIfOwnerMatch: true,
+      //   host: "www.mydomain.com", // if 'www' is set to 'false', be sure to also remove it here!
+      //   ErrorDocument: `
+      //     ErrorDocument 401 /error_pages/401.html
+      //     ErrorDocument 404 /error_pages/404.html
+      //     ErrorDocument 500 /error_pages/500.html
+      //   `,
+      //   redirect: [
+      //     "RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]",
+      //     {
+      //       from: "my-domain.com",
+      //       to: "mydomain.com",
+      //     },
+      //     {
+      //       from: "my-other-domain.com",
+      //       to: "mydomain.com",
+      //     },
+      //   ],
+      //   custom: `
+      //       # This is a custom rule!
+      //       # This is a another custom rule!
+      //   `,
+      // },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => `https://i.gromov.digital/`,
+        resolvePages: ({ allSitePage: { nodes: allPages } }: TResolvePages) => {
+          return allPages.map((page) => {
+            return { ...page };
+          });
+        },
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          };
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        configFile: "robots-txt.config.js",
+      },
+    },
     {
       resolve: `gatsby-plugin-yandex-metrika`,
       options: {
