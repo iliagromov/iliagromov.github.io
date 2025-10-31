@@ -10,7 +10,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image";
 import { ReactSVG } from "react-svg";
 import { SwiperToggles } from "../../common/Projects/SwiperToggles";
 
@@ -19,6 +19,14 @@ type PageDataProjectProps = {
   pageData: {
     slug: string;
     title: string;
+    task: string;
+    description: string;
+    skills: {
+      image: {
+        publicURL: string;
+        name: string;
+      };
+    }[];
     publicData: string;
     siteLink: string;
     pagesCount: number;
@@ -60,7 +68,13 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
   // });
 
   const { slug, title, pages, siteLink } = pageData;
-  const pageInit = pages.length;
+
+  const task = `${pageData?.task ? pageData?.task : ""}`;
+  const skills = pageData?.skills
+    ?.map((item) => item.image?.name || "")
+    .toString();
+
+  const shortDescription = `${task} ${title} с использованием технологий ${skills}`;
 
   const renderPagesLink = pages?.map((page: PageProjectProps, idx: number) => {
     return (
@@ -77,7 +91,14 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
       <SwiperSlide key={`page${idx + 1}`}>
         <div className="SwiperSlideProjectCardPage" key={`page${idx}`}>
           <h1>{page.title} </h1>
-          <GatsbyImage image={layout} alt={"img"} />
+          {layout ? (
+            <GatsbyImage image={layout} alt={"img"} />
+          ) : (
+            <StaticImage
+              src="../../../assets/images/projects/project-0-openfactoring/1.png"
+              alt={"img"}
+            />
+          )}
         </div>
       </SwiperSlide>
     );
@@ -112,6 +133,16 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
                 {renderPagesImage}
                 {Boolean(renderPagesImage.length > 1) && <SwiperToggles />}
               </Swiper>
+              <div>
+                <p className="page__text">{shortDescription}</p>
+
+                <div
+                  className="page__text"
+                  dangerouslySetInnerHTML={{
+                    __html: `${pageData.description}`,
+                  }}
+                ></div>
+              </div>
             </div>
 
             <div className="project-page-content__info">
@@ -130,24 +161,43 @@ const PageProject: React.FC<PageDataProjectProps> = ({ pageData }) => {
                 </div>
                 <div className="project-info__element project-info__task">
                   <h3 className="page__title-h3">Задача:</h3>
-                  <p className="page__text">
-                    Разработка сайта для компании site.
-                  </p>
+                  <p className="page__text">{pageData.task}</p>
                 </div>
                 <div className="project-info__element project-info__technology">
                   <h3 className="page__title-h3">Используемые технологии:</h3>
-                  <ul className="page__list"></ul>
+                  <ul className="page__ul">
+                    {pageData.skills.map((item, idx) => {
+                      if (!item.image?.name) {
+                        return;
+                      }
+                      return (
+                        <li
+                          key={`icon${item.image.name}__${idx}`}
+                          className="page__li"
+                        >
+                          <ReactSVG
+                            className="page__list_icon page-svg"
+                            src={item?.image.publicURL}
+                            width={30}
+                            title={item?.image?.name}
+                            desc={`На проекте использовался ${item?.image?.name}`}
+                            wrapper={"span"}
+                          />
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
-                <div className="project-info__element project-info__days">
+                {/* <div className="project-info__element project-info__days">
                   <h3 className="page__title-h3">Сроки:</h3>
                   <p className="page__text">
-                    {/* <span className="page__number_days">{days} </span> */}
+                     <span className="page__number_days">{days} </span> 
                     &nbsp;<span className="page__number_days_text">дней.</span>
                   </p>
-                </div>
+                </div> */}
                 <div className="project-info__element project-info__date">
                   <h3 className="page__title-h3">Дата создания:</h3>
-                  <p className="page__text">9 февраля 2019</p>
+                  <p className="page__text">{pageData.publicData}</p>
                 </div>
               </aside>
             </div>

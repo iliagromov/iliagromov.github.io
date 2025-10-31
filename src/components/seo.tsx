@@ -38,10 +38,17 @@ const SEO = ({ title, description, pathname, children }: ISEO) => {
   return (
     <>
       <title>{`${title} | ${defaultTitle}`}</title>
-      <meta
-        name="description"
-        content={`${metaDescription} | ${defaultTitle}`}
-      />
+      {seo.description ? (
+        <meta
+          name="description"
+          content={`${seo.description} | ${defaultTitle}`}
+        />
+      ) : (
+        <meta
+          name="description"
+          content={`${metaDescription} | ${defaultTitle}`}
+        />
+      )}
       <meta name="image" content={seo.image} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />

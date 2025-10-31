@@ -5,7 +5,7 @@ import { PageProps, graphql } from "gatsby";
 import PageProject, {
   PageProjectProps,
 } from "../components/containers/PageProject/PageProject";
-import { MDXProvider } from "@mdx-js/react";
+// import { MDXProvider } from "@mdx-js/react";
 
 export const query = graphql`
   query GetCurrentProject($id: String!) {
@@ -13,9 +13,17 @@ export const query = graphql`
       frontmatter {
         slug
         title
+        description
+        task
         publicData
         pagesCount
         siteLink
+        skills {
+          image {
+            publicURL
+            name
+          }
+        }
         pages {
           page {
             title
@@ -54,9 +62,8 @@ type TProject = {
 };
 
 const BlogPost: React.FC<PageProps> = (props) => {
-  const title = `Project ${
-    props.data.mdx.frontmatter?.title ? props.data.mdx.frontmatter?.title : ""
-  }`;
+  console.log("🚀 ~ BlogPost ~ props:", props);
+  const dataMd = props.data.mdx.frontmatter;
 
   const pages: PageProjectProps[] = props.data.mdx?.frontmatter?.pages?.map(
     (project: TProject) => {
@@ -81,19 +88,34 @@ const BlogPost: React.FC<PageProps> = (props) => {
   );
 
   const SelfProject = {
-    slug: props.data.mdx.frontmatter.slug,
-    title: props.data.mdx.frontmatter.title,
-    publicData: props.data.mdx.frontmatter.publicData,
-    pagesCount: props.data.mdx.frontmatter.pagesCount,
-    siteLink: props.data.mdx.frontmatter.siteLink,
+    slug: dataMd.slug,
+    title: dataMd.title,
+    description: dataMd.description,
+    task: dataMd.task,
+    publicData: dataMd.publicData,
+    pagesCount: dataMd.pagesCount,
+    siteLink: dataMd.siteLink,
     pages: pages,
+    skills: dataMd.skills,
   };
 
   return (
     <Layout>
-      <SEO title={title} />
       <PageProject pageData={SelfProject} />
     </Layout>
   );
 };
 export default BlogPost;
+
+export const Head = (props: PageProps) => {
+  const dataMd = props.data.mdx.frontmatter;
+  const title = `${dataMd?.title ? dataMd?.title : ""}`;
+  const task = `${dataMd?.task ? dataMd?.task : ""}`;
+  const skills = dataMd?.skills
+    ?.map((item) => item.image?.name || "")
+    .toString();
+
+  const description = `${task} ${title} с использованием технологий ${skills}`;
+
+  return <SEO title={`Проект ${title}`} description={description} />;
+};
